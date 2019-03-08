@@ -6,7 +6,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 import json
 from conf import conf
 import logging
-from stat import S_IREAD
+from stat import S_IREAD, UF_NODUMP
 
 app = Flask(__name__)
 
@@ -64,7 +64,8 @@ def read_path():
                 compare_hash(path, file_string, hashes_file)
 
     if not created:
-        os.chmod("./hashes.txt", S_IREAD)
+        pass
+        os.chmod("./hashes.txt", S_IREAD, UF_NODUMP)
     else:
         logging.info("Execution has been finished")
         logging.info("Files to check: " + str(len(conf["paths"])))
@@ -74,22 +75,31 @@ def read_path():
 
         global lastExecution
         lastExecution = "Files to check: " + str(len(conf["paths"])) + " Checked files: " + str(
-            checked_files) + " Modified files: " + str(modified_files) + " Not modified files: " + str(not_modified_files)
+            checked_files) + " Modified files: " + str(modified_files) + " Not modified files: " + str(
+            not_modified_files)
         if modified_files > 0 or len(conf["paths"]) != checked_files:
             global huboIncidencias
             huboIncidencias = True
 
 
 def mainP():
-    print("hola ramones")
-    logging.basicConfig(filename="log.log", level=logging.INFO)
+    global checked_files
+    global modified_files
+    global not_modified_files
+    global logfile
+    checked_files = 0
+    modified_files = 0
+    not_modified_files = 0
     read_path()
 
 
 @app.route('/', methods=['GET'])
 def index():
-    return "<h3> Last Execution </h3><p>" + lastExecution + "</p>"
-
+    global huboIncidencias
+    if not huboIncidencias:
+        return "<h3> Last Execution1 </h3><p>" + lastExecution + "</p>" + "<br><div><a href='incidencias'><button style='float:left'>Issues</button></a><a href='graficas'><button>Graphs</button></a></div>"
+    else:
+        return "<h1 style='color:red;'>There were issues, please click <a href='incidencias'>here</a> to see them</h1>" + "<h3> Last Execution1 </h3><p>" + lastExecution + "</p>" + "<br><div><a href='incidencias'><button style='float:left'>Issues</button></a><a href='graficas'><button>Graphs</button></a></div>"
 
 @app.route('/incidencias', methods=['GET'])
 def incidencias():
@@ -102,7 +112,9 @@ def graficas():
 
 
 if __name__ == '__main__':
-    schedule = BackgroundScheduler()
-    schedule.add_job(mainP, "interval", minutes=1)
+    logging.basicConfig(filename="./log.log", level=logging.INFO)
+    logging.info("Started")
+    schedule = BackgroundScheduler(daemon=True)
+    schedule.add_job(mainP, "interval", seconds=10)
     schedule.start()
-    app.run(host="0.0.0.0", port="9006")
+    app.run(host="0.0.0.0", port="9007")

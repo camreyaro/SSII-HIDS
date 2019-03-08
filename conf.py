@@ -4,5 +4,5 @@ conf = {
     "frequency" : "",
     "issue_file" : "",
     "log_frequency": "",
-    "notify_email": "camilareyyes@gmail.com"
+    "notify_email": ""
 }

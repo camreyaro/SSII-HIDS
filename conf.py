@@ -3,5 +3,6 @@ conf = {
     "algorithm" : "",
     "frequency" : "",
     "issue_file" : "",
-    "log_frequency": ""
+    "log_frequency": "",
+    "notify_email": ""
 }

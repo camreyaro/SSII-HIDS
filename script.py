@@ -8,6 +8,8 @@ from conf import conf
 import logging
 from stat import S_IREAD, UF_NODUMP
 import datetime
+import sendgrid
+from sendgrid.helpers.mail import *
 
 app = Flask(__name__)
 
@@ -102,6 +104,16 @@ def index():
     if not huboIncidencias:
         return "<h3> Last Execution1 </h3><p>" + lastExecution + "</p>" + "<br><div><a href='incidencias'><button style='float:left'>Issues</button></a><a href='graficas'><button>Graphs</button></a></div>"
     else:
+
+        # Email notification
+        sg = sendgrid.SendGridAPIClient(apikey="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")
+        from_email = Email("insegus@insegus.com")
+        to_email = Email(conf["notify_email"])
+        subject = "te han hackeado"
+        content = Content("text/plain", "se detectaron insidensias :(")
+        mail = Mail(from_email, subject, to_email, content)
+        response = sg.client.mail.send.post(request_body=mail.get())
+       
         return "<h1 style='color:red;'>There were issues, please click <a href='incidencias'>here</a> to see them</h1>" + "<h3> Last Execution1 </h3><p>" + lastExecution + "</p>" + "<br><div><a href='incidencias'><button style='float:left'>Issues</button></a><a href='graficas'><button>Graphs</button></a></div>"
 
 
@@ -120,3 +132,4 @@ if __name__ == '__main__':
     schedule.add_job(mainP, "interval", seconds=10)
     schedule.start()
     app.run(host="0.0.0.0", port="9007")
+

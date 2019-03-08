@@ -4,8 +4,8 @@ import math
 
 from urllib3.connectionpool import xrange
 
-message = "Hola te voy a ingresar una milloná" #Mensaje mandado
-hash = "" #Poner en Hexadecimal
+message = "1002755892 647621034 267" #Mensaje mandado
+hash = "0c7d41633825604a643639ecd0fd5450750ec955" #Poner en Hexadecimal
 bits = 32 #Número de bits de la clave
 #Se usa sha256, si se cree que se usa otro cambiar el código
 
@@ -62,11 +62,14 @@ def getKey3():
     i = 0
     while (i < combinations):
 
-        posibleKey = str(format(random.sample(rango, 1)[0], "032b"))
+        posibleKey = format(random.sample(rango, 1)[0], "032b")
         print("Probando con: " + posibleKey)
-
-        if hashlib.sha256((message + posibleKey).encode()).hexdigest() == hash or hashlib.sha256(
-                (posibleKey + message).encode()).hexdigest() == hash:
+		
+		message = message.enconde()
+		
+		compare = (message << 32) | (posibleKey >> 32)
+		print(compare)
+        if hashlib.sha256(compare).hexdigest() == hash or hashlib.sha256(compare).hexdigest() == hash:
             return "KEY: " + str(posibleKey)
 
         i += 1
@@ -74,4 +77,4 @@ def getKey3():
 
 
 if __name__ == '__main__':
-    getKey1()
+    print("El resultado es :"+str(getKey2()))

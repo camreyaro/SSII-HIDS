@@ -32,6 +32,8 @@ def compare_hash(path, file_string, hashes_file):
             else:
                 not_modified_files += 1
                 logging.info("File " + path + " has not been modified")
+		else if hashes_file.readlines()[-1] == line:
+			logging.error("File " + path + " not founded")
 
 def read_path():
     created = True
@@ -46,8 +48,11 @@ def read_path():
 
     with open("./hashes.txt", mode) as hashes_file:
         for path in conf["paths"]:
-            file_string = open(path, "r").read()
-
+            try:
+				file_string = open(path, "r").read()
+			except:
+				logging.error("File "+str(path)+" does not exists.")
+				continue
             if not created:
                 hash_file(path, file_string, hashes_file)
             else:
@@ -67,5 +72,6 @@ def main():
 
 if __name__== "__main__":
     logging.basicConfig(filename="log.log", level=logging.INFO)
+	logging.basicConfig(filename="incidents.log", level=logging.ERORR)
     read_path()
     

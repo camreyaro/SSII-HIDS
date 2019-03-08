@@ -7,6 +7,7 @@ import json
 from conf import conf
 import logging
 from stat import S_IREAD, UF_NODUMP
+import datetime
 
 app = Flask(__name__)
 
@@ -83,6 +84,8 @@ def read_path():
 
 
 def mainP():
+    date = datetime.datetime.now()
+    logging.basicConfig(filename="./"+str(date.year)+"-"+str(date.month)+".log", level=logging.INFO)
     global checked_files
     global modified_files
     global not_modified_files
@@ -101,6 +104,7 @@ def index():
     else:
         return "<h1 style='color:red;'>There were issues, please click <a href='incidencias'>here</a> to see them</h1>" + "<h3> Last Execution1 </h3><p>" + lastExecution + "</p>" + "<br><div><a href='incidencias'><button style='float:left'>Issues</button></a><a href='graficas'><button>Graphs</button></a></div>"
 
+
 @app.route('/incidencias', methods=['GET'])
 def incidencias():
     return "incidencias"
@@ -112,8 +116,6 @@ def graficas():
 
 
 if __name__ == '__main__':
-    logging.basicConfig(filename="./log.log", level=logging.INFO)
-    logging.info("Started")
     schedule = BackgroundScheduler(daemon=True)
     schedule.add_job(mainP, "interval", seconds=10)
     schedule.start()

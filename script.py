@@ -6,7 +6,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 import json
 from conf import conf
 import logging
-from stat import S_IREAD
+from stat import S_IREAD, S_IWOTH
 import datetime
 import sendgrid
 from sendgrid.helpers.mail import *
@@ -19,9 +19,11 @@ not_modified_files = 0
 logfile = "log" + "March" + ".log"
 huboIncidencias = False
 lastExecution = ""
+lastDateTimeExecution = datetime.datetime.strptime("09/03/2019 15:37:00", "%d/%m/%Y %H:%M:%S")
 logger = None
 incident_logger = None
 last_month = 0
+
 formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
 
 
@@ -43,7 +45,7 @@ def hash_file(path, file_string, hashes_file):
     hashes_file.write(path + ", " + hashed_file + "\n")
 
 
-def compare_hash(path, file_string, hashes_file):
+def compare_hash(file_string, hashes_file):
     global logfile
     global logger
     global checked_files
@@ -51,21 +53,23 @@ def compare_hash(path, file_string, hashes_file):
     global not_modified_files
 
     hashed_file = str(hashlib.sha256(file_string.encode()).hexdigest())
+    i = -1
     for line in hashes_file.readlines():
+        i += 1
         file_path = line.split(",")[0].strip()
         file_hash = line.split(",")[1].strip()
 
-        if file_path == path:
+        if file_path == conf["paths"][i]:
             checked_files += 1
             if file_hash != hashed_file:
                 modified_files += 1
                 incident_logger.error(
-                    "File " + path + " has been modified")  # añadir totales archivos revisados y cuales han ido bien
+                    "File " + conf["paths"][i] + " has been modified")  # añadir totales archivos revisados y cuales han ido bien
             else:
                 not_modified_files += 1
-                logger.info("File " + path + " has not been modified")
-        elif hashes_file.readlines()[-1] == line:
-            logger.warning("File " + path + " not founded")
+                logger.info("File " + conf["paths"][i] + " has not been modified")
+        else:
+            logger.warning("File " + conf["paths"][i] + " not founded")
 
 
 def read_path():
@@ -97,7 +101,7 @@ def read_path():
             if not created:
                 hash_file(path, file_string, hashes_file)
             else:
-                compare_hash(path, file_string, hashes_file)
+                compare_hash(file_string, hashes_file)
 
     if not created:
         pass
@@ -128,6 +132,26 @@ def mainP():
     global logger
     global last_month
     global incident_logger
+    global lastDateTimeExecution
+
+    if conf["last_update"].strip() != "" and datetime.datetime.strptime(conf["last_update"],
+                                                                        "%d/%m/%Y %H:%M:%S") > lastDateTimeExecution:
+        # os.chmod("./hashes.txt", S_IWOTH)
+        with open("./hashes.txt", "a") as hashes_file:
+            for path in conf["new_files"]:
+                try:
+                    file_string = open(path, "r").read()
+                    if len(file_string) == 0 or file_string == "":
+                        logger.warning("File " + str(path) + " is empty.")
+                        continue
+                except MemoryError:
+                    logger.warning("File " + str(path) + " is too big.")
+                    continue
+                except FileNotFoundError:
+                    logger.warning("File " + str(path) + " does not exists.")
+                    continue
+                hash_file(path, file_string, hashes_file)
+    lastDateTimeExecution = datetime.datetime.now()
 
     date = datetime.datetime.now()
     if not os.path.isdir('./logs'):
@@ -171,7 +195,7 @@ def index():
 def incidencias():
     res = "<ul>"
     for path in os.listdir("./incidents"):
-        with open("./incidents/"+path, "r") as incident:
+        with open("./incidents/" + path, "r") as incident:
             res += "<li><b>" + path + "</b>:<br> " + str(incident.read()) + "</li><br>"
     return res + "</ul>"
 
@@ -186,3 +210,4 @@ if __name__ == '__main__':
     schedule.add_job(mainP, "interval", seconds=10)
     schedule.start()
     app.run(host="0.0.0.0", port="9007")
+    mainP()

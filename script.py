@@ -1,15 +1,15 @@
 #! /usr/bin/python3.6
-from flask import Flask, request
+from flask import Flask, request, render_template
 import hashlib
 import os
 from apscheduler.schedulers.background import BackgroundScheduler
 import json
-from conf import conf
 import logging
-from stat import S_IREAD
+from stat import S_IREAD, S_IWRITE
 import datetime
 import sendgrid
 from sendgrid.helpers.mail import *
+import importlib
 
 app = Flask(__name__)
 
@@ -18,11 +18,18 @@ modified_files = 0
 not_modified_files = 0
 logfile = "log" + "March" + ".log"
 huboIncidencias = False
+first_time = True
 lastExecution = ""
 logger = None
 incident_logger = None
 last_month = 0
 formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
+last_paths = 0
+incidents_data = []
+modified_files_data = []
+not_modified_files_data = []
+files_to_check_data = []
+checked_files_data = []
 
 def setup_logger(name, log_file, level=logging.INFO):
     """Function setup as many loggers as you want"""
@@ -67,8 +74,15 @@ def compare_hash(path, file_string, hashes_file):
 
 
 def read_path():
+	import conf
+	importlib.reload(conf)
+	conf = conf.conf
 	global logfile
 	global logger
+	global checked_files_data
+	global modified_files_data
+	global not_modified_files_data
+	global files_to_check_data
 	created = True
 	mode = "w+"
 	logger.info("=========================================")
@@ -98,7 +112,6 @@ def read_path():
 				compare_hash(path, file_string, hashes_file)
 
 	if not created:
-		pass
 		os.chmod("./hashes.txt", S_IREAD)
 	else:
 		logger.info("###### Summary ######")
@@ -108,12 +121,17 @@ def read_path():
 		logger.info("Modified files: " + str(modified_files))
 		logger.info("Not modified files: " + str(not_modified_files))
 		logger.info("==============================================")
-
+		checked_files_data = [checked_files]
+		modified_files_data = [modified_files]
+		not_modified_files_data = [not_modified_files]
+		files_to_check_data = [len(conf["paths"])]
 		global lastExecution
+		global last_paths
+		last_paths = len(conf["paths"])
 		lastExecution = "Files to check: " + str(len(conf["paths"])) + " Checked files: " + str(
 			checked_files) + " Modified files: " + str(modified_files) + " Not modified files: " + str(
 			not_modified_files)
-		if modified_files > 0 or len(conf["paths"]) != checked_files:
+		if modified_files > 0:
 			global huboIncidencias
 			huboIncidencias = True
 
@@ -126,7 +144,35 @@ def mainP():
 	global logger
 	global last_month
 	global incident_logger
-	
+	global last_paths
+	global huboIncidencias
+	global first_time
+	import conf
+	importlib.reload(conf)
+	conf = conf.conf
+	if last_paths != len(conf["paths"]) and not huboIncidencias and not first_time:
+		
+		logger.warning("Paths change detected, hashing files...")
+		os.chmod("./hashes.txt", S_IWRITE)
+		with open("./hashes.txt", 'w') as hashes_file:
+			for path in conf["paths"]:
+				try:
+					file_string = open(path, "r").read()
+					if len(file_string) == 0 or file_string == "":
+						logger.warning("File "+str(path)+" is empty.")
+						continue
+				except MemoryError:
+					logger.warning("File "+str(path)+" is too big.")
+					continue
+				except FileNotFoundError:
+					logger.warning("File "+str(path)+" does not exists.")
+					continue
+				
+				hash_file(path, file_string, hashes_file)
+		logger.warning("Hashfile updated")
+		os.chmod("./hashes.txt", S_IREAD)
+	first_time = False
+	last_paths = len(conf["paths"])
 	date = datetime.datetime.now()
 	if not os.path.isdir('./logs'):
 		os.makedirs('./logs')
@@ -135,6 +181,7 @@ def mainP():
 		
 	if last_month != date.month:
 		logger = setup_logger('info_logger'+str(date.year)+"-"+str(date.month), "./logs/"+str(date.year)+"-"+str(date.month)+".log")
+		logger.addHandler(logging.StreamHandler())
 		incident_logger = setup_logger('error_logger'+str(date.year)+"-"+str(date.month), "./incidents/incident-"+str(date.year)+"-"+str(date.month)+".log", level=logging.ERROR)
 		last_month = date.month
 	checked_files = 0
@@ -149,13 +196,12 @@ def index():
     if not huboIncidencias:
         return "<h3> Last Execution1 </h3><p>" + lastExecution + "</p>" + "<br><div><a href='incidencias'><button style='float:left'>Issues</button></a><a href='graficas'><button>Graphs</button></a></div>"
     else:
-
         # Email notification
         sg = sendgrid.SendGridAPIClient(apikey="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")
         from_email = Email("insegus@insegus.com")
         to_email = Email(conf["notify_email"])
         subject = "La integridad de su sistema se ha visto comprometido."
-        content = Content("text/plain", "Se han detectado incidencias en el sistema.")
+        content = Content("text/plain", "Se han detectado incidencias en el sistema, compruebe su archivo de incidencias.")
         mail = Mail(from_email, subject, to_email, content)
         response = sg.client.mail.send.post(request_body=mail.get())
        
@@ -169,12 +215,12 @@ def incidencias():
 
 @app.route('/graficas', methods=['GET'])
 def graficas():
-    return "grafis"
+    return render_template('graph.html', modified_files_data = modified_files_data, checked_files_data = checked_files_data, not_modified_files_data = not_modified_files_data, files_to_check_data=files_to_check_data)
 
 
 if __name__ == '__main__':
     schedule = BackgroundScheduler(daemon=True)
     schedule.add_job(mainP, "interval", seconds=10)
     schedule.start()
-    app.run(host="0.0.0.0", port="9007")
+    app.run(host="localhost", port="9007")
 

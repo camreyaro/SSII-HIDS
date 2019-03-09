@@ -5,7 +5,7 @@ import os
 from apscheduler.schedulers.background import BackgroundScheduler
 import json
 import logging
-from stat import S_IREAD, S_IWRITE, S_IWOTH
+from stat import S_IREAD, S_IWRITE
 import datetime
 import sendgrid
 from sendgrid.helpers.mail import *
@@ -20,11 +20,9 @@ logfile = "log" + "March" + ".log"
 huboIncidencias = False
 first_time = True
 lastExecution = ""
-lastDateTimeExecution = datetime.datetime.strptime("09/03/2019 15:37:00", "%d/%m/%Y %H:%M:%S")
 logger = None
 incident_logger = None
 last_month = 0
-
 formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
 last_paths = 0
 incidents_data = []
@@ -33,11 +31,10 @@ not_modified_files_data = []
 files_to_check_data = []
 checked_files_data = []
 
-
 def setup_logger(name, log_file, level=logging.INFO):
     """Function setup as many loggers as you want"""
 
-    handler = logging.FileHandler(log_file)
+    handler = logging.FileHandler(log_file)        
     handler.setFormatter(formatter)
 
     logger = logging.getLogger(name)
@@ -52,31 +49,28 @@ def hash_file(path, file_string, hashes_file):
     hashes_file.write(path + ", " + hashed_file + "\n")
 
 
-def compare_hash(file_string, hashes_file):
-    global logfile
-    global logger
-    global checked_files
-    global modified_files
-    global not_modified_files
+def compare_hash(path, file_string, hashes_file):
+	global logfile
+	global logger
+	global checked_files
+	global modified_files
+	global not_modified_files
+	
+	hashed_file = str(hashlib.sha256(file_string.encode()).hexdigest())
+	for line in hashes_file.readlines():
+		file_path = line.split(",")[0].strip()
+		file_hash = line.split(",")[1].strip()
 
-    hashed_file = str(hashlib.sha256(file_string.encode()).hexdigest())
-    i = -1
-    for line in hashes_file.readlines():
-        i += 1
-        file_path = line.split(",")[0].strip()
-        file_hash = line.split(",")[1].strip()
-
-        if file_path == conf["paths"][i]:
-            checked_files += 1
-            if file_hash != hashed_file:
-                modified_files += 1
-                incident_logger.error(
-                    "File " + conf["paths"][i] + " has been modified")  # añadir totales archivos revisados y cuales han ido bien
-            else:
-                not_modified_files += 1
-                logger.info("File " + conf["paths"][i] + " has not been modified")
-        else:
-            logger.warning("File " + conf["paths"][i] + " not founded")
+		if file_path == path:
+			checked_files += 1
+			if file_hash != hashed_file:
+				modified_files += 1
+				incident_logger.error("File " + path + " has been modified")  # añadir totales archivos revisados y cuales han ido bien
+			else:
+				not_modified_files += 1
+				logger.info("File " + path + " has not been modified")
+		elif hashes_file.readlines()[-1] == line:
+			logger.warning("File " + path + " not founded")
 
 
 def read_path():
@@ -141,14 +135,6 @@ def read_path():
 			global huboIncidencias
 			huboIncidencias = True
 
-        global lastExecution
-        lastExecution = "Files to check: " + str(len(conf["paths"])) + " Checked files: " + str(
-            checked_files) + " Modified files: " + str(modified_files) + " Not modified files: " + str(
-            not_modified_files)
-        if modified_files > 0 or len(conf["paths"]) != checked_files:
-            global huboIncidencias
-            huboIncidencias = True
-
 
 def mainP():
 	global checked_files
@@ -203,43 +189,6 @@ def mainP():
 	not_modified_files = 0
 	read_path()
 
-    if conf["last_update"].strip() != "" and datetime.datetime.strptime(conf["last_update"],
-                                                                        "%d/%m/%Y %H:%M:%S") > lastDateTimeExecution:
-        # os.chmod("./hashes.txt", S_IWOTH)
-        with open("./hashes.txt", "a") as hashes_file:
-            for path in conf["new_files"]:
-                try:
-                    file_string = open(path, "r").read()
-                    if len(file_string) == 0 or file_string == "":
-                        logger.warning("File " + str(path) + " is empty.")
-                        continue
-                except MemoryError:
-                    logger.warning("File " + str(path) + " is too big.")
-                    continue
-                except FileNotFoundError:
-                    logger.warning("File " + str(path) + " does not exists.")
-                    continue
-                hash_file(path, file_string, hashes_file)
-    lastDateTimeExecution = datetime.datetime.now()
-
-    date = datetime.datetime.now()
-    if not os.path.isdir('./logs'):
-        os.makedirs('./logs')
-    if not os.path.isdir('./incidents'):
-        os.makedirs('./incidents')
-
-    if last_month != date.month:
-        logger = setup_logger('info_logger' + str(date.year) + "-" + str(date.month),
-                              "./logs/" + str(date.year) + "-" + str(date.month) + ".log")
-        incident_logger = setup_logger('error_logger' + str(date.year) + "-" + str(date.month),
-                                       "./incidents/incident-" + str(date.year) + "-" + str(date.month) + ".log",
-                                       level=logging.ERROR)
-        last_month = date.month
-    checked_files = 0
-    modified_files = 0
-    not_modified_files = 0
-    read_path()
-
 
 @app.route('/', methods=['GET'])
 def index():
@@ -255,17 +204,13 @@ def index():
         content = Content("text/plain", "Se han detectado incidencias en el sistema, compruebe su archivo de incidencias.")
         mail = Mail(from_email, subject, to_email, content)
         response = sg.client.mail.send.post(request_body=mail.get())
-
+       
         return "<h1 style='color:red;'>There were issues, please click <a href='incidencias'>here</a> to see them</h1>" + "<h3> Last Execution1 </h3><p>" + lastExecution + "</p>" + "<br><div><a href='incidencias'><button style='float:left'>Issues</button></a><a href='graficas'><button>Graphs</button></a></div>"
 
 
 @app.route('/incidencias', methods=['GET'])
 def incidencias():
-    res = "<ul>"
-    for path in os.listdir("./incidents"):
-        with open("./incidents/" + path, "r") as incident:
-            res += "<li><b>" + path + "</b>:<br> " + str(incident.read()) + "</li><br>"
-    return res + "</ul>"
+    return "incidencias"
 
 
 @app.route('/graficas', methods=['GET'])
@@ -278,3 +223,4 @@ if __name__ == '__main__':
     schedule.add_job(mainP, "interval", seconds=10)
     schedule.start()
     app.run(host="localhost", port="9007")
+

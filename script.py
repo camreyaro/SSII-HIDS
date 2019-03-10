@@ -155,7 +155,7 @@ def mainP():
     if last_paths != len(conf["paths"]) and not huboIncidencias and not first_time:
 
         old_hashes = Attachment()
-        with open("hashes.txt", "rb") as file_to_attach:
+        with open("hashes.txt", "r") as file_to_attach:
             # encoded_string = base64.b64encode(file_to_attach.read()).decode()
             # old_hashes.content = file_to_attach
             # old_hashes.type = "text/plain"
@@ -242,7 +242,11 @@ def index():
 
 @app.route('/incidencias', methods=['GET'])
 def incidencias():
-    return "incidencias"
+    res = "<ul>"
+    for path in os.listdir("./incidents"):
+        with open("./incidents/" + path, "r") as incident:
+            res += "<li><b>" + path + "</b>:<br> " + str(incident.read()) + "</li><br>"
+    return res + "</ul>"
 
 
 @app.route('/graficas', methods=['GET'])

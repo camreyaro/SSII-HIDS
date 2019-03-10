@@ -10,6 +10,7 @@ import datetime
 import sendgrid
 from sendgrid.helpers.mail import *
 import importlib
+import base64
 
 app = Flask(__name__)
 
@@ -152,6 +153,22 @@ def mainP():
 	conf = conf.conf
 	if last_paths != len(conf["paths"]) and not huboIncidencias and not first_time:
 		
+		old_hashes = Attachment()
+		with open("hashes.txt", "rb") as file_to_attach:
+			# encoded_string = base64.b64encode(file_to_attach.read()).decode()
+			# old_hashes.content = file_to_attach
+			# old_hashes.type = "text/plain"
+			# old_hashes.filename = os.path.basename("old_hashes.txt")
+			# old_hashes.disposition = "attachment"
+			data = file_to_attach.read()
+
+		content_string = "El archivo de configuración ha sido modificado, compruebe que ha sido el administrador del sistema.\n Hashes antiguos:\n"+str(data)+"\n"
+		# Email notification
+		sg = sendgrid.SendGridAPIClient(apikey="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")
+		from_email = Email("insegus@insegus.com")
+		to_email = Email(conf["notify_email"])
+		subject = "Se ha modificado la configuracion."
+		
 		logger.warning("Paths change detected, hashing files...")
 		os.chmod("./hashes.txt", S_IWRITE)
 		with open("./hashes.txt", 'w') as hashes_file:
@@ -167,10 +184,20 @@ def mainP():
 				except FileNotFoundError:
 					logger.warning("File "+str(path)+" does not exists.")
 					continue
+					
 				
 				hash_file(path, file_string, hashes_file)
+		
+		new_hashes = Attachment()
+		with open("hashes.txt", "rb") as file_to_attach:
+			content_string+= "Hashes nuevos\n"+str(file_to_attach.read())
+		content = Content("text/plain", content_string)
+		mail = Mail(from_email, subject, to_email, content)
+		response = sg.client.mail.send.post(request_body=mail.get())
+		
 		logger.warning("Hashfile updated")
 		os.chmod("./hashes.txt", S_IREAD)
+		
 	first_time = False
 	last_paths = len(conf["paths"])
 	date = datetime.datetime.now()

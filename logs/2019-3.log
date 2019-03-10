@@ -1677,3 +1677,1067 @@
 2019-03-09 13:03:19,621 INFO Modified files: 0
 2019-03-09 13:03:19,621 INFO Not modified files: 3
 2019-03-09 13:03:19,622 INFO ==============================================
+2019-03-10 11:58:48,750 INFO =========================================
+2019-03-10 11:58:48,765 INFO Starting execution...
+2019-03-10 11:58:48,815 INFO File ./hola.txt has not been modified
+2019-03-10 11:58:48,815 INFO File ./hola.txt has not been modified
+2019-03-10 11:58:48,815 INFO File ./hola.txt has not been modified
+2019-03-10 11:58:48,816 INFO ###### Summary ######
+2019-03-10 11:58:48,816 INFO Execution has been finished
+2019-03-10 11:58:48,817 INFO Files to check: 3
+2019-03-10 11:58:48,817 INFO Checked files: 3
+2019-03-10 11:58:48,817 INFO Modified files: 0
+2019-03-10 11:58:48,817 INFO Not modified files: 3
+2019-03-10 11:58:48,817 INFO ==============================================
+2019-03-10 11:59:26,479 INFO =========================================
+2019-03-10 11:59:26,480 INFO Starting execution...
+2019-03-10 11:59:26,480 INFO File ./hola.txt has not been modified
+2019-03-10 11:59:26,480 INFO File ./hola.txt has not been modified
+2019-03-10 11:59:26,480 INFO File ./hola.txt has not been modified
+2019-03-10 11:59:26,481 INFO ###### Summary ######
+2019-03-10 11:59:26,481 INFO Execution has been finished
+2019-03-10 11:59:26,481 INFO Files to check: 3
+2019-03-10 11:59:26,481 INFO Checked files: 3
+2019-03-10 11:59:26,481 INFO Modified files: 0
+2019-03-10 11:59:26,481 INFO Not modified files: 3
+2019-03-10 11:59:26,482 INFO ==============================================
+2019-03-10 12:01:03,433 INFO =========================================
+2019-03-10 12:01:03,433 INFO Starting execution...
+2019-03-10 12:01:03,435 INFO File ./hola.txt has not been modified
+2019-03-10 12:01:03,435 INFO File ./hola.txt has not been modified
+2019-03-10 12:01:03,435 INFO File ./hola.txt has not been modified
+2019-03-10 12:01:03,436 INFO ###### Summary ######
+2019-03-10 12:01:03,436 INFO Execution has been finished
+2019-03-10 12:01:03,437 INFO Files to check: 2
+2019-03-10 12:01:03,437 INFO Checked files: 3
+2019-03-10 12:01:03,437 INFO Modified files: 0
+2019-03-10 12:01:03,437 INFO Not modified files: 3
+2019-03-10 12:01:03,438 INFO ==============================================
+2019-03-10 12:01:13,432 INFO =========================================
+2019-03-10 12:01:13,432 INFO Starting execution...
+2019-03-10 12:01:13,433 INFO File ./hola.txt has not been modified
+2019-03-10 12:01:13,434 INFO File ./hola.txt has not been modified
+2019-03-10 12:01:13,434 INFO File ./hola.txt has not been modified
+2019-03-10 12:01:13,435 INFO ###### Summary ######
+2019-03-10 12:01:13,435 INFO Execution has been finished
+2019-03-10 12:01:13,435 INFO Files to check: 2
+2019-03-10 12:01:13,436 INFO Checked files: 3
+2019-03-10 12:01:13,436 INFO Modified files: 0
+2019-03-10 12:01:13,436 INFO Not modified files: 3
+2019-03-10 12:01:13,437 INFO ==============================================
+2019-03-10 12:01:55,411 INFO =========================================
+2019-03-10 12:01:55,412 INFO Starting execution...
+2019-03-10 12:01:55,413 INFO File ./hola.txt has not been modified
+2019-03-10 12:01:55,414 INFO File ./hola.txt has not been modified
+2019-03-10 12:01:55,414 INFO File ./hola.txt has not been modified
+2019-03-10 12:01:55,415 INFO ###### Summary ######
+2019-03-10 12:01:55,415 INFO Execution has been finished
+2019-03-10 12:01:55,415 INFO Files to check: 3
+2019-03-10 12:01:55,415 INFO Checked files: 3
+2019-03-10 12:01:55,415 INFO Modified files: 0
+2019-03-10 12:01:55,415 INFO Not modified files: 3
+2019-03-10 12:01:55,416 INFO ==============================================
+2019-03-10 12:02:05,413 INFO =========================================
+2019-03-10 12:02:05,413 INFO Starting execution...
+2019-03-10 12:02:05,414 INFO File ./hola.txt has not been modified
+2019-03-10 12:02:05,415 INFO File ./hola.txt has not been modified
+2019-03-10 12:02:05,415 INFO File ./hola.txt has not been modified
+2019-03-10 12:02:05,416 INFO ###### Summary ######
+2019-03-10 12:02:05,416 INFO Execution has been finished
+2019-03-10 12:02:05,417 INFO Files to check: 3
+2019-03-10 12:02:05,417 INFO Checked files: 3
+2019-03-10 12:02:05,417 INFO Modified files: 0
+2019-03-10 12:02:05,417 INFO Not modified files: 3
+2019-03-10 12:02:05,418 INFO ==============================================
+2019-03-10 12:04:54,027 INFO =========================================
+2019-03-10 12:04:54,027 INFO Starting execution...
+2019-03-10 12:04:54,028 INFO File ./hola.txt has not been modified
+2019-03-10 12:04:54,028 INFO File ./hola.txt has not been modified
+2019-03-10 12:04:54,029 INFO File ./hola.txt has not been modified
+2019-03-10 12:04:54,029 INFO ###### Summary ######
+2019-03-10 12:04:54,030 INFO Execution has been finished
+2019-03-10 12:04:54,030 INFO Files to check: 2
+2019-03-10 12:04:54,030 INFO Checked files: 3
+2019-03-10 12:04:54,030 INFO Modified files: 0
+2019-03-10 12:04:54,030 INFO Not modified files: 3
+2019-03-10 12:04:54,030 INFO ==============================================
+2019-03-10 12:05:04,040 WARNING Paths change detected, hashing files...
+2019-03-10 12:10:59,394 INFO =========================================
+2019-03-10 12:10:59,411 INFO Starting execution...
+2019-03-10 12:10:59,437 INFO File ./hola.txt has not been modified
+2019-03-10 12:10:59,438 INFO File ./hola.txt has not been modified
+2019-03-10 12:10:59,438 INFO File ./hola.txt has not been modified
+2019-03-10 12:10:59,439 INFO ###### Summary ######
+2019-03-10 12:10:59,439 INFO Execution has been finished
+2019-03-10 12:10:59,439 INFO Files to check: 3
+2019-03-10 12:10:59,439 INFO Checked files: 3
+2019-03-10 12:10:59,440 INFO Modified files: 0
+2019-03-10 12:10:59,440 INFO Not modified files: 3
+2019-03-10 12:10:59,440 INFO ==============================================
+2019-03-10 12:11:09,474 WARNING Paths change detected, hashing files...
+2019-03-10 12:12:55,301 INFO =========================================
+2019-03-10 12:12:55,301 INFO Starting execution...
+2019-03-10 12:12:55,301 INFO File ./hola.txt has not been modified
+2019-03-10 12:12:55,302 INFO File ./hola.txt has not been modified
+2019-03-10 12:12:55,303 INFO ###### Summary ######
+2019-03-10 12:12:55,303 INFO Execution has been finished
+2019-03-10 12:12:55,303 INFO Files to check: 2
+2019-03-10 12:12:55,303 INFO Checked files: 2
+2019-03-10 12:12:55,303 INFO Modified files: 0
+2019-03-10 12:12:55,303 INFO Not modified files: 2
+2019-03-10 12:12:55,303 INFO ==============================================
+2019-03-10 12:13:05,352 WARNING Paths change detected, hashing files...
+2019-03-10 12:13:52,652 INFO =========================================
+2019-03-10 12:13:52,652 INFO Starting execution...
+2019-03-10 12:13:52,653 INFO File ./hola.txt has not been modified
+2019-03-10 12:13:52,653 INFO File ./hola.txt has not been modified
+2019-03-10 12:13:52,653 INFO File ./hola.txt has not been modified
+2019-03-10 12:13:52,653 INFO ###### Summary ######
+2019-03-10 12:13:52,654 INFO Execution has been finished
+2019-03-10 12:13:52,654 INFO Files to check: 3
+2019-03-10 12:13:52,654 INFO Checked files: 3
+2019-03-10 12:13:52,654 INFO Modified files: 0
+2019-03-10 12:13:52,654 INFO Not modified files: 3
+2019-03-10 12:13:52,655 INFO ==============================================
+2019-03-10 12:14:02,660 WARNING Paths change detected, hashing files...
+2019-03-10 12:15:08,537 INFO =========================================
+2019-03-10 12:15:08,538 INFO Starting execution...
+2019-03-10 12:15:08,538 INFO File ./hola.txt has not been modified
+2019-03-10 12:15:08,538 INFO File ./hola.txt has not been modified
+2019-03-10 12:15:08,539 INFO ###### Summary ######
+2019-03-10 12:15:08,539 INFO Execution has been finished
+2019-03-10 12:15:08,539 INFO Files to check: 2
+2019-03-10 12:15:08,539 INFO Checked files: 2
+2019-03-10 12:15:08,539 INFO Modified files: 0
+2019-03-10 12:15:08,539 INFO Not modified files: 2
+2019-03-10 12:15:08,539 INFO ==============================================
+2019-03-10 12:15:18,545 WARNING Paths change detected, hashing files...
+2019-03-10 12:16:41,965 INFO =========================================
+2019-03-10 12:16:41,966 INFO Starting execution...
+2019-03-10 12:16:41,966 INFO File ./hola.txt has not been modified
+2019-03-10 12:16:41,967 INFO File ./hola.txt has not been modified
+2019-03-10 12:16:41,967 INFO File ./hola.txt has not been modified
+2019-03-10 12:16:41,967 INFO ###### Summary ######
+2019-03-10 12:16:41,967 INFO Execution has been finished
+2019-03-10 12:16:41,968 INFO Files to check: 3
+2019-03-10 12:16:41,968 INFO Checked files: 3
+2019-03-10 12:16:41,968 INFO Modified files: 0
+2019-03-10 12:16:41,968 INFO Not modified files: 3
+2019-03-10 12:16:41,968 INFO ==============================================
+2019-03-10 12:16:51,971 WARNING Paths change detected, hashing files...
+2019-03-10 12:19:31,291 INFO =========================================
+2019-03-10 12:19:31,291 INFO Starting execution...
+2019-03-10 12:19:31,291 INFO File ./hola.txt has not been modified
+2019-03-10 12:19:31,292 INFO File ./hola.txt has not been modified
+2019-03-10 12:19:31,292 INFO ###### Summary ######
+2019-03-10 12:19:31,292 INFO Execution has been finished
+2019-03-10 12:19:31,292 INFO Files to check: 2
+2019-03-10 12:19:31,293 INFO Checked files: 2
+2019-03-10 12:19:31,293 INFO Modified files: 0
+2019-03-10 12:19:31,293 INFO Not modified files: 2
+2019-03-10 12:19:31,293 INFO ==============================================
+2019-03-10 12:19:41,301 WARNING Paths change detected, hashing files...
+2019-03-10 12:24:15,271 INFO =========================================
+2019-03-10 12:24:15,271 INFO Starting execution...
+2019-03-10 12:24:15,271 INFO File ./hola.txt has not been modified
+2019-03-10 12:24:15,272 INFO File ./hola.txt has not been modified
+2019-03-10 12:24:15,272 INFO File ./hola.txt has not been modified
+2019-03-10 12:24:15,272 INFO ###### Summary ######
+2019-03-10 12:24:15,273 INFO Execution has been finished
+2019-03-10 12:24:15,273 INFO Files to check: 3
+2019-03-10 12:24:15,273 INFO Checked files: 3
+2019-03-10 12:24:15,273 INFO Modified files: 0
+2019-03-10 12:24:15,273 INFO Not modified files: 3
+2019-03-10 12:24:15,273 INFO ==============================================
+2019-03-10 12:24:25,279 WARNING Paths change detected, hashing files...
+2019-03-10 12:24:27,405 WARNING Hashfile updated
+2019-03-10 12:24:27,407 INFO =========================================
+2019-03-10 12:24:27,407 INFO Starting execution...
+2019-03-10 12:24:27,407 INFO File ./hola.txt has not been modified
+2019-03-10 12:24:27,407 INFO File ./hola.txt has not been modified
+2019-03-10 12:24:27,408 INFO ###### Summary ######
+2019-03-10 12:24:27,408 INFO Execution has been finished
+2019-03-10 12:24:27,408 INFO Files to check: 2
+2019-03-10 12:24:27,408 INFO Checked files: 2
+2019-03-10 12:24:27,409 INFO Modified files: 0
+2019-03-10 12:24:27,409 INFO Not modified files: 2
+2019-03-10 12:24:27,409 INFO ==============================================
+2019-03-10 12:24:35,271 INFO =========================================
+2019-03-10 12:24:35,271 INFO Starting execution...
+2019-03-10 12:24:35,272 INFO File ./hola.txt has not been modified
+2019-03-10 12:24:35,272 INFO File ./hola.txt has not been modified
+2019-03-10 12:24:35,272 INFO ###### Summary ######
+2019-03-10 12:24:35,273 INFO Execution has been finished
+2019-03-10 12:24:35,273 INFO Files to check: 2
+2019-03-10 12:24:35,274 INFO Checked files: 2
+2019-03-10 12:24:35,274 INFO Modified files: 0
+2019-03-10 12:24:35,275 INFO Not modified files: 2
+2019-03-10 12:24:35,275 INFO ==============================================
+2019-03-10 12:28:46,866 INFO =========================================
+2019-03-10 12:28:46,884 INFO Starting execution...
+2019-03-10 12:28:46,911 INFO File ./hola.txt has not been modified
+2019-03-10 12:28:46,911 INFO File ./hola.txt has not been modified
+2019-03-10 12:28:46,911 INFO ###### Summary ######
+2019-03-10 12:28:46,911 INFO Execution has been finished
+2019-03-10 12:28:46,912 INFO Files to check: 2
+2019-03-10 12:28:46,912 INFO Checked files: 2
+2019-03-10 12:28:46,912 INFO Modified files: 0
+2019-03-10 12:28:46,912 INFO Not modified files: 2
+2019-03-10 12:28:46,912 INFO ==============================================
+2019-03-10 12:28:56,854 WARNING Paths change detected, hashing files...
+2019-03-10 12:28:59,207 WARNING Hashfile updated
+2019-03-10 12:28:59,208 INFO =========================================
+2019-03-10 12:28:59,209 INFO Starting execution...
+2019-03-10 12:28:59,214 INFO File ./hola.txt has not been modified
+2019-03-10 12:28:59,216 INFO File ./hola.txt has not been modified
+2019-03-10 12:28:59,216 INFO File ./hola.txt has not been modified
+2019-03-10 12:28:59,217 INFO ###### Summary ######
+2019-03-10 12:28:59,217 INFO Execution has been finished
+2019-03-10 12:28:59,218 INFO Files to check: 3
+2019-03-10 12:28:59,218 INFO Checked files: 3
+2019-03-10 12:28:59,218 INFO Modified files: 0
+2019-03-10 12:28:59,218 INFO Not modified files: 3
+2019-03-10 12:28:59,218 INFO ==============================================
+2019-03-10 12:29:06,849 INFO =========================================
+2019-03-10 12:29:06,849 INFO Starting execution...
+2019-03-10 12:29:06,849 INFO File ./hola.txt has not been modified
+2019-03-10 12:29:06,850 INFO File ./hola.txt has not been modified
+2019-03-10 12:29:06,850 INFO File ./hola.txt has not been modified
+2019-03-10 12:29:06,850 INFO ###### Summary ######
+2019-03-10 12:29:06,851 INFO Execution has been finished
+2019-03-10 12:29:06,851 INFO Files to check: 3
+2019-03-10 12:29:06,851 INFO Checked files: 3
+2019-03-10 12:29:06,851 INFO Modified files: 0
+2019-03-10 12:29:06,851 INFO Not modified files: 3
+2019-03-10 12:29:06,852 INFO ==============================================
+2019-03-10 12:37:45,310 INFO =========================================
+2019-03-10 12:37:45,310 INFO Starting execution...
+2019-03-10 12:37:45,310 INFO File ./hola.txt has not been modified
+2019-03-10 12:37:45,310 INFO File ./hola.txt has not been modified
+2019-03-10 12:37:45,311 INFO File ./hola.txt has not been modified
+2019-03-10 12:37:45,311 INFO ###### Summary ######
+2019-03-10 12:37:45,311 INFO Execution has been finished
+2019-03-10 12:37:45,311 INFO Files to check: 3
+2019-03-10 12:37:45,311 INFO Checked files: 3
+2019-03-10 12:37:45,312 INFO Modified files: 0
+2019-03-10 12:37:45,312 INFO Not modified files: 3
+2019-03-10 12:37:45,312 INFO ==============================================
+2019-03-10 12:39:19,219 INFO =========================================
+2019-03-10 12:39:19,220 INFO Starting execution...
+2019-03-10 12:39:19,220 INFO File ./hola.txt has not been modified
+2019-03-10 12:39:19,220 INFO File ./hola.txt has not been modified
+2019-03-10 12:39:19,220 INFO File ./hola.txt has not been modified
+2019-03-10 12:39:19,221 INFO ###### Summary ######
+2019-03-10 12:39:19,223 INFO Execution has been finished
+2019-03-10 12:39:19,223 INFO Files to check: 2
+2019-03-10 12:39:19,223 INFO Checked files: 3
+2019-03-10 12:39:19,224 INFO Modified files: 0
+2019-03-10 12:39:19,224 INFO Not modified files: 3
+2019-03-10 12:39:19,224 INFO ==============================================
+2019-03-10 12:39:29,223 WARNING Paths change detected, hashing files...
+2019-03-10 12:39:30,333 WARNING Hashfile updated
+2019-03-10 12:39:30,334 INFO =========================================
+2019-03-10 12:39:30,334 INFO Starting execution...
+2019-03-10 12:39:30,335 INFO File ./hola.txt has not been modified
+2019-03-10 12:39:30,335 INFO File ./hola.txt has not been modified
+2019-03-10 12:39:30,335 INFO File ./hola.txt has not been modified
+2019-03-10 12:39:30,335 INFO ###### Summary ######
+2019-03-10 12:39:30,336 INFO Execution has been finished
+2019-03-10 12:39:30,336 INFO Files to check: 3
+2019-03-10 12:39:30,336 INFO Checked files: 3
+2019-03-10 12:39:30,337 INFO Modified files: 0
+2019-03-10 12:39:30,337 INFO Not modified files: 3
+2019-03-10 12:39:30,337 INFO ==============================================
+2019-03-10 12:39:39,219 INFO =========================================
+2019-03-10 12:39:39,219 INFO Starting execution...
+2019-03-10 12:39:39,220 INFO File ./hola.txt has not been modified
+2019-03-10 12:39:39,222 INFO File ./hola.txt has not been modified
+2019-03-10 12:39:39,222 INFO File ./hola.txt has not been modified
+2019-03-10 12:39:39,223 INFO ###### Summary ######
+2019-03-10 12:39:39,225 INFO Execution has been finished
+2019-03-10 12:39:39,226 INFO Files to check: 3
+2019-03-10 12:39:39,226 INFO Checked files: 3
+2019-03-10 12:39:39,226 INFO Modified files: 0
+2019-03-10 12:39:39,226 INFO Not modified files: 3
+2019-03-10 12:39:39,227 INFO ==============================================
+2019-03-10 12:42:23,125 INFO =========================================
+2019-03-10 12:42:23,127 INFO Starting execution...
+2019-03-10 12:42:23,148 INFO File ./hola.txt has not been modified
+2019-03-10 12:42:23,148 INFO File ./hola.txt has not been modified
+2019-03-10 12:42:23,148 INFO File ./hola.txt has not been modified
+2019-03-10 12:42:23,148 INFO ###### Summary ######
+2019-03-10 12:42:23,148 INFO Execution has been finished
+2019-03-10 12:42:23,148 INFO Files to check: 3
+2019-03-10 12:42:23,148 INFO Checked files: 3
+2019-03-10 12:42:23,149 INFO Modified files: 0
+2019-03-10 12:42:23,149 INFO Not modified files: 3
+2019-03-10 12:42:23,149 INFO ==============================================
+2019-03-10 12:42:33,168 WARNING Paths change detected, hashing files...
+2019-03-10 12:42:33,672 WARNING Hashfile updated
+2019-03-10 12:42:33,673 INFO =========================================
+2019-03-10 12:42:33,674 INFO Starting execution...
+2019-03-10 12:42:33,674 INFO File ./hola.txt has not been modified
+2019-03-10 12:42:33,674 INFO File ./hola.txt has not been modified
+2019-03-10 12:42:33,675 INFO ###### Summary ######
+2019-03-10 12:42:33,675 INFO Execution has been finished
+2019-03-10 12:42:33,675 INFO Files to check: 2
+2019-03-10 12:42:33,675 INFO Checked files: 2
+2019-03-10 12:42:33,675 INFO Modified files: 0
+2019-03-10 12:42:33,676 INFO Not modified files: 2
+2019-03-10 12:42:33,676 INFO ==============================================
+2019-03-10 12:42:43,097 INFO =========================================
+2019-03-10 12:42:43,097 INFO Starting execution...
+2019-03-10 12:42:43,097 INFO File ./hola.txt has not been modified
+2019-03-10 12:42:43,097 INFO File ./hola.txt has not been modified
+2019-03-10 12:42:43,098 INFO ###### Summary ######
+2019-03-10 12:42:43,098 INFO Execution has been finished
+2019-03-10 12:42:43,098 INFO Files to check: 2
+2019-03-10 12:42:43,098 INFO Checked files: 2
+2019-03-10 12:42:43,098 INFO Modified files: 0
+2019-03-10 12:42:43,099 INFO Not modified files: 2
+2019-03-10 12:42:43,099 INFO ==============================================
+2019-03-10 12:48:07,642 INFO =========================================
+2019-03-10 12:48:07,643 INFO Starting execution...
+2019-03-10 12:48:07,643 INFO File ./hola.txt has not been modified
+2019-03-10 12:48:07,643 INFO File ./hola.txt has not been modified
+2019-03-10 12:48:07,644 INFO ###### Summary ######
+2019-03-10 12:48:07,644 INFO Execution has been finished
+2019-03-10 12:48:07,644 INFO Files to check: 2
+2019-03-10 12:48:07,644 INFO Checked files: 2
+2019-03-10 12:48:07,645 INFO Modified files: 0
+2019-03-10 12:48:07,645 INFO Not modified files: 2
+2019-03-10 12:48:07,645 INFO ==============================================
+2019-03-10 12:48:17,646 WARNING Paths change detected, hashing files...
+2019-03-10 12:48:18,886 WARNING Hashfile updated
+2019-03-10 12:48:18,887 INFO =========================================
+2019-03-10 12:48:18,888 INFO Starting execution...
+2019-03-10 12:48:18,888 INFO File ./hola.txt has not been modified
+2019-03-10 12:48:18,888 INFO File ./hola.txt has not been modified
+2019-03-10 12:48:18,888 INFO File ./hola.txt has not been modified
+2019-03-10 12:48:18,889 INFO ###### Summary ######
+2019-03-10 12:48:18,889 INFO Execution has been finished
+2019-03-10 12:48:18,889 INFO Files to check: 3
+2019-03-10 12:48:18,889 INFO Checked files: 3
+2019-03-10 12:48:18,890 INFO Modified files: 0
+2019-03-10 12:48:18,892 INFO Not modified files: 3
+2019-03-10 12:48:18,892 INFO ==============================================
+2019-03-10 12:48:27,642 INFO =========================================
+2019-03-10 12:48:27,642 INFO Starting execution...
+2019-03-10 12:48:27,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:48:27,643 INFO File ./hola.txt has not been modified
+2019-03-10 12:48:27,643 INFO File ./hola.txt has not been modified
+2019-03-10 12:48:27,643 INFO ###### Summary ######
+2019-03-10 12:48:27,643 INFO Execution has been finished
+2019-03-10 12:48:27,643 INFO Files to check: 3
+2019-03-10 12:48:27,644 INFO Checked files: 3
+2019-03-10 12:48:27,644 INFO Modified files: 0
+2019-03-10 12:48:27,644 INFO Not modified files: 3
+2019-03-10 12:48:27,644 INFO ==============================================
+2019-03-10 12:48:37,642 INFO =========================================
+2019-03-10 12:48:37,642 INFO Starting execution...
+2019-03-10 12:48:37,643 INFO File ./hola.txt has not been modified
+2019-03-10 12:48:37,643 INFO File ./hola.txt has not been modified
+2019-03-10 12:48:37,643 INFO File ./hola.txt has not been modified
+2019-03-10 12:48:37,644 INFO ###### Summary ######
+2019-03-10 12:48:37,644 INFO Execution has been finished
+2019-03-10 12:48:37,644 INFO Files to check: 3
+2019-03-10 12:48:37,644 INFO Checked files: 3
+2019-03-10 12:48:37,644 INFO Modified files: 0
+2019-03-10 12:48:37,644 INFO Not modified files: 3
+2019-03-10 12:48:37,644 INFO ==============================================
+2019-03-10 12:48:47,641 INFO =========================================
+2019-03-10 12:48:47,641 INFO Starting execution...
+2019-03-10 12:48:47,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:48:47,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:48:47,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:48:47,642 INFO ###### Summary ######
+2019-03-10 12:48:47,643 INFO Execution has been finished
+2019-03-10 12:48:47,643 INFO Files to check: 3
+2019-03-10 12:48:47,643 INFO Checked files: 3
+2019-03-10 12:48:47,643 INFO Modified files: 0
+2019-03-10 12:48:47,643 INFO Not modified files: 3
+2019-03-10 12:48:47,644 INFO ==============================================
+2019-03-10 12:48:57,642 INFO =========================================
+2019-03-10 12:48:57,642 INFO Starting execution...
+2019-03-10 12:48:57,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:48:57,643 INFO File ./hola.txt has not been modified
+2019-03-10 12:48:57,643 INFO File ./hola.txt has not been modified
+2019-03-10 12:48:57,643 INFO ###### Summary ######
+2019-03-10 12:48:57,644 INFO Execution has been finished
+2019-03-10 12:48:57,644 INFO Files to check: 3
+2019-03-10 12:48:57,644 INFO Checked files: 3
+2019-03-10 12:48:57,644 INFO Modified files: 0
+2019-03-10 12:48:57,644 INFO Not modified files: 3
+2019-03-10 12:48:57,644 INFO ==============================================
+2019-03-10 12:49:07,641 INFO =========================================
+2019-03-10 12:49:07,641 INFO Starting execution...
+2019-03-10 12:49:07,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:49:07,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:49:07,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:49:07,642 INFO ###### Summary ######
+2019-03-10 12:49:07,642 INFO Execution has been finished
+2019-03-10 12:49:07,642 INFO Files to check: 3
+2019-03-10 12:49:07,643 INFO Checked files: 3
+2019-03-10 12:49:07,643 INFO Modified files: 0
+2019-03-10 12:49:07,643 INFO Not modified files: 3
+2019-03-10 12:49:07,643 INFO ==============================================
+2019-03-10 12:49:17,641 INFO =========================================
+2019-03-10 12:49:17,641 INFO Starting execution...
+2019-03-10 12:49:17,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:49:17,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:49:17,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:49:17,642 INFO ###### Summary ######
+2019-03-10 12:49:17,642 INFO Execution has been finished
+2019-03-10 12:49:17,643 INFO Files to check: 3
+2019-03-10 12:49:17,643 INFO Checked files: 3
+2019-03-10 12:49:17,643 INFO Modified files: 0
+2019-03-10 12:49:17,643 INFO Not modified files: 3
+2019-03-10 12:49:17,643 INFO ==============================================
+2019-03-10 12:49:27,641 INFO =========================================
+2019-03-10 12:49:27,641 INFO Starting execution...
+2019-03-10 12:49:27,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:49:27,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:49:27,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:49:27,642 INFO ###### Summary ######
+2019-03-10 12:49:27,642 INFO Execution has been finished
+2019-03-10 12:49:27,642 INFO Files to check: 3
+2019-03-10 12:49:27,643 INFO Checked files: 3
+2019-03-10 12:49:27,643 INFO Modified files: 0
+2019-03-10 12:49:27,643 INFO Not modified files: 3
+2019-03-10 12:49:27,643 INFO ==============================================
+2019-03-10 12:49:37,641 INFO =========================================
+2019-03-10 12:49:37,641 INFO Starting execution...
+2019-03-10 12:49:37,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:49:37,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:49:37,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:49:37,642 INFO ###### Summary ######
+2019-03-10 12:49:37,642 INFO Execution has been finished
+2019-03-10 12:49:37,643 INFO Files to check: 3
+2019-03-10 12:49:37,643 INFO Checked files: 3
+2019-03-10 12:49:37,643 INFO Modified files: 0
+2019-03-10 12:49:37,643 INFO Not modified files: 3
+2019-03-10 12:49:37,643 INFO ==============================================
+2019-03-10 12:49:47,640 INFO =========================================
+2019-03-10 12:49:47,640 INFO Starting execution...
+2019-03-10 12:49:47,640 INFO File ./hola.txt has not been modified
+2019-03-10 12:49:47,640 INFO File ./hola.txt has not been modified
+2019-03-10 12:49:47,678 INFO File ./hola.txt has not been modified
+2019-03-10 12:49:47,679 INFO ###### Summary ######
+2019-03-10 12:49:47,679 INFO Execution has been finished
+2019-03-10 12:49:47,679 INFO Files to check: 3
+2019-03-10 12:49:47,679 INFO Checked files: 3
+2019-03-10 12:49:47,680 INFO Modified files: 0
+2019-03-10 12:49:47,680 INFO Not modified files: 3
+2019-03-10 12:49:47,680 INFO ==============================================
+2019-03-10 12:49:57,640 INFO =========================================
+2019-03-10 12:49:57,640 INFO Starting execution...
+2019-03-10 12:49:57,640 INFO File ./hola.txt has not been modified
+2019-03-10 12:49:57,640 INFO File ./hola.txt has not been modified
+2019-03-10 12:49:57,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:49:57,641 INFO ###### Summary ######
+2019-03-10 12:49:57,641 INFO Execution has been finished
+2019-03-10 12:49:57,642 INFO Files to check: 3
+2019-03-10 12:49:57,642 INFO Checked files: 3
+2019-03-10 12:49:57,642 INFO Modified files: 0
+2019-03-10 12:49:57,643 INFO Not modified files: 3
+2019-03-10 12:49:57,643 INFO ==============================================
+2019-03-10 12:50:07,641 INFO =========================================
+2019-03-10 12:50:07,641 INFO Starting execution...
+2019-03-10 12:50:07,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:50:07,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:50:07,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:50:07,642 INFO ###### Summary ######
+2019-03-10 12:50:07,642 INFO Execution has been finished
+2019-03-10 12:50:07,642 INFO Files to check: 3
+2019-03-10 12:50:07,643 INFO Checked files: 3
+2019-03-10 12:50:07,643 INFO Modified files: 0
+2019-03-10 12:50:07,643 INFO Not modified files: 3
+2019-03-10 12:50:07,643 INFO ==============================================
+2019-03-10 12:50:17,640 INFO =========================================
+2019-03-10 12:50:17,640 INFO Starting execution...
+2019-03-10 12:50:17,640 INFO File ./hola.txt has not been modified
+2019-03-10 12:50:17,640 INFO File ./hola.txt has not been modified
+2019-03-10 12:50:17,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:50:17,641 INFO ###### Summary ######
+2019-03-10 12:50:17,641 INFO Execution has been finished
+2019-03-10 12:50:17,641 INFO Files to check: 3
+2019-03-10 12:50:17,641 INFO Checked files: 3
+2019-03-10 12:50:17,642 INFO Modified files: 0
+2019-03-10 12:50:17,642 INFO Not modified files: 3
+2019-03-10 12:50:17,642 INFO ==============================================
+2019-03-10 12:50:27,641 INFO =========================================
+2019-03-10 12:50:27,641 INFO Starting execution...
+2019-03-10 12:50:27,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:50:27,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:50:27,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:50:27,641 INFO ###### Summary ######
+2019-03-10 12:50:27,641 INFO Execution has been finished
+2019-03-10 12:50:27,641 INFO Files to check: 3
+2019-03-10 12:50:27,642 INFO Checked files: 3
+2019-03-10 12:50:27,642 INFO Modified files: 0
+2019-03-10 12:50:27,642 INFO Not modified files: 3
+2019-03-10 12:50:27,642 INFO ==============================================
+2019-03-10 12:50:37,640 INFO =========================================
+2019-03-10 12:50:37,641 INFO Starting execution...
+2019-03-10 12:50:37,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:50:37,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:50:37,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:50:37,642 INFO ###### Summary ######
+2019-03-10 12:50:37,642 INFO Execution has been finished
+2019-03-10 12:50:37,642 INFO Files to check: 3
+2019-03-10 12:50:37,643 INFO Checked files: 3
+2019-03-10 12:50:37,643 INFO Modified files: 0
+2019-03-10 12:50:37,643 INFO Not modified files: 3
+2019-03-10 12:50:37,643 INFO ==============================================
+2019-03-10 12:50:47,641 INFO =========================================
+2019-03-10 12:50:47,641 INFO Starting execution...
+2019-03-10 12:50:47,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:50:47,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:50:47,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:50:47,643 INFO ###### Summary ######
+2019-03-10 12:50:47,643 INFO Execution has been finished
+2019-03-10 12:50:47,643 INFO Files to check: 3
+2019-03-10 12:50:47,643 INFO Checked files: 3
+2019-03-10 12:50:47,643 INFO Modified files: 0
+2019-03-10 12:50:47,643 INFO Not modified files: 3
+2019-03-10 12:50:47,644 INFO ==============================================
+2019-03-10 12:50:57,640 INFO =========================================
+2019-03-10 12:50:57,641 INFO Starting execution...
+2019-03-10 12:50:57,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:50:57,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:50:57,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:50:57,642 INFO ###### Summary ######
+2019-03-10 12:50:57,642 INFO Execution has been finished
+2019-03-10 12:50:57,642 INFO Files to check: 3
+2019-03-10 12:50:57,643 INFO Checked files: 3
+2019-03-10 12:50:57,643 INFO Modified files: 0
+2019-03-10 12:50:57,643 INFO Not modified files: 3
+2019-03-10 12:50:57,643 INFO ==============================================
+2019-03-10 12:51:07,642 INFO =========================================
+2019-03-10 12:51:07,642 INFO Starting execution...
+2019-03-10 12:51:07,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:51:07,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:51:07,643 INFO File ./hola.txt has not been modified
+2019-03-10 12:51:07,643 INFO ###### Summary ######
+2019-03-10 12:51:07,643 INFO Execution has been finished
+2019-03-10 12:51:07,643 INFO Files to check: 3
+2019-03-10 12:51:07,643 INFO Checked files: 3
+2019-03-10 12:51:07,644 INFO Modified files: 0
+2019-03-10 12:51:07,644 INFO Not modified files: 3
+2019-03-10 12:51:07,644 INFO ==============================================
+2019-03-10 12:51:17,642 INFO =========================================
+2019-03-10 12:51:17,642 INFO Starting execution...
+2019-03-10 12:51:17,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:51:17,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:51:17,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:51:17,643 INFO ###### Summary ######
+2019-03-10 12:51:17,643 INFO Execution has been finished
+2019-03-10 12:51:17,643 INFO Files to check: 3
+2019-03-10 12:51:17,643 INFO Checked files: 3
+2019-03-10 12:51:17,643 INFO Modified files: 0
+2019-03-10 12:51:17,643 INFO Not modified files: 3
+2019-03-10 12:51:17,644 INFO ==============================================
+2019-03-10 12:51:27,641 INFO =========================================
+2019-03-10 12:51:27,641 INFO Starting execution...
+2019-03-10 12:51:27,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:51:27,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:51:27,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:51:27,642 INFO ###### Summary ######
+2019-03-10 12:51:27,642 INFO Execution has been finished
+2019-03-10 12:51:27,643 INFO Files to check: 3
+2019-03-10 12:51:27,643 INFO Checked files: 3
+2019-03-10 12:51:27,643 INFO Modified files: 0
+2019-03-10 12:51:27,643 INFO Not modified files: 3
+2019-03-10 12:51:27,643 INFO ==============================================
+2019-03-10 12:51:37,640 INFO =========================================
+2019-03-10 12:51:37,641 INFO Starting execution...
+2019-03-10 12:51:37,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:51:37,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:51:37,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:51:37,642 INFO ###### Summary ######
+2019-03-10 12:51:37,642 INFO Execution has been finished
+2019-03-10 12:51:37,642 INFO Files to check: 3
+2019-03-10 12:51:37,642 INFO Checked files: 3
+2019-03-10 12:51:37,642 INFO Modified files: 0
+2019-03-10 12:51:37,643 INFO Not modified files: 3
+2019-03-10 12:51:37,644 INFO ==============================================
+2019-03-10 12:51:47,641 INFO =========================================
+2019-03-10 12:51:47,641 INFO Starting execution...
+2019-03-10 12:51:47,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:51:47,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:51:47,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:51:47,642 INFO ###### Summary ######
+2019-03-10 12:51:47,642 INFO Execution has been finished
+2019-03-10 12:51:47,642 INFO Files to check: 3
+2019-03-10 12:51:47,642 INFO Checked files: 3
+2019-03-10 12:51:47,643 INFO Modified files: 0
+2019-03-10 12:51:47,643 INFO Not modified files: 3
+2019-03-10 12:51:47,643 INFO ==============================================
+2019-03-10 12:51:57,640 INFO =========================================
+2019-03-10 12:51:57,641 INFO Starting execution...
+2019-03-10 12:51:57,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:51:57,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:51:57,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:51:57,642 INFO ###### Summary ######
+2019-03-10 12:51:57,642 INFO Execution has been finished
+2019-03-10 12:51:57,642 INFO Files to check: 3
+2019-03-10 12:51:57,643 INFO Checked files: 3
+2019-03-10 12:51:57,643 INFO Modified files: 0
+2019-03-10 12:51:57,643 INFO Not modified files: 3
+2019-03-10 12:51:57,643 INFO ==============================================
+2019-03-10 12:52:07,640 INFO =========================================
+2019-03-10 12:52:07,640 INFO Starting execution...
+2019-03-10 12:52:07,640 INFO File ./hola.txt has not been modified
+2019-03-10 12:52:07,640 INFO File ./hola.txt has not been modified
+2019-03-10 12:52:07,640 INFO File ./hola.txt has not been modified
+2019-03-10 12:52:07,641 INFO ###### Summary ######
+2019-03-10 12:52:07,641 INFO Execution has been finished
+2019-03-10 12:52:07,641 INFO Files to check: 3
+2019-03-10 12:52:07,641 INFO Checked files: 3
+2019-03-10 12:52:07,641 INFO Modified files: 0
+2019-03-10 12:52:07,642 INFO Not modified files: 3
+2019-03-10 12:52:07,642 INFO ==============================================
+2019-03-10 12:52:17,641 INFO =========================================
+2019-03-10 12:52:17,641 INFO Starting execution...
+2019-03-10 12:52:17,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:52:17,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:52:17,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:52:17,642 INFO ###### Summary ######
+2019-03-10 12:52:17,642 INFO Execution has been finished
+2019-03-10 12:52:17,643 INFO Files to check: 3
+2019-03-10 12:52:17,643 INFO Checked files: 3
+2019-03-10 12:52:17,643 INFO Modified files: 0
+2019-03-10 12:52:17,643 INFO Not modified files: 3
+2019-03-10 12:52:17,643 INFO ==============================================
+2019-03-10 12:52:27,641 INFO =========================================
+2019-03-10 12:52:27,641 INFO Starting execution...
+2019-03-10 12:52:27,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:52:27,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:52:27,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:52:27,642 INFO ###### Summary ######
+2019-03-10 12:52:27,642 INFO Execution has been finished
+2019-03-10 12:52:27,642 INFO Files to check: 3
+2019-03-10 12:52:27,643 INFO Checked files: 3
+2019-03-10 12:52:27,643 INFO Modified files: 0
+2019-03-10 12:52:27,643 INFO Not modified files: 3
+2019-03-10 12:52:27,643 INFO ==============================================
+2019-03-10 12:52:37,641 INFO =========================================
+2019-03-10 12:52:37,641 INFO Starting execution...
+2019-03-10 12:52:37,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:52:37,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:52:37,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:52:37,642 INFO ###### Summary ######
+2019-03-10 12:52:37,642 INFO Execution has been finished
+2019-03-10 12:52:37,642 INFO Files to check: 3
+2019-03-10 12:52:37,643 INFO Checked files: 3
+2019-03-10 12:52:37,643 INFO Modified files: 0
+2019-03-10 12:52:37,643 INFO Not modified files: 3
+2019-03-10 12:52:37,643 INFO ==============================================
+2019-03-10 12:52:47,641 INFO =========================================
+2019-03-10 12:52:47,641 INFO Starting execution...
+2019-03-10 12:52:47,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:52:47,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:52:47,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:52:47,642 INFO ###### Summary ######
+2019-03-10 12:52:47,642 INFO Execution has been finished
+2019-03-10 12:52:47,643 INFO Files to check: 3
+2019-03-10 12:52:47,644 INFO Checked files: 3
+2019-03-10 12:52:47,645 INFO Modified files: 0
+2019-03-10 12:52:47,646 INFO Not modified files: 3
+2019-03-10 12:52:47,647 INFO ==============================================
+2019-03-10 12:52:57,641 INFO =========================================
+2019-03-10 12:52:57,641 INFO Starting execution...
+2019-03-10 12:52:57,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:52:57,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:52:57,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:52:57,642 INFO ###### Summary ######
+2019-03-10 12:52:57,642 INFO Execution has been finished
+2019-03-10 12:52:57,642 INFO Files to check: 3
+2019-03-10 12:52:57,643 INFO Checked files: 3
+2019-03-10 12:52:57,643 INFO Modified files: 0
+2019-03-10 12:52:57,643 INFO Not modified files: 3
+2019-03-10 12:52:57,643 INFO ==============================================
+2019-03-10 12:53:07,641 INFO =========================================
+2019-03-10 12:53:07,641 INFO Starting execution...
+2019-03-10 12:53:07,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:53:07,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:53:07,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:53:07,642 INFO ###### Summary ######
+2019-03-10 12:53:07,642 INFO Execution has been finished
+2019-03-10 12:53:07,642 INFO Files to check: 3
+2019-03-10 12:53:07,643 INFO Checked files: 3
+2019-03-10 12:53:07,643 INFO Modified files: 0
+2019-03-10 12:53:07,643 INFO Not modified files: 3
+2019-03-10 12:53:07,643 INFO ==============================================
+2019-03-10 12:53:17,642 INFO =========================================
+2019-03-10 12:53:17,643 INFO Starting execution...
+2019-03-10 12:53:17,643 INFO File ./hola.txt has not been modified
+2019-03-10 12:53:17,643 INFO File ./hola.txt has not been modified
+2019-03-10 12:53:17,643 INFO File ./hola.txt has not been modified
+2019-03-10 12:53:17,644 INFO ###### Summary ######
+2019-03-10 12:53:17,644 INFO Execution has been finished
+2019-03-10 12:53:17,644 INFO Files to check: 3
+2019-03-10 12:53:17,644 INFO Checked files: 3
+2019-03-10 12:53:17,644 INFO Modified files: 0
+2019-03-10 12:53:17,645 INFO Not modified files: 3
+2019-03-10 12:53:17,645 INFO ==============================================
+2019-03-10 12:53:27,642 INFO =========================================
+2019-03-10 12:53:27,642 INFO Starting execution...
+2019-03-10 12:53:27,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:53:27,643 INFO File ./hola.txt has not been modified
+2019-03-10 12:53:27,643 INFO File ./hola.txt has not been modified
+2019-03-10 12:53:27,643 INFO ###### Summary ######
+2019-03-10 12:53:27,643 INFO Execution has been finished
+2019-03-10 12:53:27,644 INFO Files to check: 3
+2019-03-10 12:53:27,645 INFO Checked files: 3
+2019-03-10 12:53:27,645 INFO Modified files: 0
+2019-03-10 12:53:27,645 INFO Not modified files: 3
+2019-03-10 12:53:27,645 INFO ==============================================
+2019-03-10 12:53:37,641 INFO =========================================
+2019-03-10 12:53:37,641 INFO Starting execution...
+2019-03-10 12:53:37,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:53:37,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:53:37,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:53:37,643 INFO ###### Summary ######
+2019-03-10 12:53:37,643 INFO Execution has been finished
+2019-03-10 12:53:37,643 INFO Files to check: 3
+2019-03-10 12:53:37,643 INFO Checked files: 3
+2019-03-10 12:53:37,643 INFO Modified files: 0
+2019-03-10 12:53:37,644 INFO Not modified files: 3
+2019-03-10 12:53:37,644 INFO ==============================================
+2019-03-10 12:53:47,641 INFO =========================================
+2019-03-10 12:53:47,641 INFO Starting execution...
+2019-03-10 12:53:47,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:53:47,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:53:47,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:53:47,642 INFO ###### Summary ######
+2019-03-10 12:53:47,642 INFO Execution has been finished
+2019-03-10 12:53:47,643 INFO Files to check: 3
+2019-03-10 12:53:47,643 INFO Checked files: 3
+2019-03-10 12:53:47,644 INFO Modified files: 0
+2019-03-10 12:53:47,644 INFO Not modified files: 3
+2019-03-10 12:53:47,644 INFO ==============================================
+2019-03-10 12:53:57,641 INFO =========================================
+2019-03-10 12:53:57,641 INFO Starting execution...
+2019-03-10 12:53:57,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:53:57,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:53:57,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:53:57,642 INFO ###### Summary ######
+2019-03-10 12:53:57,642 INFO Execution has been finished
+2019-03-10 12:53:57,643 INFO Files to check: 3
+2019-03-10 12:53:57,643 INFO Checked files: 3
+2019-03-10 12:53:57,643 INFO Modified files: 0
+2019-03-10 12:53:57,643 INFO Not modified files: 3
+2019-03-10 12:53:57,643 INFO ==============================================
+2019-03-10 12:54:07,641 INFO =========================================
+2019-03-10 12:54:07,642 INFO Starting execution...
+2019-03-10 12:54:07,643 INFO File ./hola.txt has not been modified
+2019-03-10 12:54:07,644 INFO File ./hola.txt has not been modified
+2019-03-10 12:54:07,652 INFO File ./hola.txt has not been modified
+2019-03-10 12:54:07,653 INFO ###### Summary ######
+2019-03-10 12:54:07,653 INFO Execution has been finished
+2019-03-10 12:54:07,653 INFO Files to check: 3
+2019-03-10 12:54:07,657 INFO Checked files: 3
+2019-03-10 12:54:07,657 INFO Modified files: 0
+2019-03-10 12:54:07,658 INFO Not modified files: 3
+2019-03-10 12:54:07,658 INFO ==============================================
+2019-03-10 12:54:17,640 INFO =========================================
+2019-03-10 12:54:17,640 INFO Starting execution...
+2019-03-10 12:54:17,640 INFO File ./hola.txt has not been modified
+2019-03-10 12:54:17,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:54:17,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:54:17,641 INFO ###### Summary ######
+2019-03-10 12:54:17,641 INFO Execution has been finished
+2019-03-10 12:54:17,642 INFO Files to check: 3
+2019-03-10 12:54:17,642 INFO Checked files: 3
+2019-03-10 12:54:17,642 INFO Modified files: 0
+2019-03-10 12:54:17,642 INFO Not modified files: 3
+2019-03-10 12:54:17,642 INFO ==============================================
+2019-03-10 12:54:27,641 INFO =========================================
+2019-03-10 12:54:27,641 INFO Starting execution...
+2019-03-10 12:54:27,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:54:27,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:54:27,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:54:27,643 INFO ###### Summary ######
+2019-03-10 12:54:27,643 INFO Execution has been finished
+2019-03-10 12:54:27,643 INFO Files to check: 3
+2019-03-10 12:54:27,643 INFO Checked files: 3
+2019-03-10 12:54:27,644 INFO Modified files: 0
+2019-03-10 12:54:27,644 INFO Not modified files: 3
+2019-03-10 12:54:27,644 INFO ==============================================
+2019-03-10 12:54:37,641 INFO =========================================
+2019-03-10 12:54:37,641 INFO Starting execution...
+2019-03-10 12:54:37,644 INFO File ./hola.txt has not been modified
+2019-03-10 12:54:37,644 INFO File ./hola.txt has not been modified
+2019-03-10 12:54:37,644 INFO File ./hola.txt has not been modified
+2019-03-10 12:54:37,645 INFO ###### Summary ######
+2019-03-10 12:54:37,645 INFO Execution has been finished
+2019-03-10 12:54:37,645 INFO Files to check: 3
+2019-03-10 12:54:37,645 INFO Checked files: 3
+2019-03-10 12:54:37,646 INFO Modified files: 0
+2019-03-10 12:54:37,646 INFO Not modified files: 3
+2019-03-10 12:54:37,646 INFO ==============================================
+2019-03-10 12:54:47,640 INFO =========================================
+2019-03-10 12:54:47,641 INFO Starting execution...
+2019-03-10 12:54:47,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:54:47,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:54:47,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:54:47,642 INFO ###### Summary ######
+2019-03-10 12:54:47,642 INFO Execution has been finished
+2019-03-10 12:54:47,642 INFO Files to check: 3
+2019-03-10 12:54:47,643 INFO Checked files: 3
+2019-03-10 12:54:47,643 INFO Modified files: 0
+2019-03-10 12:54:47,643 INFO Not modified files: 3
+2019-03-10 12:54:47,643 INFO ==============================================
+2019-03-10 12:54:57,641 INFO =========================================
+2019-03-10 12:54:57,641 INFO Starting execution...
+2019-03-10 12:54:57,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:54:57,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:54:57,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:54:57,642 INFO ###### Summary ######
+2019-03-10 12:54:57,642 INFO Execution has been finished
+2019-03-10 12:54:57,643 INFO Files to check: 3
+2019-03-10 12:54:57,643 INFO Checked files: 3
+2019-03-10 12:54:57,643 INFO Modified files: 0
+2019-03-10 12:54:57,643 INFO Not modified files: 3
+2019-03-10 12:54:57,643 INFO ==============================================
+2019-03-10 12:55:07,640 INFO =========================================
+2019-03-10 12:55:07,640 INFO Starting execution...
+2019-03-10 12:55:07,640 INFO File ./hola.txt has not been modified
+2019-03-10 12:55:07,643 INFO File ./hola.txt has not been modified
+2019-03-10 12:55:07,643 INFO File ./hola.txt has not been modified
+2019-03-10 12:55:07,643 INFO ###### Summary ######
+2019-03-10 12:55:07,644 INFO Execution has been finished
+2019-03-10 12:55:07,644 INFO Files to check: 3
+2019-03-10 12:55:07,644 INFO Checked files: 3
+2019-03-10 12:55:07,644 INFO Modified files: 0
+2019-03-10 12:55:07,644 INFO Not modified files: 3
+2019-03-10 12:55:07,645 INFO ==============================================
+2019-03-10 12:55:17,640 INFO =========================================
+2019-03-10 12:55:17,641 INFO Starting execution...
+2019-03-10 12:55:17,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:55:17,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:55:17,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:55:17,642 INFO ###### Summary ######
+2019-03-10 12:55:17,642 INFO Execution has been finished
+2019-03-10 12:55:17,642 INFO Files to check: 3
+2019-03-10 12:55:17,642 INFO Checked files: 3
+2019-03-10 12:55:17,643 INFO Modified files: 0
+2019-03-10 12:55:17,643 INFO Not modified files: 3
+2019-03-10 12:55:17,643 INFO ==============================================
+2019-03-10 12:55:27,642 INFO =========================================
+2019-03-10 12:55:27,646 INFO Starting execution...
+2019-03-10 12:55:27,650 INFO File ./hola.txt has not been modified
+2019-03-10 12:55:27,650 INFO File ./hola.txt has not been modified
+2019-03-10 12:55:27,651 INFO File ./hola.txt has not been modified
+2019-03-10 12:55:27,651 INFO ###### Summary ######
+2019-03-10 12:55:27,652 INFO Execution has been finished
+2019-03-10 12:55:27,654 INFO Files to check: 3
+2019-03-10 12:55:27,656 INFO Checked files: 3
+2019-03-10 12:55:27,657 INFO Modified files: 0
+2019-03-10 12:55:27,658 INFO Not modified files: 3
+2019-03-10 12:55:27,658 INFO ==============================================
+2019-03-10 12:55:37,641 INFO =========================================
+2019-03-10 12:55:37,641 INFO Starting execution...
+2019-03-10 12:55:37,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:55:37,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:55:37,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:55:37,643 INFO ###### Summary ######
+2019-03-10 12:55:37,643 INFO Execution has been finished
+2019-03-10 12:55:37,643 INFO Files to check: 3
+2019-03-10 12:55:37,643 INFO Checked files: 3
+2019-03-10 12:55:37,644 INFO Modified files: 0
+2019-03-10 12:55:37,644 INFO Not modified files: 3
+2019-03-10 12:55:37,644 INFO ==============================================
+2019-03-10 12:55:47,642 INFO =========================================
+2019-03-10 12:55:47,642 INFO Starting execution...
+2019-03-10 12:55:47,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:55:47,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:55:47,643 INFO File ./hola.txt has not been modified
+2019-03-10 12:55:47,643 INFO ###### Summary ######
+2019-03-10 12:55:47,643 INFO Execution has been finished
+2019-03-10 12:55:47,643 INFO Files to check: 3
+2019-03-10 12:55:47,644 INFO Checked files: 3
+2019-03-10 12:55:47,644 INFO Modified files: 0
+2019-03-10 12:55:47,644 INFO Not modified files: 3
+2019-03-10 12:55:47,644 INFO ==============================================
+2019-03-10 12:55:57,641 INFO =========================================
+2019-03-10 12:55:57,641 INFO Starting execution...
+2019-03-10 12:55:57,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:55:57,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:55:57,642 INFO File ./hola.txt has not been modified
+2019-03-10 12:55:57,642 INFO ###### Summary ######
+2019-03-10 12:55:57,642 INFO Execution has been finished
+2019-03-10 12:55:57,643 INFO Files to check: 3
+2019-03-10 12:55:57,643 INFO Checked files: 3
+2019-03-10 12:55:57,643 INFO Modified files: 0
+2019-03-10 12:55:57,643 INFO Not modified files: 3
+2019-03-10 12:55:57,644 INFO ==============================================
+2019-03-10 12:56:07,639 INFO =========================================
+2019-03-10 12:56:07,640 INFO Starting execution...
+2019-03-10 12:56:07,640 INFO File ./hola.txt has not been modified
+2019-03-10 12:56:07,640 INFO File ./hola.txt has not been modified
+2019-03-10 12:56:07,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:56:07,641 INFO ###### Summary ######
+2019-03-10 12:56:07,641 INFO Execution has been finished
+2019-03-10 12:56:07,641 INFO Files to check: 3
+2019-03-10 12:56:07,642 INFO Checked files: 3
+2019-03-10 12:56:07,643 INFO Modified files: 0
+2019-03-10 12:56:07,643 INFO Not modified files: 3
+2019-03-10 12:56:07,643 INFO ==============================================
+2019-03-10 12:56:17,640 INFO =========================================
+2019-03-10 12:56:17,640 INFO Starting execution...
+2019-03-10 12:56:17,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:56:17,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:56:17,641 INFO File ./hola.txt has not been modified
+2019-03-10 12:56:17,641 INFO ###### Summary ######
+2019-03-10 12:56:17,641 INFO Execution has been finished
+2019-03-10 12:56:17,642 INFO Files to check: 3
+2019-03-10 12:56:17,642 INFO Checked files: 3
+2019-03-10 12:56:17,642 INFO Modified files: 0
+2019-03-10 12:56:17,642 INFO Not modified files: 3
+2019-03-10 12:56:17,642 INFO ==============================================
+2019-03-10 13:00:02,420 INFO =========================================
+2019-03-10 13:00:02,456 INFO Starting execution...
+2019-03-10 13:00:02,480 INFO File ./hola.txt has not been modified
+2019-03-10 13:00:02,481 INFO File ./hola.txt has not been modified
+2019-03-10 13:00:02,481 INFO File ./hola.txt has not been modified
+2019-03-10 13:00:02,482 INFO ###### Summary ######
+2019-03-10 13:00:02,482 INFO Execution has been finished
+2019-03-10 13:00:02,484 INFO Files to check: 3
+2019-03-10 13:00:02,484 INFO Checked files: 3
+2019-03-10 13:00:02,485 INFO Modified files: 0
+2019-03-10 13:00:02,485 INFO Not modified files: 3
+2019-03-10 13:00:02,485 INFO ==============================================
+2019-03-10 13:00:12,505 WARNING Paths change detected, hashing files...
+2019-03-10 13:00:14,065 WARNING Hashfile updated
+2019-03-10 13:00:14,066 INFO =========================================
+2019-03-10 13:00:14,067 INFO Starting execution...
+2019-03-10 13:00:14,067 INFO File ./hola.txt has not been modified
+2019-03-10 13:00:14,067 INFO File ./hola.txt has not been modified
+2019-03-10 13:00:14,067 INFO ###### Summary ######
+2019-03-10 13:00:14,068 INFO Execution has been finished
+2019-03-10 13:00:14,070 INFO Files to check: 2
+2019-03-10 13:00:14,070 INFO Checked files: 2
+2019-03-10 13:00:14,071 INFO Modified files: 0
+2019-03-10 13:00:14,071 INFO Not modified files: 2
+2019-03-10 13:00:14,071 INFO ==============================================
+2019-03-10 13:00:22,466 INFO =========================================
+2019-03-10 13:00:22,466 INFO Starting execution...
+2019-03-10 13:00:22,467 INFO File ./hola.txt has not been modified
+2019-03-10 13:00:22,467 INFO File ./hola.txt has not been modified
+2019-03-10 13:00:22,467 INFO ###### Summary ######
+2019-03-10 13:00:22,467 INFO Execution has been finished
+2019-03-10 13:00:22,468 INFO Files to check: 2
+2019-03-10 13:00:22,468 INFO Checked files: 2
+2019-03-10 13:00:22,468 INFO Modified files: 0
+2019-03-10 13:00:22,468 INFO Not modified files: 2
+2019-03-10 13:00:22,468 INFO ==============================================
+2019-03-10 13:03:59,062 INFO =========================================
+2019-03-10 13:03:59,062 INFO Starting execution...
+2019-03-10 13:03:59,063 INFO File ./hola.txt has not been modified
+2019-03-10 13:03:59,063 INFO File ./hola.txt has not been modified
+2019-03-10 13:03:59,063 INFO ###### Summary ######
+2019-03-10 13:03:59,063 INFO Execution has been finished
+2019-03-10 13:03:59,063 INFO Files to check: 2
+2019-03-10 13:03:59,064 INFO Checked files: 2
+2019-03-10 13:03:59,064 INFO Modified files: 0
+2019-03-10 13:03:59,064 INFO Not modified files: 2
+2019-03-10 13:03:59,064 INFO ==============================================
+2019-03-10 13:04:09,129 WARNING Paths change detected, hashing files...
+2019-03-10 13:06:36,055 INFO =========================================
+2019-03-10 13:06:36,056 INFO Starting execution...
+2019-03-10 13:06:36,056 INFO File ./hola.txt has not been modified
+2019-03-10 13:06:36,057 INFO File ./hola.txt has not been modified
+2019-03-10 13:06:36,057 INFO File ./hola.txt has not been modified
+2019-03-10 13:06:36,057 INFO ###### Summary ######
+2019-03-10 13:06:36,057 INFO Execution has been finished
+2019-03-10 13:06:36,058 INFO Files to check: 3
+2019-03-10 13:06:36,058 INFO Checked files: 3
+2019-03-10 13:06:36,058 INFO Modified files: 0
+2019-03-10 13:06:36,058 INFO Not modified files: 3
+2019-03-10 13:06:36,058 INFO ==============================================
+2019-03-10 13:06:46,064 WARNING Paths change detected, hashing files...
+2019-03-10 13:09:11,770 INFO =========================================
+2019-03-10 13:09:11,771 INFO Starting execution...
+2019-03-10 13:09:11,771 INFO File ./hola.txt has not been modified
+2019-03-10 13:09:11,772 INFO File ./hola.txt has not been modified
+2019-03-10 13:09:11,774 INFO ###### Summary ######
+2019-03-10 13:09:11,774 INFO Execution has been finished
+2019-03-10 13:09:11,774 INFO Files to check: 2
+2019-03-10 13:09:11,774 INFO Checked files: 2
+2019-03-10 13:09:11,774 INFO Modified files: 0
+2019-03-10 13:09:11,774 INFO Not modified files: 2
+2019-03-10 13:09:11,775 INFO ==============================================
+2019-03-10 13:09:21,827 WARNING Paths change detected, hashing files...
+2019-03-10 13:09:31,773 WARNING Paths change detected, hashing files...
+2019-03-10 13:10:13,539 INFO =========================================
+2019-03-10 13:10:13,540 INFO Starting execution...
+2019-03-10 13:10:13,540 INFO File ./hola.txt has not been modified
+2019-03-10 13:10:13,540 INFO File ./hola.txt has not been modified
+2019-03-10 13:10:13,541 INFO File ./hola.txt has not been modified
+2019-03-10 13:10:13,541 INFO ###### Summary ######
+2019-03-10 13:10:13,541 INFO Execution has been finished
+2019-03-10 13:10:13,541 INFO Files to check: 3
+2019-03-10 13:10:13,542 INFO Checked files: 3
+2019-03-10 13:10:13,542 INFO Modified files: 0
+2019-03-10 13:10:13,542 INFO Not modified files: 3
+2019-03-10 13:10:13,542 INFO ==============================================
+2019-03-10 13:10:23,556 WARNING Paths change detected, hashing files...
+2019-03-10 13:15:19,546 INFO =========================================
+2019-03-10 13:15:19,560 INFO Starting execution...
+2019-03-10 13:15:19,589 INFO File ./hola.txt has not been modified
+2019-03-10 13:15:19,589 INFO File ./hola.txt has not been modified
+2019-03-10 13:15:19,589 INFO ###### Summary ######
+2019-03-10 13:15:19,589 INFO Execution has been finished
+2019-03-10 13:15:19,591 INFO Files to check: 2
+2019-03-10 13:15:19,592 INFO Checked files: 2
+2019-03-10 13:15:19,592 INFO Modified files: 0
+2019-03-10 13:15:19,592 INFO Not modified files: 2
+2019-03-10 13:15:19,593 INFO ==============================================
+2019-03-10 13:16:24,212 INFO =========================================
+2019-03-10 13:16:24,213 INFO Starting execution...
+2019-03-10 13:16:24,213 INFO File ./hola.txt has not been modified
+2019-03-10 13:16:24,213 INFO File ./hola.txt has not been modified
+2019-03-10 13:16:24,214 INFO ###### Summary ######
+2019-03-10 13:16:24,214 INFO Execution has been finished
+2019-03-10 13:16:24,214 INFO Files to check: 3
+2019-03-10 13:16:24,215 INFO Checked files: 2
+2019-03-10 13:16:24,215 INFO Modified files: 0
+2019-03-10 13:16:24,216 INFO Not modified files: 2
+2019-03-10 13:16:24,216 INFO ==============================================
+2019-03-10 13:16:34,212 INFO =========================================
+2019-03-10 13:16:34,212 INFO Starting execution...
+2019-03-10 13:16:34,212 INFO File ./hola.txt has not been modified
+2019-03-10 13:16:34,213 INFO File ./hola.txt has not been modified
+2019-03-10 13:16:34,213 INFO ###### Summary ######
+2019-03-10 13:16:34,213 INFO Execution has been finished
+2019-03-10 13:16:34,213 INFO Files to check: 3
+2019-03-10 13:16:34,214 INFO Checked files: 2
+2019-03-10 13:16:34,214 INFO Modified files: 0
+2019-03-10 13:16:34,214 INFO Not modified files: 2
+2019-03-10 13:16:34,214 INFO ==============================================
+2019-03-10 13:16:44,219 WARNING Paths change detected, hashing files...
+2019-03-10 13:16:46,040 WARNING Hashfile updated
+2019-03-10 13:16:46,043 INFO =========================================
+2019-03-10 13:16:46,043 INFO Starting execution...
+2019-03-10 13:16:46,043 INFO File ./hola.txt has not been modified
+2019-03-10 13:16:46,044 INFO File ./hola.txt has not been modified
+2019-03-10 13:16:46,044 INFO ###### Summary ######
+2019-03-10 13:16:46,044 INFO Execution has been finished
+2019-03-10 13:16:46,044 INFO Files to check: 2
+2019-03-10 13:16:46,044 INFO Checked files: 2
+2019-03-10 13:16:46,045 INFO Modified files: 0
+2019-03-10 13:16:46,045 INFO Not modified files: 2
+2019-03-10 13:16:46,045 INFO ==============================================
+2019-03-10 13:16:54,212 INFO =========================================
+2019-03-10 13:16:54,212 INFO Starting execution...
+2019-03-10 13:16:54,212 INFO File ./hola.txt has not been modified
+2019-03-10 13:16:54,212 INFO File ./hola.txt has not been modified
+2019-03-10 13:16:54,213 INFO ###### Summary ######
+2019-03-10 13:16:54,213 INFO Execution has been finished
+2019-03-10 13:16:54,213 INFO Files to check: 2
+2019-03-10 13:16:54,213 INFO Checked files: 2
+2019-03-10 13:16:54,213 INFO Modified files: 0
+2019-03-10 13:16:54,214 INFO Not modified files: 2
+2019-03-10 13:16:54,214 INFO ==============================================

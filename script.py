@@ -145,88 +145,89 @@ def read_path():
 
 
 def mainP():
-    global checked_files
-    global modified_files
-    global not_modified_files
-    global logfile
-    global logger
-    global last_month
-    global incident_logger
-    global last_paths
-    global huboIncidencias
-    global first_time
-    reload(configuration)
-    from configuration import conf
-    print("paths de antes " + str(last_paths))
-    print("paths de ahora " + str(len(conf["paths"])))
-    # reload(conf.conf)
-    if last_paths != len(conf["paths"]) and not huboIncidencias and not first_time:
+	global checked_files
+	global modified_files
+	global not_modified_files
+	global logfile
+	global logger
+	global last_month
+	global incident_logger
+	global last_paths
+	global huboIncidencias
+	global first_time
+	reload(configuration)
+	from configuration import conf
 
-        old_hashes = Attachment()
-        with open("hashes.txt", "r") as file_to_attach:
-            # encoded_string = base64.b64encode(file_to_attach.read()).decode()
-            # old_hashes.content = file_to_attach
-            # old_hashes.type = "text/plain"
-            # old_hashes.filename = os.path.basename("old_hashes.txt")
-            # old_hashes.disposition = "attachment"
-            data = file_to_attach.read()
+	date = datetime.datetime.now()
+	sg = sendgrid.SendGridAPIClient(apikey="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")
+	from_email = Email("insegus@insegus.com")
+	to_email = Email(conf["notify_email"])
 
-        content_string = "El archivo de configuración ha sido modificado, compruebe que ha sido el administrador del sistema.\n Hashes antiguos:\n" + str(
-            data) + "\n"
-        # Email notification
-        sg = sendgrid.SendGridAPIClient(apikey="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")
-        from_email = Email("insegus@insegus.com")
-        to_email = Email(conf["notify_email"])
-        subject = "Se ha modificado la configuracion."
+	if last_paths != len(conf["paths"]) and not huboIncidencias and not first_time:
+		with open("hashes.txt", "r") as file_to_attach:
+			data = file_to_attach.read()
 
-        logger.warning("Paths change detected, hashing files...")
-        os.chmod(conf['workDirectory']+"/hashes.txt", S_IWRITE)
-        with open(conf['workDirectory']+"/hashes.txt", 'w') as hashes_file:
-            for path in conf["paths"]:
-                try:
-                    file_string = open(path, "rb").read()
-                    if len(file_string) == 0 or file_string == "":
-                        logger.warning("File " + str(path) + " is empty.")
-                        continue
-                except MemoryError:
-                    logger.warning("File " + str(path) + " is too big.")
-                    continue
-                except FileNotFoundError:
-                    logger.warning("File " + str(path) + " does not exists.")
-                    continue
+		content_string = "El archivo de configuración ha sido modificado, compruebe que ha sido el administrador del sistema.\n Hashes antiguos:\n" + str(
+			data) + "\n"
+		# Email notification
+		
+		subject = "Se ha modificado la configuracion."
 
-                hash_file(path, file_string, hashes_file)
+		logger.warning("Paths change detected, hashing files...")
+		os.chmod(conf['workDirectory']+"/hashes.txt", S_IWRITE)
+		with open(conf['workDirectory']+"/hashes.txt", 'w') as hashes_file:
+			for path in conf["paths"]:
+				try:
+					file_string = open(path, "rb").read()
+					if len(file_string) == 0 or file_string == "":
+						logger.warning("File " + str(path) + " is empty.")
+						continue
+				except MemoryError:
+					logger.warning("File " + str(path) + " is too big.")
+					continue
+				except FileNotFoundError:
+					logger.warning("File " + str(path) + " does not exists.")
+					continue
 
-        new_hashes = Attachment()
-        with open(conf['workDirectory']+"/hashes.txt", "rb") as file_to_attach:
-            content_string += "Hashes nuevos\n" + str(file_to_attach.read())
-        content = Content("text/plain", content_string)
-        mail = Mail(from_email, subject, to_email, content)
-        response = sg.client.mail.send.post(request_body=mail.get())
+				hash_file(path, file_string, hashes_file)
 
-        logger.warning("Hashfile updated")
-        os.chmod(conf['workDirectory']+"/hashes.txt", S_IREAD)
+		new_hashes = Attachment()
+		with open(conf['workDirectory']+"/hashes.txt", "rb") as file_to_attach:
+			content_string += "Hashes nuevos\n" + str(file_to_attach.read())
+		content = Content("text/plain", repr(content_string))
+		mail = Mail(from_email, subject, to_email, content)
+		response = sg.client.mail.send.post(request_body=mail.get())
 
-    first_time = False
-    last_paths = len(conf["paths"])
-    date = datetime.datetime.now()
-    if not os.path.isdir(conf['workDirectory']+'/logs'):
-        os.makedirs(conf['workDirectory']+'/logs')
-    if not os.path.isdir(conf['workDirectory']+'/incidents'):
-        os.makedirs(conf['workDirectory']+'/incidents')
+		logger.warning("Hashfile updated")
+		os.chmod(conf['workDirectory']+"/hashes.txt", S_IREAD)
+	elif huboIncidencias:
+		# Email notification
+		incident_str = open("./incidents/incident-"+ str(date.year) + "-" + str(date.month) + ".log", "r").read()
+		subject = "La integridad de su sistema se ha visto comprometido."
+		content = Content("text/plain",
+							"Se han detectado incidencias en el sistema, compruebe su archivo de incidencias.\n"+ incident_str)
+		mail = Mail(from_email, subject, to_email, repr(content))
+		response = sg.client.mail.send.post(request_body=mail.get())
 
-    if last_month != date.month:
-        logger = setup_logger('info_logger' + str(date.year) + "-" + str(date.month),
-                              conf['workDirectory']+"/logs/" + str(date.year) + "-" + str(date.month) + ".log")
-        logger.addHandler(logging.StreamHandler())
-        incident_logger = setup_logger('error_logger' + str(date.year) + "-" + str(date.month),
-                                       conf['workDirectory']+"/incidents/incident-" + str(date.year) + "-" + str(date.month) + ".log",
-                                       level=logging.ERROR)
-        last_month = date.month
-    checked_files = 0
-    modified_files = 0
-    not_modified_files = 0
-    read_path()
+	first_time = False
+	last_paths = len(conf["paths"])
+	if not os.path.isdir(conf['workDirectory']+'/logs'):
+		os.makedirs(conf['workDirectory']+'/logs')
+	if not os.path.isdir(conf['workDirectory']+'/incidents'):
+		os.makedirs(conf['workDirectory']+'/incidents')
+
+	if last_month != date.month:
+		logger = setup_logger('info_logger' + str(date.year) + "-" + str(date.month),
+								conf['workDirectory']+"/logs/" + str(date.year) + "-" + str(date.month) + ".log")
+		logger.addHandler(logging.StreamHandler())
+		incident_logger = setup_logger('error_logger' + str(date.year) + "-" + str(date.month),
+										conf['workDirectory']+"/incidents/incident-" + str(date.year) + "-" + str(date.month) + ".log",
+										level=logging.ERROR)
+		last_month = date.month
+	checked_files = 0
+	modified_files = 0
+	not_modified_files = 0
+	read_path()
 
 
 @app.route('/', methods=['GET'])
@@ -236,16 +237,6 @@ def index():
     if not huboIncidencias:
         return "<h3> Last Execution1 </h3><p>" + lastExecution + "</p>" + "<br><div><a href='incidencias'><button style='float:left'>Issues</button></a><a href='graficas'><button>Graphs</button></a></div>"
     else:
-        # Email notification
-        sg = sendgrid.SendGridAPIClient(apikey="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")
-        from_email = Email("insegus@insegus.com")
-        to_email = Email(conf["notify_email"])
-        subject = "La integridad de su sistema se ha visto comprometido."
-        content = Content("text/plain",
-                          "Se han detectado incidencias en el sistema, compruebe su archivo de incidencias.")
-        mail = Mail(from_email, subject, to_email, content)
-        response = sg.client.mail.send.post(request_body=mail.get())
-
         return "<h1 style='color:red;'>There were issues, please click <a href='incidencias'>here</a> to see them</h1>" + "<h3> Last Execution1 </h3><p>" + lastExecution + "</p>" + "<br><div><a href='incidencias'><button style='float:left'>Issues</button></a><a href='graficas'><button>Graphs</button></a></div>"
 
 

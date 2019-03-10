@@ -1,7 +1,7 @@
 conf = {
-    "paths": ["./imagen_share.png"],
+    "paths": ["./imagen_share.png","./imagen_share.png"],
     "workDirectory": ".",
     "frequency": 10,
     "issue_file": "",
-    "notify_email": "aperez.fr2@gmail.com"
+    "notify_email": "manjjimnav@gmail.com"
 }

@@ -1,5 +1,6 @@
 conf = {
     "paths": ["./hola.txt", "./hola.txt", "./hola.txt", "./MAC.java", "./MAC.java"],
+    "workDirectory": "", #Para cuando este ejecutandose el servicio será necesario
     "algorithm": "",
     "frequency": 10,  # in seconds. Requires to reload the service if it changes
     "issue_file": "",

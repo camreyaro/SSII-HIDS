@@ -10,6 +10,7 @@ import datetime
 import sendgrid
 from sendgrid.helpers.mail import *
 import importlib
+from conf import conf
 
 app = Flask(__name__)
 
@@ -52,26 +53,28 @@ def hash_file(path, file_string, hashes_file):
     hashes_file.write(path + ", " + hashed_file + "\n")
 
 
-def compare_hash(file_string, hashes_file):
+def compare_hash(hashes_file):
     global logfile
     global logger
     global checked_files
     global modified_files
     global not_modified_files
 
-    hashed_file = str(hashlib.sha256(file_string.encode()).hexdigest())
+
     i = -1
     for line in hashes_file.readlines():
         i += 1
+
         file_path = line.split(",")[0].strip()
         file_hash = line.split(",")[1].strip()
 
         if file_path == conf["paths"][i]:
             checked_files += 1
+            with open("./hashes.txt", "r") as file_string:
+                hashed_file = str(hashlib.sha256(file_string.read().encode()).hexdigest())
             if file_hash != hashed_file:
                 modified_files += 1
-                incident_logger.error(
-                    "File " + conf["paths"][i] + " has been modified")  # añadir totales archivos revisados y cuales han ido bien
+                incident_logger.error("File " + conf["paths"][i] + " has been modified")  # añadir totales archivos revisados y cuales han ido bien
             else:
                 not_modified_files += 1
                 logger.info("File " + conf["paths"][i] + " has not been modified")
@@ -80,132 +83,93 @@ def compare_hash(file_string, hashes_file):
 
 
 def read_path():
-	import conf
-	importlib.reload(conf)
-	conf = conf.conf
-	global logfile
-	global logger
-	global checked_files_data
-	global modified_files_data
-	global not_modified_files_data
-	global files_to_check_data
-	created = True
-	mode = "w+"
-	logger.info("=========================================")
-	if not os.path.isfile("./hashes.txt"):  # comprobar si hay archivos nuevos
-		created = False
-		logger.info("Hashes file has been created")
-	else:
-		mode = "r"
-		logger.info("Starting execution...")
-	
-	with open("./hashes.txt", mode) as hashes_file:
-		for path in conf["paths"]:
-			try:
-				file_string = open(path, "r").read()
-				if len(file_string) == 0 or file_string == "":
-					logger.warning("File "+str(path)+" is empty.")
-					continue
-			except MemoryError:
-				logger.warning("File "+str(path)+" is too big.")
-				continue
-			except FileNotFoundError:
-				logger.warning("File "+str(path)+" does not exists.")
-				continue
-			if not created:
-				hash_file(path, file_string, hashes_file)
-			else:
-				compare_hash(path, file_string, hashes_file)
+    import conf
+    importlib.reload(conf)
+    conf = conf.conf
+    global logfile
+    global logger
+    global checked_files_data
+    global modified_files_data
+    global not_modified_files_data
+    global files_to_check_data
+    created = True
+    mode = "w+"
+    logger.info("=========================================")
+    if not os.path.isfile("./hashes.txt"):  # comprobar si hay archivos nuevos
+        created = False
+        logger.info("Hashes file has been created")
+    else:
+        mode = "r"
+        logger.info("Starting execution...")
 
-	if not created:
-		os.chmod("./hashes.txt", S_IREAD)
-	else:
-		logger.info("###### Summary ######")
-		logger.info("Execution has been finished")
-		logger.info("Files to check: " + str(len(conf["paths"])))
-		logger.info("Checked files: " + str(checked_files))
-		logger.info("Modified files: " + str(modified_files))
-		logger.info("Not modified files: " + str(not_modified_files))
-		logger.info("==============================================")
-		checked_files_data = [checked_files]
-		modified_files_data = [modified_files]
-		not_modified_files_data = [not_modified_files]
-		files_to_check_data = [len(conf["paths"])]
-		global lastExecution
-		global last_paths
-		last_paths = len(conf["paths"])
-		lastExecution = "Files to check: " + str(len(conf["paths"])) + " Checked files: " + str(
-			checked_files) + " Modified files: " + str(modified_files) + " Not modified files: " + str(
-			not_modified_files)
-		if modified_files > 0:
-			global huboIncidencias
-			huboIncidencias = True
+    with open("./hashes.txt", mode) as hashes_file:
+        for path in conf["paths"]:
+            try:
+                file_string = open(path, "r").read()
+                if len(file_string) == 0 or file_string == "":
+                    logger.warning("File " + str(path) + " is empty.")
+                    continue
+            except MemoryError:
+                logger.warning("File " + str(path) + " is too big.")
+                continue
+            except FileNotFoundError:
+                logger.warning("File " + str(path) + " does not exists.")
+                continue
+            if not created:
+                hash_file(path, file_string, hashes_file)
+            else:
+                compare_hash(hashes_file)
 
+    if not created:
+        os.chmod("./hashes.txt", S_IREAD)
+    else:
+        logger.info("###### Summary ######")
+        logger.info("Execution has been finished")
+        logger.info("Files to check: " + str(len(conf["paths"])))
+        logger.info("Checked files: " + str(checked_files))
+        logger.info("Modified files: " + str(modified_files))
+        logger.info("Not modified files: " + str(not_modified_files))
+        logger.info("==============================================")
+        checked_files_data = [checked_files]
+        modified_files_data = [modified_files]
+        not_modified_files_data = [not_modified_files]
+        files_to_check_data = [len(conf["paths"])]
         global lastExecution
+        global last_paths
+        last_paths = len(conf["paths"])
+        lastExecution = "Files to check: " + str(len(conf["paths"])) + " Checked files: " + str(
+            checked_files) + " Modified files: " + str(modified_files) + " Not modified files: " + str(
+            not_modified_files)
+        if modified_files > 0:
+            global huboIncidencias
+            huboIncidencias = True
+
         lastExecution = "Files to check: " + str(len(conf["paths"])) + " Checked files: " + str(
             checked_files) + " Modified files: " + str(modified_files) + " Not modified files: " + str(
             not_modified_files)
         if modified_files > 0 or len(conf["paths"]) != checked_files:
-            global huboIncidencias
             huboIncidencias = True
 
 
 def mainP():
-	global checked_files
-	global modified_files
-	global not_modified_files
-	global logfile
-	global logger
-	global last_month
-	global incident_logger
-	global last_paths
-	global huboIncidencias
-	global first_time
-	import conf
-	importlib.reload(conf)
-	conf = conf.conf
-	if last_paths != len(conf["paths"]) and not huboIncidencias and not first_time:
-		
-		logger.warning("Paths change detected, hashing files...")
-		os.chmod("./hashes.txt", S_IWRITE)
-		with open("./hashes.txt", 'w') as hashes_file:
-			for path in conf["paths"]:
-				try:
-					file_string = open(path, "r").read()
-					if len(file_string) == 0 or file_string == "":
-						logger.warning("File "+str(path)+" is empty.")
-						continue
-				except MemoryError:
-					logger.warning("File "+str(path)+" is too big.")
-					continue
-				except FileNotFoundError:
-					logger.warning("File "+str(path)+" does not exists.")
-					continue
-				
-				hash_file(path, file_string, hashes_file)
-		logger.warning("Hashfile updated")
-		os.chmod("./hashes.txt", S_IREAD)
-	first_time = False
-	last_paths = len(conf["paths"])
-	date = datetime.datetime.now()
-	if not os.path.isdir('./logs'):
-		os.makedirs('./logs')
-	if not os.path.isdir('./incidents'):
-		os.makedirs('./incidents')
-		
-	if last_month != date.month:
-		logger = setup_logger('info_logger'+str(date.year)+"-"+str(date.month), "./logs/"+str(date.year)+"-"+str(date.month)+".log")
-		logger.addHandler(logging.StreamHandler())
-		incident_logger = setup_logger('error_logger'+str(date.year)+"-"+str(date.month), "./incidents/incident-"+str(date.year)+"-"+str(date.month)+".log", level=logging.ERROR)
-		last_month = date.month
-	checked_files = 0
-	modified_files = 0
-	not_modified_files = 0
-	read_path()
+    global checked_files
+    global modified_files
+    global not_modified_files
+    global logfile
+    global logger
+    global last_month
+    global incident_logger
+    global last_paths
+    global huboIncidencias
+    global first_time
+    global lastDateTimeExecution
+
+    first_time = False
+    date = datetime.datetime.now()
 
     if conf["last_update"].strip() != "" and datetime.datetime.strptime(conf["last_update"],
                                                                         "%d/%m/%Y %H:%M:%S") > lastDateTimeExecution:
-        # os.chmod("./hashes.txt", S_IWOTH)
+
         with open("./hashes.txt", "a") as hashes_file:
             for path in conf["new_files"]:
                 try:
@@ -222,6 +186,27 @@ def mainP():
                 hash_file(path, file_string, hashes_file)
     lastDateTimeExecution = datetime.datetime.now()
 
+
+    if not os.path.isdir('./logs'):
+        os.makedirs('./logs')
+    if not os.path.isdir('./incidents'):
+        os.makedirs('./incidents')
+
+    if last_month != date.month:
+        logger = setup_logger('info_logger' + str(date.year) + "-" + str(date.month),
+                              "./logs/" + str(date.year) + "-" + str(date.month) + ".log")
+        logger.addHandler(logging.StreamHandler())
+        incident_logger = setup_logger('error_logger' + str(date.year) + "-" + str(date.month),
+                                       "./incidents/incident-" + str(date.year) + "-" + str(date.month) + ".log",
+                                       level=logging.ERROR)
+        last_month = date.month
+    checked_files = 0
+    modified_files = 0
+    not_modified_files = 0
+    read_path()
+
+
+
     date = datetime.datetime.now()
     if not os.path.isdir('./logs'):
         os.makedirs('./logs')
@@ -235,10 +220,10 @@ def mainP():
                                        "./incidents/incident-" + str(date.year) + "-" + str(date.month) + ".log",
                                        level=logging.ERROR)
         last_month = date.month
-    checked_files = 0
-    modified_files = 0
-    not_modified_files = 0
-    read_path()
+        checked_files = 0
+        modified_files = 0
+        not_modified_files = 0
+        read_path()
 
 
 @app.route('/', methods=['GET'])
@@ -252,7 +237,8 @@ def index():
         from_email = Email("insegus@insegus.com")
         to_email = Email(conf["notify_email"])
         subject = "La integridad de su sistema se ha visto comprometido."
-        content = Content("text/plain", "Se han detectado incidencias en el sistema, compruebe su archivo de incidencias.")
+        content = Content("text/plain",
+                          "Se han detectado incidencias en el sistema, compruebe su archivo de incidencias.")
         mail = Mail(from_email, subject, to_email, content)
         response = sg.client.mail.send.post(request_body=mail.get())
 
@@ -270,11 +256,13 @@ def incidencias():
 
 @app.route('/graficas', methods=['GET'])
 def graficas():
-    return render_template('graph.html', modified_files_data = modified_files_data, checked_files_data = checked_files_data, not_modified_files_data = not_modified_files_data, files_to_check_data=files_to_check_data)
+    return render_template('graph.html', modified_files_data=modified_files_data, checked_files_data=checked_files_data,
+                           not_modified_files_data=not_modified_files_data, files_to_check_data=files_to_check_data)
 
 
 if __name__ == '__main__':
     schedule = BackgroundScheduler(daemon=True)
-    schedule.add_job(mainP, "interval", seconds=10)
+    schedule.add_job(mainP, "interval", seconds=conf['frequency'])
     schedule.start()
     app.run(host="localhost", port="9007")
+

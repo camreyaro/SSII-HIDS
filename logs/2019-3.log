@@ -2741,3 +2741,69 @@
 2019-03-10 13:16:54,213 INFO Modified files: 0
 2019-03-10 13:16:54,214 INFO Not modified files: 2
 2019-03-10 13:16:54,214 INFO ==============================================
+2019-03-10 20:26:11,186 INFO =========================================
+2019-03-10 20:26:11,219 INFO Hashes file has been created
+2019-03-10 20:26:21,186 INFO =========================================
+2019-03-10 20:26:21,210 INFO Starting execution...
+2019-03-10 20:26:21,212 INFO File ./imagen_share.png has not been modified
+2019-03-10 20:26:21,213 INFO File ./hola.txt has not been modified
+2019-03-10 20:26:21,214 INFO ###### Summary ######
+2019-03-10 20:26:21,214 INFO Execution has been finished
+2019-03-10 20:26:21,217 INFO Files to check: 2
+2019-03-10 20:26:21,218 INFO Checked files: 2
+2019-03-10 20:26:21,219 INFO Modified files: 0
+2019-03-10 20:26:21,219 INFO Not modified files: 2
+2019-03-10 20:26:21,220 INFO ==============================================
+2019-03-10 20:26:31,226 WARNING Paths change detected, hashing files...
+2019-03-10 20:26:41,185 WARNING Paths change detected, hashing files...
+2019-03-10 20:28:39,596 INFO =========================================
+2019-03-10 20:28:39,614 INFO Starting execution...
+2019-03-10 20:28:39,615 INFO ###### Summary ######
+2019-03-10 20:28:39,615 INFO Execution has been finished
+2019-03-10 20:28:39,616 INFO Files to check: 1
+2019-03-10 20:28:39,616 INFO Checked files: 0
+2019-03-10 20:28:39,617 INFO Modified files: 0
+2019-03-10 20:28:39,617 INFO Not modified files: 0
+2019-03-10 20:28:39,618 INFO ==============================================
+2019-03-10 20:28:49,990 WARNING Paths change detected, hashing files...
+2019-03-10 20:30:15,373 INFO =========================================
+2019-03-10 20:30:15,373 INFO Starting execution...
+2019-03-10 20:30:15,375 INFO ###### Summary ######
+2019-03-10 20:30:15,376 INFO Execution has been finished
+2019-03-10 20:30:15,376 INFO Files to check: 2
+2019-03-10 20:30:15,376 INFO Checked files: 0
+2019-03-10 20:30:15,376 INFO Modified files: 0
+2019-03-10 20:30:15,377 INFO Not modified files: 0
+2019-03-10 20:30:15,377 INFO ==============================================
+2019-03-10 20:30:25,390 WARNING Paths change detected, hashing files...
+2019-03-10 20:30:27,293 WARNING Hashfile updated
+2019-03-10 20:30:27,296 INFO =========================================
+2019-03-10 20:30:27,297 INFO Starting execution...
+2019-03-10 20:30:27,298 INFO File ./imagen_share.png has not been modified
+2019-03-10 20:30:27,299 INFO ###### Summary ######
+2019-03-10 20:30:27,300 INFO Execution has been finished
+2019-03-10 20:30:27,300 INFO Files to check: 1
+2019-03-10 20:30:27,301 INFO Checked files: 1
+2019-03-10 20:30:27,301 INFO Modified files: 0
+2019-03-10 20:30:27,301 INFO Not modified files: 1
+2019-03-10 20:30:27,302 INFO ==============================================
+2019-03-10 20:30:35,396 INFO =========================================
+2019-03-10 20:30:35,397 INFO Starting execution...
+2019-03-10 20:30:35,401 INFO File ./imagen_share.png has not been modified
+2019-03-10 20:30:35,411 INFO ###### Summary ######
+2019-03-10 20:30:35,414 INFO Execution has been finished
+2019-03-10 20:30:35,415 INFO Files to check: 1
+2019-03-10 20:30:35,415 INFO Checked files: 1
+2019-03-10 20:30:35,415 INFO Modified files: 0
+2019-03-10 20:30:35,415 INFO Not modified files: 1
+2019-03-10 20:30:35,415 INFO ==============================================
+2019-03-10 20:30:45,378 INFO =========================================
+2019-03-10 20:30:45,379 INFO Starting execution...
+2019-03-10 20:30:45,381 INFO File ./imagen_share.png has not been modified
+2019-03-10 20:30:45,382 INFO ###### Summary ######
+2019-03-10 20:30:45,383 INFO Execution has been finished
+2019-03-10 20:30:45,385 INFO Files to check: 1
+2019-03-10 20:30:45,385 INFO Checked files: 1
+2019-03-10 20:30:45,385 INFO Modified files: 0
+2019-03-10 20:30:45,402 INFO Not modified files: 1
+2019-03-10 20:30:45,404 INFO ==============================================

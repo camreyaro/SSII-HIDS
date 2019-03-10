@@ -184,7 +184,7 @@ def mainP():
         with open(conf['workDirectory']+"/hashes.txt", 'w') as hashes_file:
             for path in conf["paths"]:
                 try:
-                    file_string = open(path, "r").read()
+                    file_string = open(path, "rb").read()
                     if len(file_string) == 0 or file_string == "":
                         logger.warning("File " + str(path) + " is empty.")
                         continue

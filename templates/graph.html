@@ -3,10 +3,12 @@
 <head>
   <title>Métricas</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </head>
 
 <body>
-  <canvas id="myChart" width="400" height="400"></canvas>
+  <canvas id="myChart" width="100%;" height="100"></canvas>
+  <div id="chartContainer" style="height: 370px; width: 100%;"></div>
   <script>
     var ctx = document.getElementById("myChart").getContext('2d');
     var myChart = new Chart(ctx, {
@@ -45,5 +47,50 @@
         }
       }
     });
+
+    
+var lineChart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: "Integrity radio"
+	},
+	axisX:{
+		title: "Day",
+		crosshair: {
+			enabled: true
+		}
+	},
+	axisY: {
+		title: "Incident ratio",
+		crosshair: {
+			enabled: true
+		}
+  },
+  toolTip: {
+		shared: true
+	},
+	data: [{        
+    type: "line", 
+    name:"Integrity radio",  
+    showInLegend: true,   
+		dataPoints:[ 
+      {% for data in integrity_radio_data%}
+        {x: {{data["x"]}}, y:{{data["y"]}} },
+      {% endfor %}
+    ]
+	},{
+		type: "line",
+		name: "Threshold",
+		showInLegend: true,
+		markerSize: 0,
+		dataPoints: [
+    {% for data in integrity_radio_data%}
+        {x: {{data["x"]}}, y:99.0},
+      {% endfor %}
+		]
+	}]
+});
+lineChart.render();
   </script>
 </body>

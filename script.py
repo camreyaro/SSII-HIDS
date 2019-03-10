@@ -30,6 +30,7 @@ modified_files_data = []  # Variable to create graphs
 not_modified_files_data = []  # Variable to create graphs
 files_to_check_data = []  # Variable to create graphs
 checked_files_data = []  # Variable to create graphs
+integrity_radio_data = []
 
 incidentMail = ""  # This variable will be the content of the incident mail
 oldHashes = ""  # This variable will storage the last version of hashes file to see if it was changed
@@ -163,6 +164,8 @@ def read_path():
     global modified_files_data
     global not_modified_files_data
     global files_to_check_data
+    global integrity_radio_data
+    date = datetime.datetime.now()
     conf = configuration.conf
     created = True
     mode = "w+"
@@ -201,6 +204,8 @@ def read_path():
         logger.info("Checked files: " + str(checked_files))
         logger.info("Modified files: " + str(modified_files))
         logger.info("Not modified files: " + str(not_modified_files))
+        logger.info("Integrity ratio: " + str((not_modified_files/checked_files)*100)+"%")
+        integrity_radio_data.append({"x":str(date.second), "y":(not_modified_files/checked_files)*100})
         logger.info("==============================================")
         checked_files_data = [checked_files]
         modified_files_data = [modified_files]
@@ -218,7 +223,7 @@ def read_path():
 
         # sendIncidentMail()
 
-    ##### INTEGRIDAD EN EL FICHERO DE HASHES ####
+	##### INTEGRIDAD EN EL FICHERO DE HASHES ####
     with open(conf['workDirectory'] + "/hashes.txt", "r") as hashes_file:
         global oldHashes
         if not created and oldHashes != "":
@@ -240,6 +245,7 @@ def mainP():
     global incident_logger
     global huboIncidencias
     global incidentMail
+    global integrity_radio_data
     reload(configuration)
     from configuration import conf
 
@@ -251,6 +257,7 @@ def mainP():
         os.makedirs(conf['workDirectory'] + '/incidents')
 
     if last_month != date.month:
+        integrity_radio_data = []
         logger = setup_logger('info_logger' + str(date.year) + "-" + str(date.month),
                               conf['workDirectory'] + "/logs/" + str(date.year) + "-" + str(date.month) + ".log")
         logger.addHandler(logging.StreamHandler())
@@ -289,7 +296,7 @@ def incidencias():
 @app.route('/graficas', methods=['GET'])
 def graficas():
     return render_template('graph.html', modified_files_data=modified_files_data, checked_files_data=checked_files_data,
-                           not_modified_files_data=not_modified_files_data, files_to_check_data=files_to_check_data)
+                           not_modified_files_data=not_modified_files_data, files_to_check_data=files_to_check_data, integrity_radio_data=integrity_radio_data)
 
 
 if __name__ == '__main__':

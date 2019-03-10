@@ -3182,3 +3182,1656 @@
 2019-03-10 21:11:59,837 INFO Modified files: 0
 2019-03-10 21:11:59,837 INFO Not modified files: 2
 2019-03-10 21:11:59,837 INFO ==============================================
+2019-03-10 23:40:17,129 INFO =========================================
+2019-03-10 23:40:17,149 INFO Hashes file has been created
+2019-03-10 23:40:27,039 INFO =========================================
+2019-03-10 23:40:27,040 INFO Starting execution...
+2019-03-10 23:40:27,041 INFO File ./hola.txt has not been modified
+2019-03-10 23:40:27,041 INFO ###### Summary ######
+2019-03-10 23:40:27,042 INFO Execution has been finished
+2019-03-10 23:40:27,042 INFO Files to check: 1
+2019-03-10 23:40:27,043 INFO Checked files: 1
+2019-03-10 23:40:27,043 INFO Modified files: 0
+2019-03-10 23:40:27,043 INFO Not modified files: 1
+2019-03-10 23:40:27,044 INFO Integrity ratio: 100.0%
+2019-03-10 23:40:37,038 INFO =========================================
+2019-03-10 23:40:37,039 INFO Starting execution...
+2019-03-10 23:40:37,041 INFO File ./hola.txt has not been modified
+2019-03-10 23:40:37,042 INFO ###### Summary ######
+2019-03-10 23:40:37,047 INFO Execution has been finished
+2019-03-10 23:40:37,048 INFO Files to check: 1
+2019-03-10 23:40:37,048 INFO Checked files: 1
+2019-03-10 23:40:37,049 INFO Modified files: 0
+2019-03-10 23:40:37,054 INFO Not modified files: 1
+2019-03-10 23:40:37,055 INFO Integrity ratio: 100.0%
+2019-03-10 23:41:35,127 INFO =========================================
+2019-03-10 23:41:35,195 INFO Starting execution...
+2019-03-10 23:41:35,233 INFO File ./hola.txt has not been modified
+2019-03-10 23:41:35,234 INFO ###### Summary ######
+2019-03-10 23:41:35,235 INFO Execution has been finished
+2019-03-10 23:41:35,235 INFO Files to check: 1
+2019-03-10 23:41:35,235 INFO Checked files: 1
+2019-03-10 23:41:35,235 INFO Modified files: 0
+2019-03-10 23:41:35,236 INFO Not modified files: 1
+2019-03-10 23:41:35,237 INFO Integrity ratio: 100.0%
+2019-03-10 23:41:35,237 INFO ==============================================
+2019-03-10 23:41:45,126 INFO =========================================
+2019-03-10 23:41:45,128 INFO Starting execution...
+2019-03-10 23:41:45,129 INFO File ./hola.txt has not been modified
+2019-03-10 23:41:45,130 INFO ###### Summary ######
+2019-03-10 23:41:45,133 INFO Execution has been finished
+2019-03-10 23:41:45,133 INFO Files to check: 1
+2019-03-10 23:41:45,134 INFO Checked files: 1
+2019-03-10 23:41:45,135 INFO Modified files: 0
+2019-03-10 23:41:45,135 INFO Not modified files: 1
+2019-03-10 23:41:45,136 INFO Integrity ratio: 100.0%
+2019-03-10 23:41:45,137 INFO ==============================================
+2019-03-10 23:41:55,127 INFO =========================================
+2019-03-10 23:41:55,127 INFO Starting execution...
+2019-03-10 23:41:55,130 INFO File ./hola.txt has not been modified
+2019-03-10 23:41:55,131 INFO ###### Summary ######
+2019-03-10 23:41:55,131 INFO Execution has been finished
+2019-03-10 23:41:55,132 INFO Files to check: 1
+2019-03-10 23:41:55,133 INFO Checked files: 1
+2019-03-10 23:41:55,137 INFO Modified files: 0
+2019-03-10 23:41:55,176 INFO Not modified files: 1
+2019-03-10 23:41:55,179 INFO Integrity ratio: 100.0%
+2019-03-10 23:41:55,179 INFO ==============================================
+2019-03-10 23:42:05,128 INFO =========================================
+2019-03-10 23:42:05,128 INFO Starting execution...
+2019-03-10 23:42:05,130 INFO File ./hola.txt has not been modified
+2019-03-10 23:42:05,131 INFO ###### Summary ######
+2019-03-10 23:42:05,131 INFO Execution has been finished
+2019-03-10 23:42:05,132 INFO Files to check: 1
+2019-03-10 23:42:05,133 INFO Checked files: 1
+2019-03-10 23:42:05,134 INFO Modified files: 0
+2019-03-10 23:42:05,134 INFO Not modified files: 1
+2019-03-10 23:42:05,135 INFO Integrity ratio: 100.0%
+2019-03-10 23:42:05,135 INFO ==============================================
+2019-03-10 23:42:15,128 INFO =========================================
+2019-03-10 23:42:15,128 INFO Starting execution...
+2019-03-10 23:42:15,129 INFO File ./hola.txt has not been modified
+2019-03-10 23:42:15,129 INFO ###### Summary ######
+2019-03-10 23:42:15,131 INFO Execution has been finished
+2019-03-10 23:42:15,131 INFO Files to check: 1
+2019-03-10 23:42:15,131 INFO Checked files: 1
+2019-03-10 23:42:15,135 INFO Modified files: 0
+2019-03-10 23:42:15,135 INFO Not modified files: 1
+2019-03-10 23:42:15,135 INFO Integrity ratio: 100.0%
+2019-03-10 23:42:15,136 INFO ==============================================
+2019-03-10 23:42:25,126 INFO =========================================
+2019-03-10 23:42:25,127 INFO Starting execution...
+2019-03-10 23:42:25,128 INFO File ./hola.txt has not been modified
+2019-03-10 23:42:25,129 INFO ###### Summary ######
+2019-03-10 23:42:25,129 INFO Execution has been finished
+2019-03-10 23:42:25,130 INFO Files to check: 1
+2019-03-10 23:42:25,131 INFO Checked files: 1
+2019-03-10 23:42:25,131 INFO Modified files: 0
+2019-03-10 23:42:25,132 INFO Not modified files: 1
+2019-03-10 23:42:25,132 INFO Integrity ratio: 100.0%
+2019-03-10 23:42:25,133 INFO ==============================================
+2019-03-10 23:42:35,127 INFO =========================================
+2019-03-10 23:42:35,127 INFO Starting execution...
+2019-03-10 23:42:35,130 INFO File ./hola.txt has not been modified
+2019-03-10 23:42:35,131 INFO ###### Summary ######
+2019-03-10 23:42:35,132 INFO Execution has been finished
+2019-03-10 23:42:35,132 INFO Files to check: 1
+2019-03-10 23:42:35,133 INFO Checked files: 1
+2019-03-10 23:42:35,134 INFO Modified files: 0
+2019-03-10 23:42:35,134 INFO Not modified files: 1
+2019-03-10 23:42:35,135 INFO Integrity ratio: 100.0%
+2019-03-10 23:42:35,135 INFO ==============================================
+2019-03-10 23:42:45,126 INFO =========================================
+2019-03-10 23:42:45,126 INFO Starting execution...
+2019-03-10 23:42:45,127 INFO File ./hola.txt has not been modified
+2019-03-10 23:42:45,127 INFO ###### Summary ######
+2019-03-10 23:42:45,127 INFO Execution has been finished
+2019-03-10 23:42:45,128 INFO Files to check: 1
+2019-03-10 23:42:45,128 INFO Checked files: 1
+2019-03-10 23:42:45,128 INFO Modified files: 0
+2019-03-10 23:42:45,129 INFO Not modified files: 1
+2019-03-10 23:42:45,129 INFO Integrity ratio: 100.0%
+2019-03-10 23:42:45,129 INFO ==============================================
+2019-03-10 23:43:26,528 INFO =========================================
+2019-03-10 23:43:26,529 INFO Starting execution...
+2019-03-10 23:43:26,533 INFO File ./hola.txt has not been modified
+2019-03-10 23:43:26,534 INFO ###### Summary ######
+2019-03-10 23:43:26,534 INFO Execution has been finished
+2019-03-10 23:43:26,535 INFO Files to check: 1
+2019-03-10 23:43:26,547 INFO Checked files: 1
+2019-03-10 23:43:26,548 INFO Modified files: 0
+2019-03-10 23:43:26,549 INFO Not modified files: 1
+2019-03-10 23:43:26,550 INFO Integrity ratio: 100.0%
+2019-03-10 23:43:26,550 INFO ==============================================
+2019-03-10 23:43:36,528 INFO =========================================
+2019-03-10 23:43:36,529 INFO Starting execution...
+2019-03-10 23:43:36,532 INFO File ./hola.txt has not been modified
+2019-03-10 23:43:36,533 INFO ###### Summary ######
+2019-03-10 23:43:36,534 INFO Execution has been finished
+2019-03-10 23:43:36,535 INFO Files to check: 1
+2019-03-10 23:43:36,536 INFO Checked files: 1
+2019-03-10 23:43:36,537 INFO Modified files: 0
+2019-03-10 23:43:36,537 INFO Not modified files: 1
+2019-03-10 23:43:36,538 INFO Integrity ratio: 100.0%
+2019-03-10 23:43:36,539 INFO ==============================================
+2019-03-10 23:43:46,529 INFO =========================================
+2019-03-10 23:43:46,531 INFO Starting execution...
+2019-03-10 23:43:46,532 INFO File ./hola.txt has not been modified
+2019-03-10 23:43:46,554 INFO ###### Summary ######
+2019-03-10 23:43:46,556 INFO Execution has been finished
+2019-03-10 23:43:46,562 INFO Files to check: 1
+2019-03-10 23:43:46,563 INFO Checked files: 1
+2019-03-10 23:43:46,563 INFO Modified files: 0
+2019-03-10 23:43:46,564 INFO Not modified files: 1
+2019-03-10 23:43:46,564 INFO Integrity ratio: 100.0%
+2019-03-10 23:43:46,565 INFO ==============================================
+2019-03-10 23:43:56,529 INFO =========================================
+2019-03-10 23:43:56,529 INFO Starting execution...
+2019-03-10 23:43:56,530 INFO File ./hola.txt has not been modified
+2019-03-10 23:43:56,530 INFO ###### Summary ######
+2019-03-10 23:43:56,530 INFO Execution has been finished
+2019-03-10 23:43:56,530 INFO Files to check: 1
+2019-03-10 23:43:56,530 INFO Checked files: 1
+2019-03-10 23:43:56,530 INFO Modified files: 0
+2019-03-10 23:43:56,532 INFO Not modified files: 1
+2019-03-10 23:43:56,532 INFO Integrity ratio: 100.0%
+2019-03-10 23:43:56,546 INFO ==============================================
+2019-03-10 23:44:06,544 INFO =========================================
+2019-03-10 23:44:06,545 INFO Starting execution...
+2019-03-10 23:44:06,546 INFO File ./hola.txt has not been modified
+2019-03-10 23:44:06,546 INFO ###### Summary ######
+2019-03-10 23:44:06,547 INFO Execution has been finished
+2019-03-10 23:44:06,548 INFO Files to check: 1
+2019-03-10 23:44:06,548 INFO Checked files: 1
+2019-03-10 23:44:06,549 INFO Modified files: 0
+2019-03-10 23:44:06,549 INFO Not modified files: 1
+2019-03-10 23:44:06,549 INFO Integrity ratio: 100.0%
+2019-03-10 23:44:06,550 INFO ==============================================
+2019-03-10 23:44:30,318 INFO =========================================
+2019-03-10 23:44:30,319 INFO Starting execution...
+2019-03-10 23:44:30,323 INFO File ./hola.txt has not been modified
+2019-03-10 23:44:30,324 INFO ###### Summary ######
+2019-03-10 23:44:30,327 INFO Execution has been finished
+2019-03-10 23:44:30,327 INFO Files to check: 1
+2019-03-10 23:44:30,327 INFO Checked files: 1
+2019-03-10 23:44:30,327 INFO Modified files: 0
+2019-03-10 23:44:30,328 INFO Not modified files: 1
+2019-03-10 23:44:30,328 INFO Integrity ratio: 100.0%
+2019-03-10 23:44:30,328 INFO ==============================================
+2019-03-10 23:44:40,319 INFO =========================================
+2019-03-10 23:44:40,320 INFO Starting execution...
+2019-03-10 23:44:40,321 INFO File ./hola.txt has not been modified
+2019-03-10 23:44:40,322 INFO ###### Summary ######
+2019-03-10 23:44:40,326 INFO Execution has been finished
+2019-03-10 23:44:40,328 INFO Files to check: 1
+2019-03-10 23:44:40,329 INFO Checked files: 1
+2019-03-10 23:44:40,330 INFO Modified files: 0
+2019-03-10 23:44:40,334 INFO Not modified files: 1
+2019-03-10 23:44:40,334 INFO Integrity ratio: 100.0%
+2019-03-10 23:44:40,337 INFO ==============================================
+2019-03-10 23:44:50,317 INFO =========================================
+2019-03-10 23:44:50,319 INFO Starting execution...
+2019-03-10 23:44:50,319 INFO File ./hola.txt has not been modified
+2019-03-10 23:44:50,320 INFO ###### Summary ######
+2019-03-10 23:44:50,321 INFO Execution has been finished
+2019-03-10 23:44:50,321 INFO Files to check: 1
+2019-03-10 23:44:50,321 INFO Checked files: 1
+2019-03-10 23:44:50,321 INFO Modified files: 0
+2019-03-10 23:44:50,324 INFO Not modified files: 1
+2019-03-10 23:44:50,325 INFO Integrity ratio: 100.0%
+2019-03-10 23:44:50,325 INFO ==============================================
+2019-03-10 23:45:00,321 INFO =========================================
+2019-03-10 23:45:00,321 INFO Starting execution...
+2019-03-10 23:45:00,326 INFO File ./hola.txt has not been modified
+2019-03-10 23:45:00,329 INFO ###### Summary ######
+2019-03-10 23:45:00,329 INFO Execution has been finished
+2019-03-10 23:45:00,329 INFO Files to check: 1
+2019-03-10 23:45:00,330 INFO Checked files: 1
+2019-03-10 23:45:00,352 INFO Modified files: 0
+2019-03-10 23:45:00,355 INFO Not modified files: 1
+2019-03-10 23:45:00,360 INFO Integrity ratio: 100.0%
+2019-03-10 23:45:00,360 INFO ==============================================
+2019-03-10 23:45:10,320 INFO =========================================
+2019-03-10 23:45:10,320 INFO Starting execution...
+2019-03-10 23:45:10,322 INFO File ./hola.txt has not been modified
+2019-03-10 23:45:10,323 INFO ###### Summary ######
+2019-03-10 23:45:10,325 INFO Execution has been finished
+2019-03-10 23:45:10,325 INFO Files to check: 1
+2019-03-10 23:45:10,326 INFO Checked files: 1
+2019-03-10 23:45:10,327 INFO Modified files: 0
+2019-03-10 23:45:10,327 INFO Not modified files: 1
+2019-03-10 23:45:10,328 INFO Integrity ratio: 100.0%
+2019-03-10 23:45:10,329 INFO ==============================================
+2019-03-10 23:45:20,319 INFO =========================================
+2019-03-10 23:45:20,320 INFO Starting execution...
+2019-03-10 23:45:20,322 INFO File ./hola.txt has not been modified
+2019-03-10 23:45:20,322 INFO ###### Summary ######
+2019-03-10 23:45:20,323 INFO Execution has been finished
+2019-03-10 23:45:20,324 INFO Files to check: 1
+2019-03-10 23:45:20,324 INFO Checked files: 1
+2019-03-10 23:45:20,325 INFO Modified files: 0
+2019-03-10 23:45:20,325 INFO Not modified files: 1
+2019-03-10 23:45:20,326 INFO Integrity ratio: 100.0%
+2019-03-10 23:45:20,327 INFO ==============================================
+2019-03-10 23:45:30,319 INFO =========================================
+2019-03-10 23:45:30,320 INFO Starting execution...
+2019-03-10 23:45:30,322 INFO File ./hola.txt has not been modified
+2019-03-10 23:45:30,322 INFO ###### Summary ######
+2019-03-10 23:45:30,323 INFO Execution has been finished
+2019-03-10 23:45:30,324 INFO Files to check: 1
+2019-03-10 23:45:30,324 INFO Checked files: 1
+2019-03-10 23:45:30,324 INFO Modified files: 0
+2019-03-10 23:45:30,325 INFO Not modified files: 1
+2019-03-10 23:45:30,326 INFO Integrity ratio: 100.0%
+2019-03-10 23:45:30,326 INFO ==============================================
+2019-03-10 23:45:40,320 INFO =========================================
+2019-03-10 23:45:40,320 INFO Starting execution...
+2019-03-10 23:45:40,322 INFO File ./hola.txt has not been modified
+2019-03-10 23:45:40,323 INFO ###### Summary ######
+2019-03-10 23:45:40,323 INFO Execution has been finished
+2019-03-10 23:45:40,324 INFO Files to check: 1
+2019-03-10 23:45:40,325 INFO Checked files: 1
+2019-03-10 23:45:40,325 INFO Modified files: 0
+2019-03-10 23:45:40,326 INFO Not modified files: 1
+2019-03-10 23:45:40,326 INFO Integrity ratio: 100.0%
+2019-03-10 23:45:40,327 INFO ==============================================
+2019-03-10 23:45:50,319 INFO =========================================
+2019-03-10 23:45:50,320 INFO Starting execution...
+2019-03-10 23:45:50,322 INFO File ./hola.txt has not been modified
+2019-03-10 23:45:50,323 INFO ###### Summary ######
+2019-03-10 23:45:50,323 INFO Execution has been finished
+2019-03-10 23:45:50,324 INFO Files to check: 1
+2019-03-10 23:45:50,325 INFO Checked files: 1
+2019-03-10 23:45:50,325 INFO Modified files: 0
+2019-03-10 23:45:50,326 INFO Not modified files: 1
+2019-03-10 23:45:50,327 INFO Integrity ratio: 100.0%
+2019-03-10 23:45:50,329 INFO ==============================================
+2019-03-10 23:49:17,453 INFO =========================================
+2019-03-10 23:49:17,455 INFO Starting execution...
+2019-03-10 23:49:17,456 INFO File ./hola.txt has not been modified
+2019-03-10 23:49:17,494 INFO ###### Summary ######
+2019-03-10 23:49:17,494 INFO Execution has been finished
+2019-03-10 23:49:17,495 INFO Files to check: 1
+2019-03-10 23:49:17,496 INFO Checked files: 1
+2019-03-10 23:49:17,497 INFO Modified files: 0
+2019-03-10 23:49:17,497 INFO Not modified files: 1
+2019-03-10 23:49:17,498 INFO Integrity ratio: 100.0%
+2019-03-10 23:49:17,499 INFO ==============================================
+2019-03-10 23:49:27,464 INFO =========================================
+2019-03-10 23:49:27,465 INFO Starting execution...
+2019-03-10 23:49:27,466 INFO File ./hola.txt has not been modified
+2019-03-10 23:49:27,466 INFO ###### Summary ######
+2019-03-10 23:49:27,467 INFO Execution has been finished
+2019-03-10 23:49:27,468 INFO Files to check: 1
+2019-03-10 23:49:27,468 INFO Checked files: 1
+2019-03-10 23:49:27,468 INFO Modified files: 0
+2019-03-10 23:49:27,468 INFO Not modified files: 1
+2019-03-10 23:49:27,469 INFO Integrity ratio: 100.0%
+2019-03-10 23:49:27,469 INFO ==============================================
+2019-03-10 23:49:37,449 INFO =========================================
+2019-03-10 23:49:37,450 INFO Starting execution...
+2019-03-10 23:49:37,452 INFO File ./hola.txt has not been modified
+2019-03-10 23:49:37,455 INFO ###### Summary ######
+2019-03-10 23:49:37,455 INFO Execution has been finished
+2019-03-10 23:49:37,456 INFO Files to check: 1
+2019-03-10 23:49:37,478 INFO Checked files: 1
+2019-03-10 23:49:37,480 INFO Modified files: 0
+2019-03-10 23:49:37,484 INFO Not modified files: 1
+2019-03-10 23:49:37,485 INFO Integrity ratio: 100.0%
+2019-03-10 23:49:37,486 INFO ==============================================
+2019-03-10 23:49:47,450 INFO =========================================
+2019-03-10 23:49:47,450 INFO Starting execution...
+2019-03-10 23:49:47,451 INFO File ./hola.txt has not been modified
+2019-03-10 23:49:47,452 INFO ###### Summary ######
+2019-03-10 23:49:47,453 INFO Execution has been finished
+2019-03-10 23:49:47,453 INFO Files to check: 1
+2019-03-10 23:49:47,454 INFO Checked files: 1
+2019-03-10 23:49:47,454 INFO Modified files: 0
+2019-03-10 23:49:47,455 INFO Not modified files: 1
+2019-03-10 23:49:47,455 INFO Integrity ratio: 100.0%
+2019-03-10 23:49:47,457 INFO ==============================================
+2019-03-10 23:49:57,449 INFO =========================================
+2019-03-10 23:49:57,449 INFO Starting execution...
+2019-03-10 23:49:57,451 INFO File ./hola.txt has not been modified
+2019-03-10 23:49:57,452 INFO ###### Summary ######
+2019-03-10 23:49:57,452 INFO Execution has been finished
+2019-03-10 23:49:57,455 INFO Files to check: 1
+2019-03-10 23:49:57,455 INFO Checked files: 1
+2019-03-10 23:49:57,455 INFO Modified files: 0
+2019-03-10 23:49:57,455 INFO Not modified files: 1
+2019-03-10 23:49:57,456 INFO Integrity ratio: 100.0%
+2019-03-10 23:49:57,456 INFO ==============================================
+2019-03-10 23:50:07,448 INFO =========================================
+2019-03-10 23:50:07,448 INFO Starting execution...
+2019-03-10 23:50:07,450 INFO File ./hola.txt has not been modified
+2019-03-10 23:50:07,450 INFO ###### Summary ######
+2019-03-10 23:50:07,451 INFO Execution has been finished
+2019-03-10 23:50:07,451 INFO Files to check: 1
+2019-03-10 23:50:07,451 INFO Checked files: 1
+2019-03-10 23:50:07,452 INFO Modified files: 0
+2019-03-10 23:50:07,452 INFO Not modified files: 1
+2019-03-10 23:50:07,453 INFO Integrity ratio: 100.0%
+2019-03-10 23:50:07,453 INFO ==============================================
+2019-03-10 23:50:30,247 INFO =========================================
+2019-03-10 23:50:30,249 INFO Starting execution...
+2019-03-10 23:50:30,251 INFO File ./hola.txt has not been modified
+2019-03-10 23:50:30,252 INFO ###### Summary ######
+2019-03-10 23:50:30,252 INFO Execution has been finished
+2019-03-10 23:50:30,253 INFO Files to check: 1
+2019-03-10 23:50:30,253 INFO Checked files: 1
+2019-03-10 23:50:30,254 INFO Modified files: 0
+2019-03-10 23:50:30,255 INFO Not modified files: 1
+2019-03-10 23:50:30,255 INFO Integrity ratio: 100.0%
+2019-03-10 23:50:30,257 INFO ==============================================
+2019-03-10 23:50:40,248 INFO =========================================
+2019-03-10 23:50:40,249 INFO Starting execution...
+2019-03-10 23:50:40,251 INFO File ./hola.txt has not been modified
+2019-03-10 23:50:40,252 INFO ###### Summary ######
+2019-03-10 23:50:40,253 INFO Execution has been finished
+2019-03-10 23:50:40,254 INFO Files to check: 1
+2019-03-10 23:50:40,254 INFO Checked files: 1
+2019-03-10 23:50:40,281 INFO Modified files: 0
+2019-03-10 23:50:40,284 INFO Not modified files: 1
+2019-03-10 23:50:40,285 INFO Integrity ratio: 100.0%
+2019-03-10 23:50:40,285 INFO ==============================================
+2019-03-10 23:50:50,259 INFO =========================================
+2019-03-10 23:50:50,259 INFO Starting execution...
+2019-03-10 23:50:50,260 INFO File ./hola.txt has not been modified
+2019-03-10 23:50:50,260 INFO ###### Summary ######
+2019-03-10 23:50:50,261 INFO Execution has been finished
+2019-03-10 23:50:50,261 INFO Files to check: 1
+2019-03-10 23:50:50,262 INFO Checked files: 1
+2019-03-10 23:50:50,265 INFO Modified files: 0
+2019-03-10 23:50:50,266 INFO Not modified files: 1
+2019-03-10 23:50:50,266 INFO Integrity ratio: 100.0%
+2019-03-10 23:50:50,266 INFO ==============================================
+2019-03-10 23:51:00,246 INFO =========================================
+2019-03-10 23:51:00,247 INFO Starting execution...
+2019-03-10 23:51:00,247 INFO File ./hola.txt has not been modified
+2019-03-10 23:51:00,248 INFO ###### Summary ######
+2019-03-10 23:51:00,249 INFO Execution has been finished
+2019-03-10 23:51:00,253 INFO Files to check: 1
+2019-03-10 23:51:00,253 INFO Checked files: 1
+2019-03-10 23:51:00,253 INFO Modified files: 0
+2019-03-10 23:51:00,253 INFO Not modified files: 1
+2019-03-10 23:51:00,254 INFO Integrity ratio: 100.0%
+2019-03-10 23:51:00,254 INFO ==============================================
+2019-03-10 23:51:10,247 INFO =========================================
+2019-03-10 23:51:10,248 INFO Starting execution...
+2019-03-10 23:51:10,255 INFO File ./hola.txt has not been modified
+2019-03-10 23:51:10,257 INFO ###### Summary ######
+2019-03-10 23:51:10,258 INFO Execution has been finished
+2019-03-10 23:51:10,281 INFO Files to check: 1
+2019-03-10 23:51:10,282 INFO Checked files: 1
+2019-03-10 23:51:10,282 INFO Modified files: 0
+2019-03-10 23:51:10,283 INFO Not modified files: 1
+2019-03-10 23:51:10,283 INFO Integrity ratio: 100.0%
+2019-03-10 23:51:10,283 INFO ==============================================
+2019-03-10 23:52:06,491 INFO =========================================
+2019-03-10 23:52:06,492 INFO Starting execution...
+2019-03-10 23:52:06,494 INFO File ./hola.txt has not been modified
+2019-03-10 23:52:06,494 INFO ###### Summary ######
+2019-03-10 23:52:06,495 INFO Execution has been finished
+2019-03-10 23:52:06,495 INFO Files to check: 1
+2019-03-10 23:52:06,495 INFO Checked files: 1
+2019-03-10 23:52:06,496 INFO Modified files: 0
+2019-03-10 23:52:06,496 INFO Not modified files: 1
+2019-03-10 23:52:06,497 INFO Integrity ratio: 100.0%
+2019-03-10 23:52:06,497 INFO ==============================================
+2019-03-10 23:52:16,493 INFO =========================================
+2019-03-10 23:52:16,494 INFO Starting execution...
+2019-03-10 23:52:16,496 INFO File ./hola.txt has not been modified
+2019-03-10 23:52:16,496 INFO ###### Summary ######
+2019-03-10 23:52:16,497 INFO Execution has been finished
+2019-03-10 23:52:16,501 INFO Files to check: 1
+2019-03-10 23:52:16,511 INFO Checked files: 1
+2019-03-10 23:52:16,516 INFO Modified files: 0
+2019-03-10 23:52:16,517 INFO Not modified files: 1
+2019-03-10 23:52:16,518 INFO Integrity ratio: 100.0%
+2019-03-10 23:52:16,520 INFO ==============================================
+2019-03-10 23:52:26,492 INFO =========================================
+2019-03-10 23:52:26,494 INFO Starting execution...
+2019-03-10 23:52:26,520 INFO File ./hola.txt has not been modified
+2019-03-10 23:52:26,521 INFO ###### Summary ######
+2019-03-10 23:52:26,522 INFO Execution has been finished
+2019-03-10 23:52:26,523 INFO Files to check: 1
+2019-03-10 23:52:26,524 INFO Checked files: 1
+2019-03-10 23:52:26,524 INFO Modified files: 0
+2019-03-10 23:52:26,525 INFO Not modified files: 1
+2019-03-10 23:52:26,526 INFO Integrity ratio: 100.0%
+2019-03-10 23:52:26,526 INFO ==============================================
+2019-03-10 23:52:36,494 INFO =========================================
+2019-03-10 23:52:36,495 INFO Starting execution...
+2019-03-10 23:52:36,497 INFO File ./hola.txt has not been modified
+2019-03-10 23:52:36,498 INFO ###### Summary ######
+2019-03-10 23:52:36,498 INFO Execution has been finished
+2019-03-10 23:52:36,501 INFO Files to check: 1
+2019-03-10 23:52:36,501 INFO Checked files: 1
+2019-03-10 23:52:36,505 INFO Modified files: 0
+2019-03-10 23:52:36,509 INFO Not modified files: 1
+2019-03-10 23:52:36,510 INFO Integrity ratio: 100.0%
+2019-03-10 23:52:36,511 INFO ==============================================
+2019-03-10 23:52:46,492 INFO =========================================
+2019-03-10 23:52:46,493 INFO Starting execution...
+2019-03-10 23:52:46,495 INFO File ./hola.txt has not been modified
+2019-03-10 23:52:46,495 INFO ###### Summary ######
+2019-03-10 23:52:46,496 INFO Execution has been finished
+2019-03-10 23:52:46,501 INFO Files to check: 1
+2019-03-10 23:52:46,502 INFO Checked files: 1
+2019-03-10 23:52:46,503 INFO Modified files: 0
+2019-03-10 23:52:46,504 INFO Not modified files: 1
+2019-03-10 23:52:46,504 INFO Integrity ratio: 100.0%
+2019-03-10 23:52:46,505 INFO ==============================================
+2019-03-10 23:52:59,189 INFO =========================================
+2019-03-10 23:52:59,190 INFO Starting execution...
+2019-03-10 23:52:59,191 INFO File ./hola.txt has not been modified
+2019-03-10 23:52:59,192 INFO ###### Summary ######
+2019-03-10 23:52:59,192 INFO Execution has been finished
+2019-03-10 23:52:59,193 INFO Files to check: 1
+2019-03-10 23:52:59,193 INFO Checked files: 1
+2019-03-10 23:52:59,193 INFO Modified files: 0
+2019-03-10 23:52:59,194 INFO Not modified files: 1
+2019-03-10 23:52:59,194 INFO Integrity ratio: 100.0%
+2019-03-10 23:52:59,195 INFO ==============================================
+2019-03-10 23:53:09,189 INFO =========================================
+2019-03-10 23:53:09,190 INFO Starting execution...
+2019-03-10 23:53:09,192 INFO File ./hola.txt has not been modified
+2019-03-10 23:53:09,193 INFO ###### Summary ######
+2019-03-10 23:53:09,193 INFO Execution has been finished
+2019-03-10 23:53:09,194 INFO Files to check: 1
+2019-03-10 23:53:09,195 INFO Checked files: 1
+2019-03-10 23:53:09,195 INFO Modified files: 0
+2019-03-10 23:53:09,196 INFO Not modified files: 1
+2019-03-10 23:53:09,196 INFO Integrity ratio: 100.0%
+2019-03-10 23:53:09,197 INFO ==============================================
+2019-03-10 23:53:19,188 INFO =========================================
+2019-03-10 23:53:19,189 INFO Starting execution...
+2019-03-10 23:53:19,191 INFO File ./hola.txt has not been modified
+2019-03-10 23:53:19,192 INFO ###### Summary ######
+2019-03-10 23:53:19,192 INFO Execution has been finished
+2019-03-10 23:53:19,193 INFO Files to check: 1
+2019-03-10 23:53:19,193 INFO Checked files: 1
+2019-03-10 23:53:19,194 INFO Modified files: 0
+2019-03-10 23:53:19,195 INFO Not modified files: 1
+2019-03-10 23:53:19,195 INFO Integrity ratio: 100.0%
+2019-03-10 23:53:19,196 INFO ==============================================
+2019-03-10 23:53:29,188 INFO =========================================
+2019-03-10 23:53:29,189 INFO Starting execution...
+2019-03-10 23:53:29,192 INFO File ./hola.txt has not been modified
+2019-03-10 23:53:29,192 INFO ###### Summary ######
+2019-03-10 23:53:29,192 INFO Execution has been finished
+2019-03-10 23:53:29,193 INFO Files to check: 1
+2019-03-10 23:53:29,193 INFO Checked files: 1
+2019-03-10 23:53:29,194 INFO Modified files: 0
+2019-03-10 23:53:29,194 INFO Not modified files: 1
+2019-03-10 23:53:29,194 INFO Integrity ratio: 100.0%
+2019-03-10 23:53:29,195 INFO ==============================================
+2019-03-10 23:53:39,189 INFO =========================================
+2019-03-10 23:53:39,190 INFO Starting execution...
+2019-03-10 23:53:39,192 INFO File ./hola.txt has not been modified
+2019-03-10 23:53:39,193 INFO ###### Summary ######
+2019-03-10 23:53:39,193 INFO Execution has been finished
+2019-03-10 23:53:39,194 INFO Files to check: 1
+2019-03-10 23:53:39,194 INFO Checked files: 1
+2019-03-10 23:53:39,195 INFO Modified files: 0
+2019-03-10 23:53:39,196 INFO Not modified files: 1
+2019-03-10 23:53:39,196 INFO Integrity ratio: 100.0%
+2019-03-10 23:53:39,197 INFO ==============================================
+2019-03-10 23:53:49,188 INFO =========================================
+2019-03-10 23:53:49,192 INFO Starting execution...
+2019-03-10 23:53:49,194 INFO File ./hola.txt has not been modified
+2019-03-10 23:53:49,194 INFO ###### Summary ######
+2019-03-10 23:53:49,219 INFO Execution has been finished
+2019-03-10 23:53:49,221 INFO Files to check: 1
+2019-03-10 23:53:49,221 INFO Checked files: 1
+2019-03-10 23:53:49,222 INFO Modified files: 0
+2019-03-10 23:53:49,223 INFO Not modified files: 1
+2019-03-10 23:53:49,223 INFO Integrity ratio: 100.0%
+2019-03-10 23:53:49,224 INFO ==============================================
+2019-03-10 23:54:08,545 INFO =========================================
+2019-03-10 23:54:08,546 INFO Starting execution...
+2019-03-10 23:54:08,548 INFO File ./hola.txt has not been modified
+2019-03-10 23:54:08,548 INFO ###### Summary ######
+2019-03-10 23:54:08,548 INFO Execution has been finished
+2019-03-10 23:54:08,549 INFO Files to check: 1
+2019-03-10 23:54:08,549 INFO Checked files: 1
+2019-03-10 23:54:08,549 INFO Modified files: 0
+2019-03-10 23:54:08,549 INFO Not modified files: 1
+2019-03-10 23:54:08,549 INFO Integrity ratio: 100.0%
+2019-03-10 23:54:08,550 INFO ==============================================
+2019-03-10 23:54:18,546 INFO =========================================
+2019-03-10 23:54:18,547 INFO Starting execution...
+2019-03-10 23:54:18,559 INFO File ./hola.txt has not been modified
+2019-03-10 23:54:18,563 INFO ###### Summary ######
+2019-03-10 23:54:18,563 INFO Execution has been finished
+2019-03-10 23:54:18,565 INFO Files to check: 1
+2019-03-10 23:54:18,566 INFO Checked files: 1
+2019-03-10 23:54:18,566 INFO Modified files: 0
+2019-03-10 23:54:18,567 INFO Not modified files: 1
+2019-03-10 23:54:18,568 INFO Integrity ratio: 100.0%
+2019-03-10 23:54:18,569 INFO ==============================================
+2019-03-10 23:54:28,547 INFO =========================================
+2019-03-10 23:54:28,548 INFO Starting execution...
+2019-03-10 23:54:28,549 INFO File ./hola.txt has not been modified
+2019-03-10 23:54:28,549 INFO ###### Summary ######
+2019-03-10 23:54:28,549 INFO Execution has been finished
+2019-03-10 23:54:28,550 INFO Files to check: 1
+2019-03-10 23:54:28,550 INFO Checked files: 1
+2019-03-10 23:54:28,550 INFO Modified files: 0
+2019-03-10 23:54:28,550 INFO Not modified files: 1
+2019-03-10 23:54:28,551 INFO Integrity ratio: 100.0%
+2019-03-10 23:54:28,551 INFO ==============================================
+2019-03-10 23:54:53,472 INFO =========================================
+2019-03-10 23:54:53,473 INFO Starting execution...
+2019-03-10 23:54:53,474 INFO File ./hola.txt has not been modified
+2019-03-10 23:54:53,475 INFO ###### Summary ######
+2019-03-10 23:54:53,476 INFO Execution has been finished
+2019-03-10 23:54:53,476 INFO Files to check: 1
+2019-03-10 23:54:53,477 INFO Checked files: 1
+2019-03-10 23:54:53,478 INFO Modified files: 0
+2019-03-10 23:54:53,478 INFO Not modified files: 1
+2019-03-10 23:54:53,478 INFO Integrity ratio: 100.0%
+2019-03-10 23:54:53,480 INFO ==============================================
+2019-03-10 23:55:03,471 INFO =========================================
+2019-03-10 23:55:03,472 INFO Starting execution...
+2019-03-10 23:55:03,474 INFO File ./hola.txt has not been modified
+2019-03-10 23:55:03,475 INFO ###### Summary ######
+2019-03-10 23:55:03,475 INFO Execution has been finished
+2019-03-10 23:55:03,476 INFO Files to check: 1
+2019-03-10 23:55:03,476 INFO Checked files: 1
+2019-03-10 23:55:03,477 INFO Modified files: 0
+2019-03-10 23:55:03,477 INFO Not modified files: 1
+2019-03-10 23:55:03,478 INFO Integrity ratio: 100.0%
+2019-03-10 23:55:03,478 INFO ==============================================
+2019-03-10 23:55:13,473 INFO =========================================
+2019-03-10 23:55:13,474 INFO Starting execution...
+2019-03-10 23:55:13,476 INFO File ./hola.txt has not been modified
+2019-03-10 23:55:13,477 INFO ###### Summary ######
+2019-03-10 23:55:13,477 INFO Execution has been finished
+2019-03-10 23:55:13,478 INFO Files to check: 1
+2019-03-10 23:55:13,479 INFO Checked files: 1
+2019-03-10 23:55:13,479 INFO Modified files: 0
+2019-03-10 23:55:13,480 INFO Not modified files: 1
+2019-03-10 23:55:13,480 INFO Integrity ratio: 100.0%
+2019-03-10 23:55:13,481 INFO ==============================================
+2019-03-10 23:55:23,471 INFO =========================================
+2019-03-10 23:55:23,474 INFO Starting execution...
+2019-03-10 23:55:23,476 INFO File ./hola.txt has not been modified
+2019-03-10 23:55:23,477 INFO ###### Summary ######
+2019-03-10 23:55:23,477 INFO Execution has been finished
+2019-03-10 23:55:23,478 INFO Files to check: 1
+2019-03-10 23:55:23,478 INFO Checked files: 1
+2019-03-10 23:55:23,479 INFO Modified files: 0
+2019-03-10 23:55:23,480 INFO Not modified files: 1
+2019-03-10 23:55:23,480 INFO Integrity ratio: 100.0%
+2019-03-10 23:55:23,481 INFO ==============================================
+2019-03-10 23:55:33,473 INFO =========================================
+2019-03-10 23:55:33,473 INFO Starting execution...
+2019-03-10 23:55:33,475 INFO File ./hola.txt has not been modified
+2019-03-10 23:55:33,475 INFO ###### Summary ######
+2019-03-10 23:55:33,477 INFO Execution has been finished
+2019-03-10 23:55:33,477 INFO Files to check: 1
+2019-03-10 23:55:33,479 INFO Checked files: 1
+2019-03-10 23:55:33,498 INFO Modified files: 0
+2019-03-10 23:55:33,498 INFO Not modified files: 1
+2019-03-10 23:55:33,498 INFO Integrity ratio: 100.0%
+2019-03-10 23:55:33,498 INFO ==============================================
+2019-03-10 23:56:22,089 INFO =========================================
+2019-03-10 23:56:22,090 INFO Starting execution...
+2019-03-10 23:56:22,092 INFO File ./hola.txt has not been modified
+2019-03-10 23:56:22,092 INFO ###### Summary ######
+2019-03-10 23:56:22,093 INFO Execution has been finished
+2019-03-10 23:56:22,093 INFO Files to check: 1
+2019-03-10 23:56:22,094 INFO Checked files: 1
+2019-03-10 23:56:22,094 INFO Modified files: 0
+2019-03-10 23:56:22,095 INFO Not modified files: 1
+2019-03-10 23:56:22,095 INFO Integrity ratio: 100.0%
+2019-03-10 23:56:22,095 INFO ==============================================
+2019-03-10 23:56:32,090 INFO =========================================
+2019-03-10 23:56:32,091 INFO Starting execution...
+2019-03-10 23:56:32,092 INFO File ./hola.txt has not been modified
+2019-03-10 23:56:32,093 INFO ###### Summary ######
+2019-03-10 23:56:32,094 INFO Execution has been finished
+2019-03-10 23:56:32,094 INFO Files to check: 1
+2019-03-10 23:56:32,095 INFO Checked files: 1
+2019-03-10 23:56:32,095 INFO Modified files: 0
+2019-03-10 23:56:32,096 INFO Not modified files: 1
+2019-03-10 23:56:32,096 INFO Integrity ratio: 100.0%
+2019-03-10 23:56:32,097 INFO ==============================================
+2019-03-10 23:56:42,092 INFO =========================================
+2019-03-10 23:56:42,093 INFO Starting execution...
+2019-03-10 23:56:42,094 INFO File ./hola.txt has not been modified
+2019-03-10 23:56:42,095 INFO ###### Summary ######
+2019-03-10 23:56:42,096 INFO Execution has been finished
+2019-03-10 23:56:42,096 INFO Files to check: 1
+2019-03-10 23:56:42,097 INFO Checked files: 1
+2019-03-10 23:56:42,097 INFO Modified files: 0
+2019-03-10 23:56:42,098 INFO Not modified files: 1
+2019-03-10 23:56:42,098 INFO Integrity ratio: 100.0%
+2019-03-10 23:56:42,098 INFO ==============================================
+2019-03-10 23:56:52,090 INFO =========================================
+2019-03-10 23:56:52,090 INFO Starting execution...
+2019-03-10 23:56:52,092 INFO File ./hola.txt has not been modified
+2019-03-10 23:56:52,093 INFO ###### Summary ######
+2019-03-10 23:56:52,093 INFO Execution has been finished
+2019-03-10 23:56:52,094 INFO Files to check: 1
+2019-03-10 23:56:52,095 INFO Checked files: 1
+2019-03-10 23:56:52,095 INFO Modified files: 0
+2019-03-10 23:56:52,096 INFO Not modified files: 1
+2019-03-10 23:56:52,096 INFO Integrity ratio: 100.0%
+2019-03-10 23:56:52,097 INFO ==============================================
+2019-03-10 23:57:02,089 INFO =========================================
+2019-03-10 23:57:02,090 INFO Starting execution...
+2019-03-10 23:57:02,092 INFO File ./hola.txt has not been modified
+2019-03-10 23:57:02,092 INFO ###### Summary ######
+2019-03-10 23:57:02,093 INFO Execution has been finished
+2019-03-10 23:57:02,094 INFO Files to check: 1
+2019-03-10 23:57:02,094 INFO Checked files: 1
+2019-03-10 23:57:02,095 INFO Modified files: 0
+2019-03-10 23:57:02,095 INFO Not modified files: 1
+2019-03-10 23:57:02,096 INFO Integrity ratio: 100.0%
+2019-03-10 23:57:02,096 INFO ==============================================
+2019-03-10 23:57:12,092 INFO =========================================
+2019-03-10 23:57:12,093 INFO Starting execution...
+2019-03-10 23:57:12,095 INFO File ./hola.txt has not been modified
+2019-03-10 23:57:12,095 INFO ###### Summary ######
+2019-03-10 23:57:12,096 INFO Execution has been finished
+2019-03-10 23:57:12,096 INFO Files to check: 1
+2019-03-10 23:57:12,097 INFO Checked files: 1
+2019-03-10 23:57:12,097 INFO Modified files: 0
+2019-03-10 23:57:12,098 INFO Not modified files: 1
+2019-03-10 23:57:12,098 INFO Integrity ratio: 100.0%
+2019-03-10 23:57:12,099 INFO ==============================================
+2019-03-10 23:57:22,102 INFO =========================================
+2019-03-10 23:57:22,102 INFO Starting execution...
+2019-03-10 23:57:22,103 INFO File ./hola.txt has not been modified
+2019-03-10 23:57:22,103 INFO ###### Summary ######
+2019-03-10 23:57:22,104 INFO Execution has been finished
+2019-03-10 23:57:22,104 INFO Files to check: 1
+2019-03-10 23:57:22,104 INFO Checked files: 1
+2019-03-10 23:57:22,104 INFO Modified files: 0
+2019-03-10 23:57:22,105 INFO Not modified files: 1
+2019-03-10 23:57:22,105 INFO Integrity ratio: 100.0%
+2019-03-10 23:57:22,105 INFO ==============================================
+2019-03-11 00:01:43,444 INFO =========================================
+2019-03-11 00:01:43,480 INFO Starting execution...
+2019-03-11 00:01:43,520 INFO File ./hola.txt has not been modified
+2019-03-11 00:01:43,521 INFO ###### Summary ######
+2019-03-11 00:01:43,522 INFO Execution has been finished
+2019-03-11 00:01:43,524 INFO Files to check: 1
+2019-03-11 00:01:43,524 INFO Checked files: 1
+2019-03-11 00:01:43,527 INFO Modified files: 0
+2019-03-11 00:01:43,551 INFO Not modified files: 1
+2019-03-11 00:01:43,551 INFO Integrity ratio: 100.0%
+2019-03-11 00:01:43,552 INFO ==============================================
+2019-03-11 00:01:53,443 INFO =========================================
+2019-03-11 00:01:53,443 INFO Starting execution...
+2019-03-11 00:01:53,444 INFO File ./hola.txt has not been modified
+2019-03-11 00:01:53,444 INFO ###### Summary ######
+2019-03-11 00:01:53,445 INFO Execution has been finished
+2019-03-11 00:01:53,445 INFO Files to check: 1
+2019-03-11 00:01:53,445 INFO Checked files: 1
+2019-03-11 00:01:53,446 INFO Modified files: 0
+2019-03-11 00:01:53,446 INFO Not modified files: 1
+2019-03-11 00:01:53,446 INFO Integrity ratio: 100.0%
+2019-03-11 00:01:53,446 INFO ==============================================
+2019-03-11 00:02:03,442 INFO =========================================
+2019-03-11 00:02:03,443 INFO Starting execution...
+2019-03-11 00:02:03,445 INFO File ./hola.txt has not been modified
+2019-03-11 00:02:03,446 INFO ###### Summary ######
+2019-03-11 00:02:03,446 INFO Execution has been finished
+2019-03-11 00:02:03,447 INFO Files to check: 1
+2019-03-11 00:02:03,448 INFO Checked files: 1
+2019-03-11 00:02:03,448 INFO Modified files: 0
+2019-03-11 00:02:03,448 INFO Not modified files: 1
+2019-03-11 00:02:03,449 INFO Integrity ratio: 100.0%
+2019-03-11 00:02:03,450 INFO ==============================================
+2019-03-11 00:02:13,443 INFO =========================================
+2019-03-11 00:02:13,444 INFO Starting execution...
+2019-03-11 00:02:13,446 INFO File ./hola.txt has not been modified
+2019-03-11 00:02:13,447 INFO ###### Summary ######
+2019-03-11 00:02:13,447 INFO Execution has been finished
+2019-03-11 00:02:13,448 INFO Files to check: 1
+2019-03-11 00:02:13,448 INFO Checked files: 1
+2019-03-11 00:02:13,449 INFO Modified files: 0
+2019-03-11 00:02:13,450 INFO Not modified files: 1
+2019-03-11 00:02:13,450 INFO Integrity ratio: 100.0%
+2019-03-11 00:02:13,451 INFO ==============================================
+2019-03-11 00:02:23,445 INFO =========================================
+2019-03-11 00:02:23,446 INFO Starting execution...
+2019-03-11 00:02:23,448 INFO File ./hola.txt has not been modified
+2019-03-11 00:02:23,449 INFO ###### Summary ######
+2019-03-11 00:02:23,473 INFO Execution has been finished
+2019-03-11 00:02:23,474 INFO Files to check: 1
+2019-03-11 00:02:23,474 INFO Checked files: 1
+2019-03-11 00:02:23,474 INFO Modified files: 0
+2019-03-11 00:02:23,475 INFO Not modified files: 1
+2019-03-11 00:02:23,475 INFO Integrity ratio: 100.0%
+2019-03-11 00:02:23,475 INFO ==============================================
+2019-03-11 00:02:33,442 INFO =========================================
+2019-03-11 00:02:33,443 INFO Starting execution...
+2019-03-11 00:02:33,444 INFO File ./hola.txt has not been modified
+2019-03-11 00:02:33,444 INFO ###### Summary ######
+2019-03-11 00:02:33,445 INFO Execution has been finished
+2019-03-11 00:02:33,445 INFO Files to check: 1
+2019-03-11 00:02:33,446 INFO Checked files: 1
+2019-03-11 00:02:33,446 INFO Modified files: 0
+2019-03-11 00:02:33,446 INFO Not modified files: 1
+2019-03-11 00:02:33,447 INFO Integrity ratio: 100.0%
+2019-03-11 00:02:33,447 INFO ==============================================
+2019-03-11 00:02:43,444 INFO =========================================
+2019-03-11 00:02:43,445 INFO Starting execution...
+2019-03-11 00:02:43,446 INFO File ./hola.txt has not been modified
+2019-03-11 00:02:43,447 INFO ###### Summary ######
+2019-03-11 00:02:43,447 INFO Execution has been finished
+2019-03-11 00:02:43,447 INFO Files to check: 1
+2019-03-11 00:02:43,448 INFO Checked files: 1
+2019-03-11 00:02:43,448 INFO Modified files: 0
+2019-03-11 00:02:43,448 INFO Not modified files: 1
+2019-03-11 00:02:43,450 INFO Integrity ratio: 100.0%
+2019-03-11 00:02:43,450 INFO ==============================================
+2019-03-11 00:02:53,443 INFO =========================================
+2019-03-11 00:02:53,443 INFO Starting execution...
+2019-03-11 00:02:53,444 INFO File ./hola.txt has not been modified
+2019-03-11 00:02:53,445 INFO ###### Summary ######
+2019-03-11 00:02:53,445 INFO Execution has been finished
+2019-03-11 00:02:53,445 INFO Files to check: 1
+2019-03-11 00:02:53,446 INFO Checked files: 1
+2019-03-11 00:02:53,446 INFO Modified files: 0
+2019-03-11 00:02:53,446 INFO Not modified files: 1
+2019-03-11 00:02:53,447 INFO Integrity ratio: 100.0%
+2019-03-11 00:02:53,447 INFO ==============================================
+2019-03-11 00:03:03,444 INFO =========================================
+2019-03-11 00:03:03,445 INFO Starting execution...
+2019-03-11 00:03:03,447 INFO File ./hola.txt has not been modified
+2019-03-11 00:03:03,448 INFO ###### Summary ######
+2019-03-11 00:03:03,448 INFO Execution has been finished
+2019-03-11 00:03:03,448 INFO Files to check: 1
+2019-03-11 00:03:03,450 INFO Checked files: 1
+2019-03-11 00:03:03,450 INFO Modified files: 0
+2019-03-11 00:03:03,451 INFO Not modified files: 1
+2019-03-11 00:03:03,453 INFO Integrity ratio: 100.0%
+2019-03-11 00:03:03,454 INFO ==============================================
+2019-03-11 00:03:18,706 INFO =========================================
+2019-03-11 00:03:18,707 INFO Starting execution...
+2019-03-11 00:03:18,709 INFO File ./hola.txt has not been modified
+2019-03-11 00:03:18,710 INFO ###### Summary ######
+2019-03-11 00:03:18,710 INFO Execution has been finished
+2019-03-11 00:03:18,711 INFO Files to check: 1
+2019-03-11 00:03:18,711 INFO Checked files: 1
+2019-03-11 00:03:18,712 INFO Modified files: 0
+2019-03-11 00:03:18,712 INFO Not modified files: 1
+2019-03-11 00:03:18,713 INFO Integrity ratio: 100.0%
+2019-03-11 00:03:18,713 INFO ==============================================
+2019-03-11 00:03:28,706 INFO =========================================
+2019-03-11 00:03:28,707 INFO Starting execution...
+2019-03-11 00:03:28,709 INFO File ./hola.txt has not been modified
+2019-03-11 00:03:28,710 INFO ###### Summary ######
+2019-03-11 00:03:28,710 INFO Execution has been finished
+2019-03-11 00:03:28,711 INFO Files to check: 1
+2019-03-11 00:03:28,711 INFO Checked files: 1
+2019-03-11 00:03:28,712 INFO Modified files: 0
+2019-03-11 00:03:28,712 INFO Not modified files: 1
+2019-03-11 00:03:28,713 INFO Integrity ratio: 100.0%
+2019-03-11 00:03:28,714 INFO ==============================================
+2019-03-11 00:03:38,704 INFO =========================================
+2019-03-11 00:03:38,704 INFO Starting execution...
+2019-03-11 00:03:38,705 INFO File ./hola.txt has not been modified
+2019-03-11 00:03:38,706 INFO ###### Summary ######
+2019-03-11 00:03:38,706 INFO Execution has been finished
+2019-03-11 00:03:38,706 INFO Files to check: 1
+2019-03-11 00:03:38,707 INFO Checked files: 1
+2019-03-11 00:03:38,707 INFO Modified files: 0
+2019-03-11 00:03:38,708 INFO Not modified files: 1
+2019-03-11 00:03:38,708 INFO Integrity ratio: 100.0%
+2019-03-11 00:03:38,708 INFO ==============================================
+2019-03-11 00:03:48,704 INFO =========================================
+2019-03-11 00:03:48,705 INFO Starting execution...
+2019-03-11 00:03:48,707 INFO File ./hola.txt has not been modified
+2019-03-11 00:03:48,707 INFO ###### Summary ######
+2019-03-11 00:03:48,707 INFO Execution has been finished
+2019-03-11 00:03:48,707 INFO Files to check: 1
+2019-03-11 00:03:48,708 INFO Checked files: 1
+2019-03-11 00:03:48,709 INFO Modified files: 0
+2019-03-11 00:03:48,709 INFO Not modified files: 1
+2019-03-11 00:03:48,710 INFO Integrity ratio: 100.0%
+2019-03-11 00:03:48,710 INFO ==============================================
+2019-03-11 00:03:58,704 INFO =========================================
+2019-03-11 00:03:58,704 INFO Starting execution...
+2019-03-11 00:03:58,706 INFO File ./hola.txt has not been modified
+2019-03-11 00:03:58,725 INFO ###### Summary ######
+2019-03-11 00:03:58,725 INFO Execution has been finished
+2019-03-11 00:03:58,725 INFO Files to check: 1
+2019-03-11 00:03:58,726 INFO Checked files: 1
+2019-03-11 00:03:58,727 INFO Modified files: 0
+2019-03-11 00:03:58,727 INFO Not modified files: 1
+2019-03-11 00:03:58,727 INFO Integrity ratio: 100.0%
+2019-03-11 00:03:58,727 INFO ==============================================
+2019-03-11 00:04:08,705 INFO =========================================
+2019-03-11 00:04:08,706 INFO Starting execution...
+2019-03-11 00:04:08,707 INFO File ./hola.txt has not been modified
+2019-03-11 00:04:08,708 INFO ###### Summary ######
+2019-03-11 00:04:08,708 INFO Execution has been finished
+2019-03-11 00:04:08,709 INFO Files to check: 1
+2019-03-11 00:04:08,709 INFO Checked files: 1
+2019-03-11 00:04:08,710 INFO Modified files: 0
+2019-03-11 00:04:08,710 INFO Not modified files: 1
+2019-03-11 00:04:08,711 INFO Integrity ratio: 100.0%
+2019-03-11 00:04:08,712 INFO ==============================================
+2019-03-11 00:04:18,706 INFO =========================================
+2019-03-11 00:04:18,706 INFO Starting execution...
+2019-03-11 00:04:18,708 INFO File ./hola.txt has not been modified
+2019-03-11 00:04:18,708 INFO ###### Summary ######
+2019-03-11 00:04:18,709 INFO Execution has been finished
+2019-03-11 00:04:18,710 INFO Files to check: 1
+2019-03-11 00:04:18,710 INFO Checked files: 1
+2019-03-11 00:04:18,711 INFO Modified files: 0
+2019-03-11 00:04:18,712 INFO Not modified files: 1
+2019-03-11 00:04:18,713 INFO Integrity ratio: 100.0%
+2019-03-11 00:04:18,713 INFO ==============================================
+2019-03-11 00:04:28,704 INFO =========================================
+2019-03-11 00:04:28,704 INFO Starting execution...
+2019-03-11 00:04:28,705 INFO File ./hola.txt has not been modified
+2019-03-11 00:04:28,705 INFO ###### Summary ######
+2019-03-11 00:04:28,706 INFO Execution has been finished
+2019-03-11 00:04:28,706 INFO Files to check: 1
+2019-03-11 00:04:28,708 INFO Checked files: 1
+2019-03-11 00:04:28,709 INFO Modified files: 0
+2019-03-11 00:04:28,710 INFO Not modified files: 1
+2019-03-11 00:04:28,725 INFO Integrity ratio: 100.0%
+2019-03-11 00:04:28,726 INFO ==============================================
+2019-03-11 00:04:38,704 INFO =========================================
+2019-03-11 00:04:38,704 INFO Starting execution...
+2019-03-11 00:04:38,706 INFO File ./hola.txt has not been modified
+2019-03-11 00:04:38,708 INFO ###### Summary ######
+2019-03-11 00:04:38,711 INFO Execution has been finished
+2019-03-11 00:04:38,731 INFO Files to check: 1
+2019-03-11 00:04:38,731 INFO Checked files: 1
+2019-03-11 00:04:38,732 INFO Modified files: 0
+2019-03-11 00:04:38,732 INFO Not modified files: 1
+2019-03-11 00:04:38,732 INFO Integrity ratio: 100.0%
+2019-03-11 00:04:38,733 INFO ==============================================
+2019-03-11 00:04:48,703 INFO =========================================
+2019-03-11 00:04:48,704 INFO Starting execution...
+2019-03-11 00:04:48,704 INFO File ./hola.txt has not been modified
+2019-03-11 00:04:48,706 INFO ###### Summary ######
+2019-03-11 00:04:48,706 INFO Execution has been finished
+2019-03-11 00:04:48,706 INFO Files to check: 1
+2019-03-11 00:04:48,706 INFO Checked files: 1
+2019-03-11 00:04:48,706 INFO Modified files: 0
+2019-03-11 00:04:48,707 INFO Not modified files: 1
+2019-03-11 00:04:48,707 INFO Integrity ratio: 100.0%
+2019-03-11 00:04:48,708 INFO ==============================================
+2019-03-11 00:04:58,704 INFO =========================================
+2019-03-11 00:04:58,705 INFO Starting execution...
+2019-03-11 00:04:58,706 INFO File ./hola.txt has not been modified
+2019-03-11 00:04:58,708 INFO ###### Summary ######
+2019-03-11 00:04:58,708 INFO Execution has been finished
+2019-03-11 00:04:58,710 INFO Files to check: 1
+2019-03-11 00:04:58,734 INFO Checked files: 1
+2019-03-11 00:04:58,735 INFO Modified files: 0
+2019-03-11 00:04:58,735 INFO Not modified files: 1
+2019-03-11 00:04:58,736 INFO Integrity ratio: 100.0%
+2019-03-11 00:04:58,736 INFO ==============================================
+2019-03-11 00:05:15,114 INFO =========================================
+2019-03-11 00:05:15,117 INFO Starting execution...
+2019-03-11 00:05:15,118 INFO File ./hola.txt has not been modified
+2019-03-11 00:05:15,119 INFO ###### Summary ######
+2019-03-11 00:05:15,119 INFO Execution has been finished
+2019-03-11 00:05:15,120 INFO Files to check: 1
+2019-03-11 00:05:15,120 INFO Checked files: 1
+2019-03-11 00:05:15,121 INFO Modified files: 0
+2019-03-11 00:05:15,121 INFO Not modified files: 1
+2019-03-11 00:05:15,122 INFO Integrity ratio: 100.0%
+2019-03-11 00:05:15,122 INFO ==============================================
+2019-03-11 00:05:37,815 INFO =========================================
+2019-03-11 00:05:37,817 INFO Starting execution...
+2019-03-11 00:05:37,818 INFO File ./hola.txt has not been modified
+2019-03-11 00:05:37,819 INFO ###### Summary ######
+2019-03-11 00:05:37,836 INFO Execution has been finished
+2019-03-11 00:05:37,836 INFO Files to check: 1
+2019-03-11 00:05:37,836 INFO Checked files: 1
+2019-03-11 00:05:37,837 INFO Modified files: 0
+2019-03-11 00:05:37,837 INFO Not modified files: 1
+2019-03-11 00:05:37,837 INFO Integrity ratio: 100.0%
+2019-03-11 00:05:37,837 INFO ==============================================
+2019-03-11 00:05:47,815 INFO =========================================
+2019-03-11 00:05:47,815 INFO Starting execution...
+2019-03-11 00:05:47,816 INFO File ./hola.txt has not been modified
+2019-03-11 00:05:47,817 INFO ###### Summary ######
+2019-03-11 00:05:47,817 INFO Execution has been finished
+2019-03-11 00:05:47,817 INFO Files to check: 1
+2019-03-11 00:05:47,818 INFO Checked files: 1
+2019-03-11 00:05:47,818 INFO Modified files: 0
+2019-03-11 00:05:47,819 INFO Not modified files: 1
+2019-03-11 00:05:47,819 INFO Integrity ratio: 100.0%
+2019-03-11 00:05:47,819 INFO ==============================================
+2019-03-11 00:05:57,817 INFO =========================================
+2019-03-11 00:05:57,818 INFO Starting execution...
+2019-03-11 00:05:57,820 INFO File ./hola.txt has not been modified
+2019-03-11 00:05:57,822 INFO ###### Summary ######
+2019-03-11 00:05:57,822 INFO Execution has been finished
+2019-03-11 00:05:57,825 INFO Files to check: 1
+2019-03-11 00:05:57,849 INFO Checked files: 1
+2019-03-11 00:05:57,850 INFO Modified files: 0
+2019-03-11 00:05:57,850 INFO Not modified files: 1
+2019-03-11 00:05:57,850 INFO Integrity ratio: 100.0%
+2019-03-11 00:05:57,851 INFO ==============================================
+2019-03-11 00:06:07,818 INFO =========================================
+2019-03-11 00:06:07,819 INFO Starting execution...
+2019-03-11 00:06:07,823 INFO File ./hola.txt has not been modified
+2019-03-11 00:06:07,825 INFO ###### Summary ######
+2019-03-11 00:06:07,837 INFO Execution has been finished
+2019-03-11 00:06:07,837 INFO Files to check: 1
+2019-03-11 00:06:07,837 INFO Checked files: 1
+2019-03-11 00:06:07,838 INFO Modified files: 0
+2019-03-11 00:06:07,838 INFO Not modified files: 1
+2019-03-11 00:06:07,838 INFO Integrity ratio: 100.0%
+2019-03-11 00:06:07,838 INFO ==============================================
+2019-03-11 00:06:30,674 INFO =========================================
+2019-03-11 00:06:30,674 INFO Starting execution...
+2019-03-11 00:06:30,676 INFO File ./hola.txt has not been modified
+2019-03-11 00:06:30,677 INFO ###### Summary ######
+2019-03-11 00:06:30,677 INFO Execution has been finished
+2019-03-11 00:06:30,678 INFO Files to check: 1
+2019-03-11 00:06:30,678 INFO Checked files: 1
+2019-03-11 00:06:30,679 INFO Modified files: 0
+2019-03-11 00:06:30,680 INFO Not modified files: 1
+2019-03-11 00:06:30,680 INFO Integrity ratio: 100.0%
+2019-03-11 00:06:30,681 INFO ==============================================
+2019-03-11 00:06:50,074 INFO =========================================
+2019-03-11 00:06:50,075 INFO Starting execution...
+2019-03-11 00:06:50,076 INFO File ./hola.txt has not been modified
+2019-03-11 00:06:50,077 INFO ###### Summary ######
+2019-03-11 00:06:50,078 INFO Execution has been finished
+2019-03-11 00:06:50,078 INFO Files to check: 1
+2019-03-11 00:06:50,079 INFO Checked files: 1
+2019-03-11 00:06:50,080 INFO Modified files: 0
+2019-03-11 00:06:50,081 INFO Not modified files: 1
+2019-03-11 00:06:50,084 INFO Integrity ratio: 100.0%
+2019-03-11 00:06:50,085 INFO ==============================================
+2019-03-11 00:07:00,073 INFO =========================================
+2019-03-11 00:07:00,074 INFO Starting execution...
+2019-03-11 00:07:00,075 INFO File ./hola.txt has not been modified
+2019-03-11 00:07:00,076 INFO ###### Summary ######
+2019-03-11 00:07:00,077 INFO Execution has been finished
+2019-03-11 00:07:00,077 INFO Files to check: 1
+2019-03-11 00:07:00,078 INFO Checked files: 1
+2019-03-11 00:07:00,078 INFO Modified files: 0
+2019-03-11 00:07:00,079 INFO Not modified files: 1
+2019-03-11 00:07:00,079 INFO Integrity ratio: 100.0%
+2019-03-11 00:07:00,080 INFO ==============================================
+2019-03-11 00:07:10,072 INFO =========================================
+2019-03-11 00:07:10,073 INFO Starting execution...
+2019-03-11 00:07:10,075 INFO File ./hola.txt has not been modified
+2019-03-11 00:07:10,075 INFO ###### Summary ######
+2019-03-11 00:07:10,076 INFO Execution has been finished
+2019-03-11 00:07:10,077 INFO Files to check: 1
+2019-03-11 00:07:10,077 INFO Checked files: 1
+2019-03-11 00:07:10,078 INFO Modified files: 0
+2019-03-11 00:07:10,081 INFO Not modified files: 1
+2019-03-11 00:07:10,110 INFO Integrity ratio: 100.0%
+2019-03-11 00:07:10,110 INFO ==============================================
+2019-03-11 00:07:20,072 INFO =========================================
+2019-03-11 00:07:20,072 INFO Starting execution...
+2019-03-11 00:07:20,074 INFO File ./hola.txt has not been modified
+2019-03-11 00:07:20,075 INFO ###### Summary ######
+2019-03-11 00:07:20,075 INFO Execution has been finished
+2019-03-11 00:07:20,076 INFO Files to check: 1
+2019-03-11 00:07:20,076 INFO Checked files: 1
+2019-03-11 00:07:20,077 INFO Modified files: 0
+2019-03-11 00:07:20,077 INFO Not modified files: 1
+2019-03-11 00:07:20,078 INFO Integrity ratio: 100.0%
+2019-03-11 00:07:20,078 INFO ==============================================
+2019-03-11 00:07:30,073 INFO =========================================
+2019-03-11 00:07:30,074 INFO Starting execution...
+2019-03-11 00:07:30,076 INFO File ./hola.txt has not been modified
+2019-03-11 00:07:30,076 INFO ###### Summary ######
+2019-03-11 00:07:30,078 INFO Execution has been finished
+2019-03-11 00:07:30,078 INFO Files to check: 1
+2019-03-11 00:07:30,078 INFO Checked files: 1
+2019-03-11 00:07:30,080 INFO Modified files: 0
+2019-03-11 00:07:30,080 INFO Not modified files: 1
+2019-03-11 00:07:30,080 INFO Integrity ratio: 100.0%
+2019-03-11 00:07:30,081 INFO ==============================================
+2019-03-11 00:07:44,128 INFO =========================================
+2019-03-11 00:07:44,130 INFO Starting execution...
+2019-03-11 00:07:44,132 INFO File ./hola.txt has not been modified
+2019-03-11 00:07:44,132 INFO ###### Summary ######
+2019-03-11 00:07:44,132 INFO Execution has been finished
+2019-03-11 00:07:44,133 INFO Files to check: 1
+2019-03-11 00:07:44,133 INFO Checked files: 1
+2019-03-11 00:07:44,134 INFO Modified files: 0
+2019-03-11 00:07:44,134 INFO Not modified files: 1
+2019-03-11 00:07:44,135 INFO Integrity ratio: 100.0%
+2019-03-11 00:07:44,135 INFO ==============================================
+2019-03-11 00:07:54,128 INFO =========================================
+2019-03-11 00:07:54,129 INFO Starting execution...
+2019-03-11 00:07:54,131 INFO File ./hola.txt has not been modified
+2019-03-11 00:07:54,132 INFO ###### Summary ######
+2019-03-11 00:07:54,132 INFO Execution has been finished
+2019-03-11 00:07:54,133 INFO Files to check: 1
+2019-03-11 00:07:54,133 INFO Checked files: 1
+2019-03-11 00:07:54,134 INFO Modified files: 0
+2019-03-11 00:07:54,134 INFO Not modified files: 1
+2019-03-11 00:07:54,135 INFO Integrity ratio: 100.0%
+2019-03-11 00:07:54,135 INFO ==============================================
+2019-03-11 00:08:04,128 INFO =========================================
+2019-03-11 00:08:04,128 INFO Starting execution...
+2019-03-11 00:08:04,130 INFO File ./hola.txt has not been modified
+2019-03-11 00:08:04,131 INFO ###### Summary ######
+2019-03-11 00:08:04,131 INFO Execution has been finished
+2019-03-11 00:08:04,132 INFO Files to check: 1
+2019-03-11 00:08:04,132 INFO Checked files: 1
+2019-03-11 00:08:04,133 INFO Modified files: 0
+2019-03-11 00:08:04,134 INFO Not modified files: 1
+2019-03-11 00:08:04,134 INFO Integrity ratio: 100.0%
+2019-03-11 00:08:04,135 INFO ==============================================
+2019-03-11 00:08:14,128 INFO =========================================
+2019-03-11 00:08:14,129 INFO Starting execution...
+2019-03-11 00:08:14,131 INFO File ./hola.txt has not been modified
+2019-03-11 00:08:14,134 INFO ###### Summary ######
+2019-03-11 00:08:14,157 INFO Execution has been finished
+2019-03-11 00:08:14,158 INFO Files to check: 1
+2019-03-11 00:08:14,159 INFO Checked files: 1
+2019-03-11 00:08:14,159 INFO Modified files: 0
+2019-03-11 00:08:14,160 INFO Not modified files: 1
+2019-03-11 00:08:14,160 INFO Integrity ratio: 100.0%
+2019-03-11 00:08:14,161 INFO ==============================================
+2019-03-11 00:08:24,127 INFO =========================================
+2019-03-11 00:08:24,128 INFO Starting execution...
+2019-03-11 00:08:24,130 INFO File ./hola.txt has not been modified
+2019-03-11 00:08:24,130 INFO ###### Summary ######
+2019-03-11 00:08:24,130 INFO Execution has been finished
+2019-03-11 00:08:24,130 INFO Files to check: 1
+2019-03-11 00:08:24,132 INFO Checked files: 1
+2019-03-11 00:08:24,132 INFO Modified files: 0
+2019-03-11 00:08:24,132 INFO Not modified files: 1
+2019-03-11 00:08:24,133 INFO Integrity ratio: 100.0%
+2019-03-11 00:08:24,133 INFO ==============================================
+2019-03-11 00:08:34,127 INFO =========================================
+2019-03-11 00:08:34,130 INFO Starting execution...
+2019-03-11 00:08:34,135 INFO File ./hola.txt has not been modified
+2019-03-11 00:08:34,184 INFO ###### Summary ######
+2019-03-11 00:08:34,186 INFO Execution has been finished
+2019-03-11 00:08:34,188 INFO Files to check: 1
+2019-03-11 00:08:34,189 INFO Checked files: 1
+2019-03-11 00:08:34,189 INFO Modified files: 0
+2019-03-11 00:08:34,190 INFO Not modified files: 1
+2019-03-11 00:08:34,190 INFO Integrity ratio: 100.0%
+2019-03-11 00:08:34,190 INFO ==============================================
+2019-03-11 00:08:44,129 INFO =========================================
+2019-03-11 00:08:44,131 INFO Starting execution...
+2019-03-11 00:08:44,135 INFO File ./hola.txt has not been modified
+2019-03-11 00:08:44,164 INFO ###### Summary ######
+2019-03-11 00:08:44,165 INFO Execution has been finished
+2019-03-11 00:08:44,165 INFO Files to check: 1
+2019-03-11 00:08:44,166 INFO Checked files: 1
+2019-03-11 00:08:44,166 INFO Modified files: 0
+2019-03-11 00:08:44,167 INFO Not modified files: 1
+2019-03-11 00:08:44,168 INFO Integrity ratio: 100.0%
+2019-03-11 00:08:44,168 INFO ==============================================
+2019-03-11 00:08:54,129 INFO =========================================
+2019-03-11 00:08:54,130 INFO Starting execution...
+2019-03-11 00:08:54,132 INFO File ./hola.txt has not been modified
+2019-03-11 00:08:54,132 INFO ###### Summary ######
+2019-03-11 00:08:54,133 INFO Execution has been finished
+2019-03-11 00:08:54,133 INFO Files to check: 1
+2019-03-11 00:08:54,134 INFO Checked files: 1
+2019-03-11 00:08:54,135 INFO Modified files: 0
+2019-03-11 00:08:54,135 INFO Not modified files: 1
+2019-03-11 00:08:54,136 INFO Integrity ratio: 100.0%
+2019-03-11 00:08:54,136 INFO ==============================================
+2019-03-11 00:09:04,155 INFO =========================================
+2019-03-11 00:09:04,156 INFO Starting execution...
+2019-03-11 00:09:04,171 INFO File ./hola.txt has not been modified
+2019-03-11 00:09:04,172 INFO ###### Summary ######
+2019-03-11 00:09:04,172 INFO Execution has been finished
+2019-03-11 00:09:04,172 INFO Files to check: 1
+2019-03-11 00:09:04,173 INFO Checked files: 1
+2019-03-11 00:09:04,173 INFO Modified files: 0
+2019-03-11 00:09:04,173 INFO Not modified files: 1
+2019-03-11 00:09:04,173 INFO Integrity ratio: 100.0%
+2019-03-11 00:09:04,174 INFO ==============================================
+2019-03-11 00:09:14,143 INFO =========================================
+2019-03-11 00:09:14,144 INFO Starting execution...
+2019-03-11 00:09:14,147 INFO File ./hola.txt has not been modified
+2019-03-11 00:09:14,150 INFO ###### Summary ######
+2019-03-11 00:09:14,179 INFO Execution has been finished
+2019-03-11 00:09:14,180 INFO Files to check: 1
+2019-03-11 00:09:14,181 INFO Checked files: 1
+2019-03-11 00:09:14,181 INFO Modified files: 0
+2019-03-11 00:09:14,181 INFO Not modified files: 1
+2019-03-11 00:09:14,181 INFO Integrity ratio: 100.0%
+2019-03-11 00:09:14,183 INFO ==============================================
+2019-03-11 00:09:24,126 INFO =========================================
+2019-03-11 00:09:24,128 INFO Starting execution...
+2019-03-11 00:09:24,129 INFO File ./hola.txt has not been modified
+2019-03-11 00:09:24,130 INFO ###### Summary ######
+2019-03-11 00:09:24,131 INFO Execution has been finished
+2019-03-11 00:09:24,131 INFO Files to check: 1
+2019-03-11 00:09:24,132 INFO Checked files: 1
+2019-03-11 00:09:24,132 INFO Modified files: 0
+2019-03-11 00:09:24,133 INFO Not modified files: 1
+2019-03-11 00:09:24,133 INFO Integrity ratio: 100.0%
+2019-03-11 00:09:24,134 INFO ==============================================
+2019-03-11 00:09:34,126 INFO =========================================
+2019-03-11 00:09:34,129 INFO Starting execution...
+2019-03-11 00:09:34,133 INFO File ./hola.txt has not been modified
+2019-03-11 00:09:34,161 INFO ###### Summary ######
+2019-03-11 00:09:34,162 INFO Execution has been finished
+2019-03-11 00:09:34,162 INFO Files to check: 1
+2019-03-11 00:09:34,163 INFO Checked files: 1
+2019-03-11 00:09:34,163 INFO Modified files: 0
+2019-03-11 00:09:34,164 INFO Not modified files: 1
+2019-03-11 00:09:34,165 INFO Integrity ratio: 100.0%
+2019-03-11 00:09:34,165 INFO ==============================================
+2019-03-11 00:09:44,126 INFO =========================================
+2019-03-11 00:09:44,126 INFO Starting execution...
+2019-03-11 00:09:44,128 INFO File ./hola.txt has not been modified
+2019-03-11 00:09:44,129 INFO ###### Summary ######
+2019-03-11 00:09:44,129 INFO Execution has been finished
+2019-03-11 00:09:44,130 INFO Files to check: 1
+2019-03-11 00:09:44,130 INFO Checked files: 1
+2019-03-11 00:09:44,131 INFO Modified files: 0
+2019-03-11 00:09:44,132 INFO Not modified files: 1
+2019-03-11 00:09:44,132 INFO Integrity ratio: 100.0%
+2019-03-11 00:09:44,133 INFO ==============================================
+2019-03-11 00:09:54,126 INFO =========================================
+2019-03-11 00:09:54,126 INFO Starting execution...
+2019-03-11 00:09:54,130 INFO File ./hola.txt has not been modified
+2019-03-11 00:09:54,132 INFO ###### Summary ######
+2019-03-11 00:09:54,159 INFO Execution has been finished
+2019-03-11 00:09:54,159 INFO Files to check: 1
+2019-03-11 00:09:54,160 INFO Checked files: 1
+2019-03-11 00:09:54,160 INFO Modified files: 0
+2019-03-11 00:09:54,161 INFO Not modified files: 1
+2019-03-11 00:09:54,161 INFO Integrity ratio: 100.0%
+2019-03-11 00:09:54,161 INFO ==============================================
+2019-03-11 00:10:04,126 INFO =========================================
+2019-03-11 00:10:04,126 INFO Starting execution...
+2019-03-11 00:10:04,129 INFO File ./hola.txt has not been modified
+2019-03-11 00:10:04,130 INFO ###### Summary ######
+2019-03-11 00:10:04,130 INFO Execution has been finished
+2019-03-11 00:10:04,134 INFO Files to check: 1
+2019-03-11 00:10:04,159 INFO Checked files: 1
+2019-03-11 00:10:04,160 INFO Modified files: 0
+2019-03-11 00:10:04,160 INFO Not modified files: 1
+2019-03-11 00:10:04,161 INFO Integrity ratio: 100.0%
+2019-03-11 00:10:04,161 INFO ==============================================
+2019-03-11 00:10:14,126 INFO =========================================
+2019-03-11 00:10:14,129 INFO Starting execution...
+2019-03-11 00:10:14,135 INFO File ./hola.txt has not been modified
+2019-03-11 00:10:14,164 INFO ###### Summary ######
+2019-03-11 00:10:14,166 INFO Execution has been finished
+2019-03-11 00:10:14,167 INFO Files to check: 1
+2019-03-11 00:10:14,167 INFO Checked files: 1
+2019-03-11 00:10:14,168 INFO Modified files: 0
+2019-03-11 00:10:14,168 INFO Not modified files: 1
+2019-03-11 00:10:14,169 INFO Integrity ratio: 100.0%
+2019-03-11 00:10:14,170 INFO ==============================================
+2019-03-11 00:10:24,127 INFO =========================================
+2019-03-11 00:10:24,127 INFO Starting execution...
+2019-03-11 00:10:24,129 INFO File ./hola.txt has not been modified
+2019-03-11 00:10:24,130 INFO ###### Summary ######
+2019-03-11 00:10:24,131 INFO Execution has been finished
+2019-03-11 00:10:24,131 INFO Files to check: 1
+2019-03-11 00:10:24,132 INFO Checked files: 1
+2019-03-11 00:10:24,133 INFO Modified files: 0
+2019-03-11 00:10:24,133 INFO Not modified files: 1
+2019-03-11 00:10:24,134 INFO Integrity ratio: 100.0%
+2019-03-11 00:10:24,135 INFO ==============================================
+2019-03-11 00:10:34,126 INFO =========================================
+2019-03-11 00:10:34,131 INFO Starting execution...
+2019-03-11 00:10:34,132 INFO File ./hola.txt has not been modified
+2019-03-11 00:10:34,133 INFO ###### Summary ######
+2019-03-11 00:10:34,133 INFO Execution has been finished
+2019-03-11 00:10:34,134 INFO Files to check: 1
+2019-03-11 00:10:34,134 INFO Checked files: 1
+2019-03-11 00:10:34,135 INFO Modified files: 0
+2019-03-11 00:10:34,136 INFO Not modified files: 1
+2019-03-11 00:10:34,136 INFO Integrity ratio: 100.0%
+2019-03-11 00:10:34,137 INFO ==============================================
+2019-03-11 00:10:44,125 INFO =========================================
+2019-03-11 00:10:44,126 INFO Starting execution...
+2019-03-11 00:10:44,128 INFO File ./hola.txt has not been modified
+2019-03-11 00:10:44,129 INFO ###### Summary ######
+2019-03-11 00:10:44,130 INFO Execution has been finished
+2019-03-11 00:10:44,131 INFO Files to check: 1
+2019-03-11 00:10:44,131 INFO Checked files: 1
+2019-03-11 00:10:44,132 INFO Modified files: 0
+2019-03-11 00:10:44,133 INFO Not modified files: 1
+2019-03-11 00:10:44,133 INFO Integrity ratio: 100.0%
+2019-03-11 00:10:44,134 INFO ==============================================
+2019-03-11 00:10:54,125 INFO =========================================
+2019-03-11 00:10:54,126 INFO Starting execution...
+2019-03-11 00:10:54,129 INFO File ./hola.txt has not been modified
+2019-03-11 00:10:54,129 INFO ###### Summary ######
+2019-03-11 00:10:54,130 INFO Execution has been finished
+2019-03-11 00:10:54,130 INFO Files to check: 1
+2019-03-11 00:10:54,130 INFO Checked files: 1
+2019-03-11 00:10:54,131 INFO Modified files: 0
+2019-03-11 00:10:54,131 INFO Not modified files: 1
+2019-03-11 00:10:54,132 INFO Integrity ratio: 100.0%
+2019-03-11 00:10:54,133 INFO ==============================================
+2019-03-11 00:11:04,126 INFO =========================================
+2019-03-11 00:11:04,127 INFO Starting execution...
+2019-03-11 00:11:04,132 INFO File ./hola.txt has not been modified
+2019-03-11 00:11:04,134 INFO ###### Summary ######
+2019-03-11 00:11:04,157 INFO Execution has been finished
+2019-03-11 00:11:04,158 INFO Files to check: 1
+2019-03-11 00:11:04,159 INFO Checked files: 1
+2019-03-11 00:11:04,159 INFO Modified files: 0
+2019-03-11 00:11:04,160 INFO Not modified files: 1
+2019-03-11 00:11:04,160 INFO Integrity ratio: 100.0%
+2019-03-11 00:11:04,161 INFO ==============================================
+2019-03-11 00:11:14,125 INFO =========================================
+2019-03-11 00:11:14,126 INFO Starting execution...
+2019-03-11 00:11:14,128 INFO File ./hola.txt has not been modified
+2019-03-11 00:11:14,131 INFO ###### Summary ######
+2019-03-11 00:11:14,131 INFO Execution has been finished
+2019-03-11 00:11:14,134 INFO Files to check: 1
+2019-03-11 00:11:14,158 INFO Checked files: 1
+2019-03-11 00:11:14,158 INFO Modified files: 0
+2019-03-11 00:11:14,159 INFO Not modified files: 1
+2019-03-11 00:11:14,159 INFO Integrity ratio: 100.0%
+2019-03-11 00:11:14,160 INFO ==============================================
+2019-03-11 00:11:24,126 INFO =========================================
+2019-03-11 00:11:24,127 INFO Starting execution...
+2019-03-11 00:11:24,131 INFO File ./hola.txt has not been modified
+2019-03-11 00:11:24,154 INFO ###### Summary ######
+2019-03-11 00:11:24,154 INFO Execution has been finished
+2019-03-11 00:11:24,155 INFO Files to check: 1
+2019-03-11 00:11:24,155 INFO Checked files: 1
+2019-03-11 00:11:24,156 INFO Modified files: 0
+2019-03-11 00:11:24,157 INFO Not modified files: 1
+2019-03-11 00:11:24,157 INFO Integrity ratio: 100.0%
+2019-03-11 00:11:24,158 INFO ==============================================
+2019-03-11 00:11:34,126 INFO =========================================
+2019-03-11 00:11:34,127 INFO Starting execution...
+2019-03-11 00:11:34,128 INFO File ./hola.txt has not been modified
+2019-03-11 00:11:34,129 INFO ###### Summary ######
+2019-03-11 00:11:34,130 INFO Execution has been finished
+2019-03-11 00:11:34,130 INFO Files to check: 1
+2019-03-11 00:11:34,131 INFO Checked files: 1
+2019-03-11 00:11:34,131 INFO Modified files: 0
+2019-03-11 00:11:34,132 INFO Not modified files: 1
+2019-03-11 00:11:34,132 INFO Integrity ratio: 100.0%
+2019-03-11 00:11:34,133 INFO ==============================================
+2019-03-11 00:11:44,126 INFO =========================================
+2019-03-11 00:11:44,127 INFO Starting execution...
+2019-03-11 00:11:44,128 INFO File ./hola.txt has not been modified
+2019-03-11 00:11:44,129 INFO ###### Summary ######
+2019-03-11 00:11:44,130 INFO Execution has been finished
+2019-03-11 00:11:44,130 INFO Files to check: 1
+2019-03-11 00:11:44,131 INFO Checked files: 1
+2019-03-11 00:11:44,131 INFO Modified files: 0
+2019-03-11 00:11:44,132 INFO Not modified files: 1
+2019-03-11 00:11:44,132 INFO Integrity ratio: 100.0%
+2019-03-11 00:11:44,133 INFO ==============================================
+2019-03-11 00:11:54,126 INFO =========================================
+2019-03-11 00:11:54,129 INFO Starting execution...
+2019-03-11 00:11:54,132 INFO File ./hola.txt has not been modified
+2019-03-11 00:11:54,156 INFO ###### Summary ######
+2019-03-11 00:11:54,156 INFO Execution has been finished
+2019-03-11 00:11:54,157 INFO Files to check: 1
+2019-03-11 00:11:54,158 INFO Checked files: 1
+2019-03-11 00:11:54,158 INFO Modified files: 0
+2019-03-11 00:11:54,159 INFO Not modified files: 1
+2019-03-11 00:11:54,159 INFO Integrity ratio: 100.0%
+2019-03-11 00:11:54,160 INFO ==============================================
+2019-03-11 00:12:04,126 INFO =========================================
+2019-03-11 00:12:04,127 INFO Starting execution...
+2019-03-11 00:12:04,129 INFO File ./hola.txt has not been modified
+2019-03-11 00:12:04,130 INFO ###### Summary ######
+2019-03-11 00:12:04,130 INFO Execution has been finished
+2019-03-11 00:12:04,131 INFO Files to check: 1
+2019-03-11 00:12:04,131 INFO Checked files: 1
+2019-03-11 00:12:04,132 INFO Modified files: 0
+2019-03-11 00:12:04,133 INFO Not modified files: 1
+2019-03-11 00:12:04,133 INFO Integrity ratio: 100.0%
+2019-03-11 00:12:04,134 INFO ==============================================
+2019-03-11 00:12:14,126 INFO =========================================
+2019-03-11 00:12:14,129 INFO Starting execution...
+2019-03-11 00:12:14,131 INFO File ./hola.txt has not been modified
+2019-03-11 00:12:14,131 INFO ###### Summary ######
+2019-03-11 00:12:14,132 INFO Execution has been finished
+2019-03-11 00:12:14,133 INFO Files to check: 1
+2019-03-11 00:12:14,133 INFO Checked files: 1
+2019-03-11 00:12:14,134 INFO Modified files: 0
+2019-03-11 00:12:14,134 INFO Not modified files: 1
+2019-03-11 00:12:14,135 INFO Integrity ratio: 100.0%
+2019-03-11 00:12:14,135 INFO ==============================================
+2019-03-11 00:12:24,126 INFO =========================================
+2019-03-11 00:12:24,127 INFO Starting execution...
+2019-03-11 00:12:24,128 INFO File ./hola.txt has not been modified
+2019-03-11 00:12:24,129 INFO ###### Summary ######
+2019-03-11 00:12:24,129 INFO Execution has been finished
+2019-03-11 00:12:24,129 INFO Files to check: 1
+2019-03-11 00:12:24,131 INFO Checked files: 1
+2019-03-11 00:12:24,131 INFO Modified files: 0
+2019-03-11 00:12:24,131 INFO Not modified files: 1
+2019-03-11 00:12:24,131 INFO Integrity ratio: 100.0%
+2019-03-11 00:12:24,132 INFO ==============================================
+2019-03-11 00:12:34,125 INFO =========================================
+2019-03-11 00:12:34,126 INFO Starting execution...
+2019-03-11 00:12:34,128 INFO File ./hola.txt has not been modified
+2019-03-11 00:12:34,128 INFO ###### Summary ######
+2019-03-11 00:12:34,129 INFO Execution has been finished
+2019-03-11 00:12:34,129 INFO Files to check: 1
+2019-03-11 00:12:34,130 INFO Checked files: 1
+2019-03-11 00:12:34,130 INFO Modified files: 0
+2019-03-11 00:12:34,133 INFO Not modified files: 1
+2019-03-11 00:12:34,133 INFO Integrity ratio: 100.0%
+2019-03-11 00:12:34,135 INFO ==============================================
+2019-03-11 00:12:44,127 INFO =========================================
+2019-03-11 00:12:44,129 INFO Starting execution...
+2019-03-11 00:12:44,131 INFO File ./hola.txt has not been modified
+2019-03-11 00:12:44,134 INFO ###### Summary ######
+2019-03-11 00:12:44,157 INFO Execution has been finished
+2019-03-11 00:12:44,158 INFO Files to check: 1
+2019-03-11 00:12:44,158 INFO Checked files: 1
+2019-03-11 00:12:44,159 INFO Modified files: 0
+2019-03-11 00:12:44,159 INFO Not modified files: 1
+2019-03-11 00:12:44,160 INFO Integrity ratio: 100.0%
+2019-03-11 00:12:44,160 INFO ==============================================
+2019-03-11 00:12:54,124 INFO =========================================
+2019-03-11 00:12:54,124 INFO Starting execution...
+2019-03-11 00:12:54,125 INFO File ./hola.txt has not been modified
+2019-03-11 00:12:54,125 INFO ###### Summary ######
+2019-03-11 00:12:54,126 INFO Execution has been finished
+2019-03-11 00:12:54,126 INFO Files to check: 1
+2019-03-11 00:12:54,126 INFO Checked files: 1
+2019-03-11 00:12:54,126 INFO Modified files: 0
+2019-03-11 00:12:54,127 INFO Not modified files: 1
+2019-03-11 00:12:54,127 INFO Integrity ratio: 100.0%
+2019-03-11 00:12:54,127 INFO ==============================================
+2019-03-11 00:13:04,126 INFO =========================================
+2019-03-11 00:13:04,127 INFO Starting execution...
+2019-03-11 00:13:04,129 INFO File ./hola.txt has not been modified
+2019-03-11 00:13:04,129 INFO ###### Summary ######
+2019-03-11 00:13:04,130 INFO Execution has been finished
+2019-03-11 00:13:04,131 INFO Files to check: 1
+2019-03-11 00:13:04,131 INFO Checked files: 1
+2019-03-11 00:13:04,132 INFO Modified files: 0
+2019-03-11 00:13:04,132 INFO Not modified files: 1
+2019-03-11 00:13:04,132 INFO Integrity ratio: 100.0%
+2019-03-11 00:13:04,133 INFO ==============================================
+2019-03-11 00:13:14,126 INFO =========================================
+2019-03-11 00:13:14,127 INFO Starting execution...
+2019-03-11 00:13:14,129 INFO File ./hola.txt has not been modified
+2019-03-11 00:13:14,129 INFO ###### Summary ######
+2019-03-11 00:13:14,130 INFO Execution has been finished
+2019-03-11 00:13:14,130 INFO Files to check: 1
+2019-03-11 00:13:14,131 INFO Checked files: 1
+2019-03-11 00:13:14,131 INFO Modified files: 0
+2019-03-11 00:13:14,131 INFO Not modified files: 1
+2019-03-11 00:13:14,133 INFO Integrity ratio: 100.0%
+2019-03-11 00:13:14,133 INFO ==============================================
+2019-03-11 00:13:24,126 INFO =========================================
+2019-03-11 00:13:24,127 INFO Starting execution...
+2019-03-11 00:13:24,129 INFO File ./hola.txt has not been modified
+2019-03-11 00:13:24,129 INFO ###### Summary ######
+2019-03-11 00:13:24,130 INFO Execution has been finished
+2019-03-11 00:13:24,130 INFO Files to check: 1
+2019-03-11 00:13:24,131 INFO Checked files: 1
+2019-03-11 00:13:24,131 INFO Modified files: 0
+2019-03-11 00:13:24,132 INFO Not modified files: 1
+2019-03-11 00:13:24,132 INFO Integrity ratio: 100.0%
+2019-03-11 00:13:24,132 INFO ==============================================
+2019-03-11 00:13:34,126 INFO =========================================
+2019-03-11 00:13:34,127 INFO Starting execution...
+2019-03-11 00:13:34,128 INFO File ./hola.txt has not been modified
+2019-03-11 00:13:34,129 INFO ###### Summary ######
+2019-03-11 00:13:34,130 INFO Execution has been finished
+2019-03-11 00:13:34,130 INFO Files to check: 1
+2019-03-11 00:13:34,131 INFO Checked files: 1
+2019-03-11 00:13:34,131 INFO Modified files: 0
+2019-03-11 00:13:34,133 INFO Not modified files: 1
+2019-03-11 00:13:34,134 INFO Integrity ratio: 100.0%
+2019-03-11 00:13:34,136 INFO ==============================================
+2019-03-11 00:13:44,125 INFO =========================================
+2019-03-11 00:13:44,126 INFO Starting execution...
+2019-03-11 00:13:44,128 INFO File ./hola.txt has not been modified
+2019-03-11 00:13:44,128 INFO ###### Summary ######
+2019-03-11 00:13:44,129 INFO Execution has been finished
+2019-03-11 00:13:44,129 INFO Files to check: 1
+2019-03-11 00:13:44,130 INFO Checked files: 1
+2019-03-11 00:13:44,130 INFO Modified files: 0
+2019-03-11 00:13:44,131 INFO Not modified files: 1
+2019-03-11 00:13:44,131 INFO Integrity ratio: 100.0%
+2019-03-11 00:13:44,132 INFO ==============================================
+2019-03-11 00:13:54,126 INFO =========================================
+2019-03-11 00:13:54,127 INFO Starting execution...
+2019-03-11 00:13:54,129 INFO File ./hola.txt has not been modified
+2019-03-11 00:13:54,129 INFO ###### Summary ######
+2019-03-11 00:13:54,130 INFO Execution has been finished
+2019-03-11 00:13:54,131 INFO Files to check: 1
+2019-03-11 00:13:54,131 INFO Checked files: 1
+2019-03-11 00:13:54,131 INFO Modified files: 0
+2019-03-11 00:13:54,132 INFO Not modified files: 1
+2019-03-11 00:13:54,133 INFO Integrity ratio: 100.0%
+2019-03-11 00:13:54,133 INFO ==============================================
+2019-03-11 00:14:04,126 INFO =========================================
+2019-03-11 00:14:04,127 INFO Starting execution...
+2019-03-11 00:14:04,129 INFO File ./hola.txt has not been modified
+2019-03-11 00:14:04,129 INFO ###### Summary ######
+2019-03-11 00:14:04,132 INFO Execution has been finished
+2019-03-11 00:14:04,132 INFO Files to check: 1
+2019-03-11 00:14:04,134 INFO Checked files: 1
+2019-03-11 00:14:04,161 INFO Modified files: 0
+2019-03-11 00:14:04,162 INFO Not modified files: 1
+2019-03-11 00:14:04,162 INFO Integrity ratio: 100.0%
+2019-03-11 00:14:04,163 INFO ==============================================
+2019-03-11 00:14:14,126 INFO =========================================
+2019-03-11 00:14:14,127 INFO Starting execution...
+2019-03-11 00:14:14,129 INFO File ./hola.txt has not been modified
+2019-03-11 00:14:14,130 INFO ###### Summary ######
+2019-03-11 00:14:14,130 INFO Execution has been finished
+2019-03-11 00:14:14,131 INFO Files to check: 1
+2019-03-11 00:14:14,131 INFO Checked files: 1
+2019-03-11 00:14:14,132 INFO Modified files: 0
+2019-03-11 00:14:14,132 INFO Not modified files: 1
+2019-03-11 00:14:14,133 INFO Integrity ratio: 100.0%
+2019-03-11 00:14:14,133 INFO ==============================================
+2019-03-11 00:14:24,127 INFO =========================================
+2019-03-11 00:14:24,128 INFO Starting execution...
+2019-03-11 00:14:24,131 INFO File ./hola.txt has not been modified
+2019-03-11 00:14:24,132 INFO ###### Summary ######
+2019-03-11 00:14:24,133 INFO Execution has been finished
+2019-03-11 00:14:24,133 INFO Files to check: 1
+2019-03-11 00:14:24,134 INFO Checked files: 1
+2019-03-11 00:14:24,135 INFO Modified files: 0
+2019-03-11 00:14:24,136 INFO Not modified files: 1
+2019-03-11 00:14:24,136 INFO Integrity ratio: 100.0%
+2019-03-11 00:14:24,137 INFO ==============================================
+2019-03-11 00:14:34,126 INFO =========================================
+2019-03-11 00:14:34,127 INFO Starting execution...
+2019-03-11 00:14:34,131 INFO File ./hola.txt has not been modified
+2019-03-11 00:14:34,133 INFO ###### Summary ######
+2019-03-11 00:14:34,157 INFO Execution has been finished
+2019-03-11 00:14:34,157 INFO Files to check: 1
+2019-03-11 00:14:34,158 INFO Checked files: 1
+2019-03-11 00:14:34,158 INFO Modified files: 0
+2019-03-11 00:14:34,159 INFO Not modified files: 1
+2019-03-11 00:14:34,159 INFO Integrity ratio: 100.0%
+2019-03-11 00:14:34,160 INFO ==============================================
+2019-03-11 00:14:44,126 INFO =========================================
+2019-03-11 00:14:44,128 INFO Starting execution...
+2019-03-11 00:14:44,131 INFO File ./hola.txt has not been modified
+2019-03-11 00:14:44,154 INFO ###### Summary ######
+2019-03-11 00:14:44,155 INFO Execution has been finished
+2019-03-11 00:14:44,155 INFO Files to check: 1
+2019-03-11 00:14:44,156 INFO Checked files: 1
+2019-03-11 00:14:44,156 INFO Modified files: 0
+2019-03-11 00:14:44,157 INFO Not modified files: 1
+2019-03-11 00:14:44,157 INFO Integrity ratio: 100.0%
+2019-03-11 00:14:44,158 INFO ==============================================
+2019-03-11 00:14:54,126 INFO =========================================
+2019-03-11 00:14:54,127 INFO Starting execution...
+2019-03-11 00:14:54,128 INFO File ./hola.txt has not been modified
+2019-03-11 00:14:54,129 INFO ###### Summary ######
+2019-03-11 00:14:54,130 INFO Execution has been finished
+2019-03-11 00:14:54,130 INFO Files to check: 1
+2019-03-11 00:14:54,133 INFO Checked files: 1
+2019-03-11 00:14:54,133 INFO Modified files: 0
+2019-03-11 00:14:54,137 INFO Not modified files: 1
+2019-03-11 00:14:54,161 INFO Integrity ratio: 100.0%
+2019-03-11 00:14:54,162 INFO ==============================================
+2019-03-11 00:15:04,126 INFO =========================================
+2019-03-11 00:15:04,127 INFO Starting execution...
+2019-03-11 00:15:04,129 INFO File ./hola.txt has not been modified
+2019-03-11 00:15:04,129 INFO ###### Summary ######
+2019-03-11 00:15:04,130 INFO Execution has been finished
+2019-03-11 00:15:04,130 INFO Files to check: 1
+2019-03-11 00:15:04,131 INFO Checked files: 1
+2019-03-11 00:15:04,131 INFO Modified files: 0
+2019-03-11 00:15:04,132 INFO Not modified files: 1
+2019-03-11 00:15:04,133 INFO Integrity ratio: 100.0%
+2019-03-11 00:15:04,133 INFO ==============================================
+2019-03-11 00:15:14,126 INFO =========================================
+2019-03-11 00:15:14,127 INFO Starting execution...
+2019-03-11 00:15:14,128 INFO File ./hola.txt has not been modified
+2019-03-11 00:15:14,130 INFO ###### Summary ######
+2019-03-11 00:15:14,131 INFO Execution has been finished
+2019-03-11 00:15:14,133 INFO Files to check: 1
+2019-03-11 00:15:14,157 INFO Checked files: 1
+2019-03-11 00:15:14,157 INFO Modified files: 0
+2019-03-11 00:15:14,158 INFO Not modified files: 1
+2019-03-11 00:15:14,159 INFO Integrity ratio: 100.0%
+2019-03-11 00:15:14,159 INFO ==============================================
+2019-03-11 00:15:24,126 INFO =========================================
+2019-03-11 00:15:24,129 INFO Starting execution...
+2019-03-11 00:15:24,130 INFO File ./hola.txt has not been modified
+2019-03-11 00:15:24,132 INFO ###### Summary ######
+2019-03-11 00:15:24,132 INFO Execution has been finished
+2019-03-11 00:15:24,132 INFO Files to check: 1
+2019-03-11 00:15:24,133 INFO Checked files: 1
+2019-03-11 00:15:24,134 INFO Modified files: 0
+2019-03-11 00:15:24,134 INFO Not modified files: 1
+2019-03-11 00:15:24,135 INFO Integrity ratio: 100.0%
+2019-03-11 00:15:24,135 INFO ==============================================
+2019-03-11 00:15:34,125 INFO =========================================
+2019-03-11 00:15:34,126 INFO Starting execution...
+2019-03-11 00:15:34,130 INFO File ./hola.txt has not been modified
+2019-03-11 00:15:34,152 INFO ###### Summary ######
+2019-03-11 00:15:34,154 INFO Execution has been finished
+2019-03-11 00:15:34,154 INFO Files to check: 1
+2019-03-11 00:15:34,154 INFO Checked files: 1
+2019-03-11 00:15:34,155 INFO Modified files: 0
+2019-03-11 00:15:34,155 INFO Not modified files: 1
+2019-03-11 00:15:34,156 INFO Integrity ratio: 100.0%
+2019-03-11 00:15:34,157 INFO ==============================================
+2019-03-11 00:15:44,126 INFO =========================================
+2019-03-11 00:15:44,129 INFO Starting execution...
+2019-03-11 00:15:44,130 INFO File ./hola.txt has not been modified
+2019-03-11 00:15:44,131 INFO ###### Summary ######
+2019-03-11 00:15:44,152 INFO Execution has been finished
+2019-03-11 00:15:44,153 INFO Files to check: 1
+2019-03-11 00:15:44,153 INFO Checked files: 1
+2019-03-11 00:15:44,154 INFO Modified files: 0
+2019-03-11 00:15:44,155 INFO Not modified files: 1
+2019-03-11 00:15:44,155 INFO Integrity ratio: 100.0%
+2019-03-11 00:15:44,156 INFO ==============================================
+2019-03-11 00:15:54,127 INFO =========================================
+2019-03-11 00:15:54,127 INFO Starting execution...
+2019-03-11 00:15:54,129 INFO File ./hola.txt has not been modified
+2019-03-11 00:15:54,131 INFO ###### Summary ######
+2019-03-11 00:15:54,131 INFO Execution has been finished
+2019-03-11 00:15:54,135 INFO Files to check: 1
+2019-03-11 00:15:54,158 INFO Checked files: 1
+2019-03-11 00:15:54,158 INFO Modified files: 0
+2019-03-11 00:15:54,158 INFO Not modified files: 1
+2019-03-11 00:15:54,159 INFO Integrity ratio: 100.0%
+2019-03-11 00:15:54,160 INFO ==============================================
+2019-03-11 00:16:04,125 INFO =========================================
+2019-03-11 00:16:04,126 INFO Starting execution...
+2019-03-11 00:16:04,128 INFO File ./hola.txt has not been modified
+2019-03-11 00:16:04,129 INFO ###### Summary ######
+2019-03-11 00:16:04,129 INFO Execution has been finished
+2019-03-11 00:16:04,130 INFO Files to check: 1
+2019-03-11 00:16:04,130 INFO Checked files: 1
+2019-03-11 00:16:04,133 INFO Modified files: 0
+2019-03-11 00:16:04,134 INFO Not modified files: 1
+2019-03-11 00:16:04,138 INFO Integrity ratio: 100.0%
+2019-03-11 00:16:04,166 INFO ==============================================
+2019-03-11 00:16:14,126 INFO =========================================
+2019-03-11 00:16:14,127 INFO Starting execution...
+2019-03-11 00:16:14,129 INFO ###### Summary ######
+2019-03-11 00:16:14,129 INFO Execution has been finished
+2019-03-11 00:16:14,130 INFO Files to check: 1
+2019-03-11 00:16:14,130 INFO Checked files: 1
+2019-03-11 00:16:14,131 INFO Modified files: 1
+2019-03-11 00:16:14,132 INFO Not modified files: 0
+2019-03-11 00:16:14,162 INFO Integrity ratio: 0.0%
+2019-03-11 00:16:14,162 INFO ==============================================
+2019-03-11 00:16:24,124 INFO =========================================
+2019-03-11 00:16:24,125 INFO Starting execution...
+2019-03-11 00:16:24,129 INFO ###### Summary ######
+2019-03-11 00:16:24,129 INFO Execution has been finished
+2019-03-11 00:16:24,130 INFO Files to check: 1
+2019-03-11 00:16:24,130 INFO Checked files: 1
+2019-03-11 00:16:24,130 INFO Modified files: 1
+2019-03-11 00:16:24,131 INFO Not modified files: 0
+2019-03-11 00:16:24,131 INFO Integrity ratio: 0.0%
+2019-03-11 00:16:24,132 INFO ==============================================
+2019-03-11 00:16:34,126 INFO =========================================
+2019-03-11 00:16:34,127 INFO Starting execution...
+2019-03-11 00:16:34,130 INFO ###### Summary ######
+2019-03-11 00:16:34,131 INFO Execution has been finished
+2019-03-11 00:16:34,132 INFO Files to check: 1
+2019-03-11 00:16:34,134 INFO Checked files: 1
+2019-03-11 00:16:34,160 INFO Modified files: 1
+2019-03-11 00:16:34,161 INFO Not modified files: 0
+2019-03-11 00:16:34,161 INFO Integrity ratio: 0.0%
+2019-03-11 00:16:34,161 INFO ==============================================
+2019-03-11 00:16:44,127 INFO =========================================
+2019-03-11 00:16:44,127 INFO Starting execution...
+2019-03-11 00:16:44,130 INFO ###### Summary ######
+2019-03-11 00:16:44,130 INFO Execution has been finished
+2019-03-11 00:16:44,133 INFO Files to check: 1
+2019-03-11 00:16:44,134 INFO Checked files: 1
+2019-03-11 00:16:44,137 INFO Modified files: 1
+2019-03-11 00:16:44,165 INFO Not modified files: 0
+2019-03-11 00:16:44,166 INFO Integrity ratio: 0.0%
+2019-03-11 00:16:44,167 INFO ==============================================
+2019-03-11 00:16:54,127 INFO =========================================
+2019-03-11 00:16:54,128 INFO Starting execution...
+2019-03-11 00:16:54,130 INFO ###### Summary ######
+2019-03-11 00:16:54,131 INFO Execution has been finished
+2019-03-11 00:16:54,132 INFO Files to check: 1
+2019-03-11 00:16:54,133 INFO Checked files: 1
+2019-03-11 00:16:54,133 INFO Modified files: 1
+2019-03-11 00:16:54,134 INFO Not modified files: 0
+2019-03-11 00:16:54,135 INFO Integrity ratio: 0.0%
+2019-03-11 00:16:54,135 INFO ==============================================
+2019-03-11 00:17:04,125 INFO =========================================
+2019-03-11 00:17:04,125 INFO Starting execution...
+2019-03-11 00:17:04,127 INFO ###### Summary ######
+2019-03-11 00:17:04,127 INFO Execution has been finished
+2019-03-11 00:17:04,127 INFO Files to check: 1
+2019-03-11 00:17:04,127 INFO Checked files: 1
+2019-03-11 00:17:04,128 INFO Modified files: 1
+2019-03-11 00:17:04,128 INFO Not modified files: 0
+2019-03-11 00:17:04,128 INFO Integrity ratio: 0.0%
+2019-03-11 00:17:04,128 INFO ==============================================
+2019-03-11 00:17:14,127 INFO =========================================
+2019-03-11 00:17:14,128 INFO Starting execution...
+2019-03-11 00:17:14,131 INFO ###### Summary ######
+2019-03-11 00:17:14,132 INFO Execution has been finished
+2019-03-11 00:17:14,132 INFO Files to check: 1
+2019-03-11 00:17:14,133 INFO Checked files: 1
+2019-03-11 00:17:14,133 INFO Modified files: 1
+2019-03-11 00:17:14,134 INFO Not modified files: 0
+2019-03-11 00:17:14,135 INFO Integrity ratio: 0.0%
+2019-03-11 00:17:14,135 INFO ==============================================
+2019-03-11 00:17:24,126 INFO =========================================
+2019-03-11 00:17:24,127 INFO Starting execution...
+2019-03-11 00:17:24,129 INFO ###### Summary ######
+2019-03-11 00:17:24,132 INFO Execution has been finished
+2019-03-11 00:17:24,132 INFO Files to check: 1
+2019-03-11 00:17:24,135 INFO Checked files: 1
+2019-03-11 00:17:24,158 INFO Modified files: 1
+2019-03-11 00:17:24,159 INFO Not modified files: 0
+2019-03-11 00:17:24,159 INFO Integrity ratio: 0.0%
+2019-03-11 00:17:24,160 INFO ==============================================

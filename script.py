@@ -63,7 +63,29 @@ def sendIncidentMail():
                           incidentMail)
         # mail = Mail(from_email, subject, to_email, content)
         # response = sg.client.mail.send.post(request_body=mail.get())
+def compare_hashes(old_hash, new_hash):
 
+	result_hashes = ""
+	old_hashes = old_hash.split("\n")
+	new_hashes = new_hash.split("\n")
+	for o_hash in old_hashes:
+		is_in_file = False
+		for n_hash in new_hashes:
+			if o_hash == n_hash:
+				is_in_file = True
+				break
+		if not is_in_file:
+			result_hashes += "OLD:"+ o_hash+"\n"
+	for n_hash in new_hashes:
+		is_in_file = False
+		for o_hash in old_hashes:
+			if o_hash == n_hash:
+				is_in_file = True
+				break
+		if not is_in_file:
+			result_hashes += "NEW:"+ o_hash+"\n"
+	
+	return result_hashes
 
 def sendChangeHashesMail(newHashes):
     """This function will recieve the new hases and will send an email with the news and the old hashes
@@ -75,8 +97,9 @@ def sendChangeHashesMail(newHashes):
     from_email = Email("insegus@insegus.com")
     to_email = Email(conf["notify_email"])
     subject = "El fichero de hashes ha cambiado"
+	changes = compare_hashes(oldHashes, newHashes)
     content = Content("text/plain",
-                      "El fichero de hashes ha cambiado puede deberse a un cambio en la configuración o a un atacante. Por favor, revise que los hashes que no han sido añadidos nuevamente estan correctos \n Hashes antiguos: \n" + oldHashes + "\n \n Hashes nuevos: \n" + newHashes)
+                      "El fichero de hashes ha cambiado puede deberse a un cambio en la configuración o a un atacante. Por favor, revise que los hashes que no han sido añadidos nuevamente estan correctos \n Hashes antiguos: \n" + oldHashes + "\n \n Hashes nuevos: \n" + newHashes+"\n Changes:\n"+changes)
     # mail = Mail(from_email, subject, to_email, content)
     # response = sg.client.mail.send.post(request_body=mail.get())
 

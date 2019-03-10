@@ -61,8 +61,8 @@ def sendIncidentMail():
         subject = "La integridad de su sistema se ha visto comprometido."
         content = Content("text/plain",
                           incidentMail)
-        mail = Mail(from_email, subject, to_email, content)
-        response = sg.client.mail.send.post(request_body=mail.get())
+        # mail = Mail(from_email, subject, to_email, content)
+        # response = sg.client.mail.send.post(request_body=mail.get())
 
 
 def sendChangeHashesMail(newHashes):
@@ -77,8 +77,8 @@ def sendChangeHashesMail(newHashes):
     subject = "El fichero de hashes ha cambiado"
     content = Content("text/plain",
                       "El fichero de hashes ha cambiado puede deberse a un cambio en la configuración o a un atacante. Por favor, revise que los hashes que no han sido añadidos nuevamente estan correctos \n Hashes antiguos: \n" + oldHashes + "\n \n Hashes nuevos: \n" + newHashes)
-    mail = Mail(from_email, subject, to_email, content)
-    response = sg.client.mail.send.post(request_body=mail.get())
+    # mail = Mail(from_email, subject, to_email, content)
+    # response = sg.client.mail.send.post(request_body=mail.get())
 
     # if last_paths != len(conf["paths"]) and not huboIncidencias and not first_time:
     #     with open("hashes.txt", "r") as file_to_attach:
@@ -126,7 +126,7 @@ def hash_file(path, file_string, hashes_file):
 
 
 def compare_hash(hashes_file):
-    """This function will compare """
+    """This function will compare the hashing of the files in the hashes files received with their current hash"""
     global logger
     global checked_files
     global modified_files
@@ -135,30 +135,32 @@ def compare_hash(hashes_file):
     conf = configuration.conf
 
     i = -1
-    for line in hashes_file.readlines():
+    for line in hashes_file.readlines():  # For every line of the hashes file
         i += 1
 
-        file_path = line.split(",")[0].strip()
-        file_hash = line.split(",")[1].strip()
+        file_path = line.split(",")[0].strip()  # file to check their integrity
+        file_hash = line.split(",")[1].strip()  # its previous hashing
 
-        if file_path == conf["paths"][i]:
+        if file_path == conf["paths"][i]:  # if it's the file I have to check now
             checked_files += 1
             with open(file_path, "rb") as file_string:
-                hashed_file = str(hashlib.sha256(file_string.read()).hexdigest())
-            if file_hash != hashed_file:
+                hashed_file = str(hashlib.sha256(file_string.read()).hexdigest())  # Calculating its current hashing
+            if file_hash != hashed_file:  # if it has changed
                 modified_files += 1
-                incident_logger.error("File " + conf["paths"][i] + " has been modified")
-                incidentMail += "File " + conf["paths"][i] + " has been modified \n"
-            else:
+                incident_logger.error("File " + conf["paths"][i] + " has been modified")  # Incident log
+                incidentMail += "File " + conf["paths"][i] + " has been modified \n"  # Incident mail
+            else:  # OK
                 not_modified_files += 1
 
                 logger.info("File " + conf["paths"][i] + " has not been modified")
-        else:
+        else:  # The file its not founded or hashes file is corrupted
             logger.warning("File " + conf["paths"][i] + " not founded")
-            incidentMail += "File " + conf["paths"][i] + " not founded"
+            incidentMail += "File " + conf["paths"][
+                i] + " not founded or hashes file is corrupted. Maybe the hashes file has not the files in the same order than the configuration, please check it. If the error persists you can remove the hashes file and it will be created again"
 
 
 def read_path():
+    """This function will execute the algorithm to check the integrity calling the previous functions"""
     global logger
     global checked_files_data
     global modified_files_data
@@ -169,74 +171,74 @@ def read_path():
     conf = configuration.conf
     created = True
     mode = "w+"
+
     logger.info("=========================================")
-    if not os.path.isfile(conf['workDirectory'] + "/hashes.txt"):  # comprobar si hay archivos nuevos
+    if not os.path.isfile(conf['workDirectory'] + "/hashes.txt"):  # if the hashes file does not exist we create it
         created = False
-        logger.info("Hashes file has been created")
-    else:
-        mode = "r"
+
+        logger.info("Creating hashes file...")
+        with open(conf['workDirectory'] + "/hashes.txt", mode) as hashes_file:
+            for path in conf["paths"]:
+                try:
+                    file_string = open(path, "rb").read()  # we read the file to hash in binary
+                    if len(file_string) == 0 or file_string == "":
+                        logger.warning("File " + str(path) + " is empty.")
+                        continue
+                except MemoryError:
+                    logger.warning("File " + str(path) + " is too big.")
+                    continue
+                except FileNotFoundError:
+                    logger.warning("File " + str(path) + " does not exists.")
+                    continue
+                if not created:
+                    hash_file(path, file_string, hashes_file)
+        os.chmod(conf['workDirectory'] + "/hashes.txt", S_IREAD)  # we change the hashes file to read only file
+
+    else:  # If it's created we will compare hashes and will show information
+
         logger.info("Starting execution...")
 
-    with open(conf['workDirectory'] + "/hashes.txt", mode) as hashes_file:
-        for path in conf["paths"]:
-            try:
-                file_string = open(path, "rb").read()
-                if len(file_string) == 0 or file_string == "":
-                    logger.warning("File " + str(path) + " is empty.")
-                    continue
-            except MemoryError:
-                logger.warning("File " + str(path) + " is too big.")
-                continue
-            except FileNotFoundError:
-                logger.warning("File " + str(path) + " does not exists.")
-                continue
-            if not created:
-                hash_file(path, file_string, hashes_file)
-            else:
-                compare_hash(hashes_file)
-
-    if not created:
-        os.chmod(conf['workDirectory'] + "/hashes.txt", S_IREAD)
-    else:
+        with open(conf['workDirectory'] + "/hashes.txt", "r") as hashes_file:
+            compare_hash(hashes_file)
         logger.info("###### Summary ######")
-        logger.info("Execution has been finished")
         logger.info("Files to check: " + str(len(conf["paths"])))
         logger.info("Checked files: " + str(checked_files))
         logger.info("Modified files: " + str(modified_files))
         logger.info("Not modified files: " + str(not_modified_files))
         logger.info("Integrity ratio: " + str((not_modified_files/checked_files)*100)+"%")
         integrity_radio_data.append({"x":str(date.second), "y":(not_modified_files/checked_files)*100})
+        logger.info("Execution has been finished")
         logger.info("==============================================")
         checked_files_data = [checked_files]
         modified_files_data = [modified_files]
         not_modified_files_data = [not_modified_files]
         files_to_check_data = [len(conf["paths"])]
+
         global lastExecution
-        global last_paths
-        last_paths = len(conf["paths"])
+        global huboIncidencias
+
         lastExecution = "Files to check: " + str(len(conf["paths"])) + " Checked files: " + str(
             checked_files) + " Modified files: " + str(modified_files) + " Not modified files: " + str(
             not_modified_files)
-        if modified_files > 0:
-            global huboIncidencias
-            huboIncidencias = True
+        huboIncidencias = modified_files > 0 or checked_files != len(conf['paths'])
 
-        # sendIncidentMail()
+        sendIncidentMail()  # We will notify the e-mail in configuration if there were some incidents
 
-	##### INTEGRIDAD EN EL FICHERO DE HASHES ####
+    # HASHES FILE INTEGRITY
     with open(conf['workDirectory'] + "/hashes.txt", "r") as hashes_file:
         global oldHashes
-        if not created and oldHashes != "":
+        if not created and oldHashes != "":  # It's not created but it was not the first execution, we send an e-mail becuase it was deleted
             sendChangeHashesMail("Se ha borrado el fichero")
-        elif not created:
+        elif not created:  # It's not created but it's the first execution, we created it and update the old hashes
             oldHashes = hashes_file.read()
-        elif oldHashes == "":
+        elif oldHashes == "":  # It's created but it's the first execution, we update the old hashes
             oldHashes = hashes_file.read()
-        elif oldHashes != hashes_file.read():
+        elif oldHashes != hashes_file.read():  # If the hashes file is different from the previous execution we notify
             sendChangeHashesMail(hashes_file.read())
 
 
 def mainP():
+    """This function will initialize every needed variable for the execution, loggers and some directories"""
     global checked_files
     global modified_files
     global not_modified_files
@@ -272,10 +274,9 @@ def mainP():
     incidentMail = ""
     read_path()
 
-
+# VIEWS
 @app.route('/', methods=['GET'])
 def index():
-    conf = configuration.conf
     global huboIncidencias
     if not huboIncidencias:
         return "<h3> Last Execution1 </h3><p>" + lastExecution + "</p>" + "<br><div><a href='incidencias'><button style='float:left'>Issues</button></a><a href='graficas'><button>Graphs</button></a></div>"
@@ -285,10 +286,10 @@ def index():
 
 @app.route('/incidencias', methods=['GET'])
 def incidencias():
-    conf = configuration.conf
+    from configuration import conf
     res = "<ul>"
-    for path in os.listdir("./incidents"):
-        with open("./incidents/" + path, "r") as incident:
+    for path in os.listdir(conf['workDirectory'] + "/incidents"):
+        with open(conf['workDirectory'] + "//incidents/" + path, "r") as incident:
             res += "<li><b>" + path + "</b>:<br> " + str(incident.read()) + "</li><br>"
     return res + "</ul>"
 
@@ -300,7 +301,9 @@ def graficas():
 
 
 if __name__ == '__main__':
+    # creating a ubuntu daemon
     schedule = BackgroundScheduler(daemon=True)
     schedule.add_job(mainP, "interval", seconds=configuration.conf['frequency'])
     schedule.start()
+    # running the app
     app.run(host="localhost", port="9007")

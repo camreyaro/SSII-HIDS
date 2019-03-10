@@ -1,7 +1,6 @@
 conf = {
-    "paths": ["./imagen_share.png","./imagen_share.png"],
-    "workDirectory": ".",
-    "frequency": 10,
-    "issue_file": "",
-    "notify_email": "manjjimnav@gmail.com"
+    "paths": ["./hola.txt"],  # Absolute paths
+    "workDirectory": ".",  # Absolute path. NOT ended in /
+    "frequency": 10,  # In seconds
+    "notify_email": "angperllo@alum.us.es"  # Mail to notify
 }

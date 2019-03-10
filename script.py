@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+﻿#! /usr/bin/python3.6
 from flask import Flask, request, render_template
 import hashlib
 import os
@@ -10,8 +10,9 @@ import datetime
 import sendgrid
 from sendgrid.helpers.mail import *
 import importlib
-from conf import conf
+import configuration
 import base64
+from importlib import reload
 
 app = Flask(__name__)
 
@@ -58,7 +59,8 @@ def compare_hash(hashes_file):
     global checked_files
     global modified_files
     global not_modified_files
-
+    conf = configuration.conf
+    
     i = -1
     for line in hashes_file.readlines():
         i += 1
@@ -88,6 +90,7 @@ def read_path():
     global modified_files_data
     global not_modified_files_data
     global files_to_check_data
+    conf = configuration.conf
     created = True
     mode = "w+"
     logger.info("=========================================")
@@ -152,6 +155,11 @@ def mainP():
     global last_paths
     global huboIncidencias
     global first_time
+    reload(configuration)
+    from configuration import conf
+    print("paths de antes " + str(last_paths))
+    print("paths de ahora " + str(len(conf["paths"])))
+    # reload(conf.conf)
     if last_paths != len(conf["paths"]) and not huboIncidencias and not first_time:
 
         old_hashes = Attachment()
@@ -223,6 +231,7 @@ def mainP():
 
 @app.route('/', methods=['GET'])
 def index():
+    conf = configuration.conf
     global huboIncidencias
     if not huboIncidencias:
         return "<h3> Last Execution1 </h3><p>" + lastExecution + "</p>" + "<br><div><a href='incidencias'><button style='float:left'>Issues</button></a><a href='graficas'><button>Graphs</button></a></div>"
@@ -242,6 +251,7 @@ def index():
 
 @app.route('/incidencias', methods=['GET'])
 def incidencias():
+    conf = configuration.conf
     res = "<ul>"
     for path in os.listdir("./incidents"):
         with open("./incidents/" + path, "r") as incident:
@@ -257,7 +267,7 @@ def graficas():
 
 if __name__ == '__main__':
     schedule = BackgroundScheduler(daemon=True)
-    schedule.add_job(mainP, "interval", seconds=conf['frequency'])
+    schedule.add_job(mainP, "interval", seconds=configuration.conf['frequency'])
     schedule.start()
     app.run(host="localhost", port="9007")
 

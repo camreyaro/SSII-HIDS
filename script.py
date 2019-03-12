@@ -3,15 +3,12 @@ from flask import Flask, request, render_template
 import hashlib
 import os
 from apscheduler.schedulers.background import BackgroundScheduler
-import json
 import logging
 from stat import S_IREAD, S_IWRITE
 import datetime
 import sendgrid
 from sendgrid.helpers.mail import *
-import importlib
 import configuration
-import base64
 from importlib import reload
 
 app = Flask(__name__)
@@ -34,6 +31,7 @@ integrity_radio_data = []
 
 incidentMail = ""  # This variable will be the content of the incident mail
 oldHashes = ""  # This variable will storage the last version of hashes file to see if it was changed
+oldConf = ""  # Old configuration
 
 
 def setup_logger(name, log_file, level=logging.INFO):
@@ -61,34 +59,31 @@ def sendIncidentMail():
         subject = "La integridad de su sistema se ha visto comprometido."
         content = Content("text/plain",
                           incidentMail)
-        # mail = Mail(from_email, subject, to_email, content)
-        # response = sg.client.mail.send.post(request_body=mail.get())
+        mail = Mail(from_email, subject, to_email, content)
+        response = sg.client.mail.send.post(request_body=mail.get())
 
 def compare_hashes(old_hash, new_hash):
+    result_hashes = ""
+    old_hashes = old_hash.split("\n")
+    new_hashes = new_hash.split("\n")
+    for o_hash in old_hashes:
+        is_in_file = False
+        for n_hash in new_hashes:
+            if o_hash == n_hash:
+                is_in_file = True
+                break
+        if not is_in_file:
+            result_hashes += "OLD:" + o_hash + "\n"
+    for n_hash in new_hashes:
+        is_in_file = False
+        for o_hash in old_hashes:
+            if o_hash == n_hash:
+                is_in_file = True
+                break
+        if not is_in_file:
+            result_hashes += "NEW:" + o_hash + "\n"
 
-	result_hashes = ""
-	old_hashes = old_hash.split("\n")
-	new_hashes = new_hash.split("\n")
-
-	for o_hash in old_hashes:
-		is_in_file = False
-		for n_hash in new_hashes:
-			if o_hash.strip() in n_hash.strip():
-				is_in_file = True
-				break
-		if not is_in_file:
-			result_hashes += "OLD:"+ o_hash+"\n"
-
-	for n_hash in new_hashes:
-		is_in_file = False
-		for o_hash in old_hashes:
-			if o_hash.strip() in n_hash.strip():
-				is_in_file = True
-				break
-		if not is_in_file:
-			result_hashes += "NEW:"+ o_hash+"\n"
-	
-	return result_hashes
+    return result_hashes
 
 def sendChangeHashesMail(newHashes):
     """This function will recieve the new hases and will send an email with the news and the old hashes
@@ -101,49 +96,30 @@ def sendChangeHashesMail(newHashes):
     to_email = Email(conf["notify_email"])
     subject = "El fichero de hashes ha cambiado"
     changes = compare_hashes(oldHashes, newHashes)
-    print(changes)
     content = Content("text/plain",
-                      "El fichero de hashes ha cambiado puede deberse a un cambio en la configuración o a un atacante. Por favor, revise que los hashes que no han sido añadidos nuevamente estan correctos \n Hashes antiguos: \n" + oldHashes + "\n \n Hashes nuevos: \n" + newHashes+"\n Changes:\n"+changes)
-    # mail = Mail(from_email, subject, to_email, content)
-    # response = sg.client.mail.send.post(request_body=mail.get())
+                      "El fichero de hashes ha cambiado puede deberse a un cambio en la configuración o a un atacante. Por favor, revise que los hashes que no han sido añadidos nuevamente estan correctos \n Hashes antiguos: \n" + oldHashes + "\n \n Hashes nuevos: \n" + newHashes + "\n Changes:\n" + changes)
+    mail = Mail(from_email, subject, to_email, content)
+    response = sg.client.mail.send.post(request_body=mail.get())
 
-    # if last_paths != len(conf["paths"]) and not huboIncidencias and not first_time:
-    #     with open("hashes.txt", "r") as file_to_attach:
-    #         data = file_to_attach.read()
-    #
-    #     content_string = "El archivo de configuración ha sido modificado, compruebe que ha sido el administrador del sistema.\n Hashes antiguos:\n" + str(
-    #         data) + "\n"
-    #     # Email notification
-    #
-    #     subject = "Se ha modificado la configuracion."
-    #
-    #     logger.warning("Paths change detected, hashing files...")
-    #     os.chmod(conf['workDirectory'] + "/hashes.txt", S_IWRITE)
-    #     with open(conf['workDirectory'] + "/hashes.txt", 'w') as hashes_file:
-    #         for path in conf["paths"]:
-    #             try:
-    #                 file_string = open(path, "rb").read()
-    #                 if len(file_string) == 0 or file_string == "":
-    #                     logger.warning("File " + str(path) + " is empty.")
-    #                     continue
-    #             except MemoryError:
-    #                 logger.warning("File " + str(path) + " is too big.")
-    #                 continue
-    #             except FileNotFoundError:
-    #                 logger.warning("File " + str(path) + " does not exists.")
-    #                 continue
-    #
-    #             hash_file(path, file_string, hashes_file)
-    #
-    #     new_hashes = Attachment()
-    #     with open(conf['workDirectory'] + "/hashes.txt", "rb") as file_to_attach:
-    #         content_string += "Hashes nuevos\n" + str(file_to_attach.read())
-    #     content = Content("text/plain", repr(content_string))
-    #     mail = Mail(from_email, subject, to_email, content)
-    #     response = sg.client.mail.send.post(request_body=mail.get())
-    #
-    #     logger.warning("Hashfile updated")
-    #     os.chmod(conf['workDirectory'] + "/hashes.txt", S_IREAD)
+
+def creatingHashingFile():
+    """Create hashes files"""
+    conf = configuration.conf
+    with open(conf['workDirectory'] + "/hashes.txt", "w") as hashes_file:
+        for path in conf["paths"]:
+            try:
+                file_string = open(path, "rb").read()  # we read the file to hash in binary
+                if len(file_string) == 0 or file_string == "":
+                    logger.warning("File " + str(path) + " is empty.")
+                    continue
+            except MemoryError:
+                logger.warning("File " + str(path) + " is too big.")
+                continue
+            except FileNotFoundError:
+                logger.warning("File " + str(path) + " does not exists.")
+                continue
+            hash_file(path, file_string, hashes_file)
+    os.chmod(conf['workDirectory'] + "/hashes.txt", S_IREAD)  # we change the hashes file to read only file
 
 
 def hash_file(path, file_string, hashes_file):
@@ -194,32 +170,22 @@ def read_path():
     global not_modified_files_data
     global files_to_check_data
     global integrity_radio_data
+    global oldConf
     date = datetime.datetime.now()
     conf = configuration.conf
     created = True
-    mode = "w+"
 
     logger.info("=========================================")
+    if oldConf != "" and oldConf != conf['paths']:
+        os.chmod(conf['workDirectory'] + "/hashes.txt", S_IWRITE)
+        creatingHashingFile()
+
     if not os.path.isfile(conf['workDirectory'] + "/hashes.txt"):  # if the hashes file does not exist we create it
         created = False
 
         logger.info("Creating hashes file...")
-        with open(conf['workDirectory'] + "/hashes.txt", mode) as hashes_file:
-            for path in conf["paths"]:
-                try:
-                    file_string = open(path, "rb").read()  # we read the file to hash in binary
-                    if len(file_string) == 0 or file_string == "":
-                        logger.warning("File " + str(path) + " is empty.")
-                        continue
-                except MemoryError:
-                    logger.warning("File " + str(path) + " is too big.")
-                    continue
-                except FileNotFoundError:
-                    logger.warning("File " + str(path) + " does not exists.")
-                    continue
-                if not created:
-                    hash_file(path, file_string, hashes_file)
-        os.chmod(conf['workDirectory'] + "/hashes.txt", S_IREAD)  # we change the hashes file to read only file
+        creatingHashingFile()
+
 
     else:  # If it's created we will compare hashes and will show information
 
@@ -232,8 +198,8 @@ def read_path():
         logger.info("Checked files: " + str(checked_files))
         logger.info("Modified files: " + str(modified_files))
         logger.info("Not modified files: " + str(not_modified_files))
-        logger.info("Integrity ratio: " + str((not_modified_files/checked_files)*100)+"%")
-        integrity_radio_data.append({"x":str(date.second), "y":(not_modified_files/checked_files)*100})
+        logger.info("Integrity ratio: " + str((not_modified_files / checked_files) * 100) + "%")
+        integrity_radio_data.append({"x": str(date.second), "y": (not_modified_files / checked_files) * 100})
         logger.info("Execution has been finished")
         logger.info("==============================================")
         checked_files_data = [checked_files]
@@ -252,16 +218,18 @@ def read_path():
         sendIncidentMail()  # We will notify the e-mail in configuration if there were some incidents
 
     # HASHES FILE INTEGRITY
+    oldConf = conf['paths']
     with open(conf['workDirectory'] + "/hashes.txt", "r") as hashes_file:
         global oldHashes
+        nhashes = hashes_file.read()
         if not created and oldHashes != "":  # It's not created but it was not the first execution, we send an e-mail becuase it was deleted
             sendChangeHashesMail("Se ha borrado el fichero")
         elif not created:  # It's not created but it's the first execution, we created it and update the old hashes
-            oldHashes = hashes_file.read()
+            oldHashes = nhashes
         elif oldHashes == "":  # It's created but it's the first execution, we update the old hashes
-            oldHashes = hashes_file.read()
-        elif oldHashes != hashes_file.read():  # If the hashes file is different from the previous execution we notify
-            sendChangeHashesMail(hashes_file.read())
+            oldHashes = nhashes
+        elif oldHashes != nhashes:  # If the hashes file is different from the previous execution we notify
+            sendChangeHashesMail(nhashes)
 
 
 def mainP():
@@ -301,6 +269,7 @@ def mainP():
     incidentMail = ""
     read_path()
 
+
 # VIEWS
 @app.route('/', methods=['GET'])
 def index():
@@ -324,7 +293,8 @@ def incidencias():
 @app.route('/graficas', methods=['GET'])
 def graficas():
     return render_template('graph.html', modified_files_data=modified_files_data, checked_files_data=checked_files_data,
-                           not_modified_files_data=not_modified_files_data, files_to_check_data=files_to_check_data, integrity_radio_data=integrity_radio_data)
+                           not_modified_files_data=not_modified_files_data, files_to_check_data=files_to_check_data,
+                           integrity_radio_data=integrity_radio_data)
 
 
 if __name__ == '__main__':

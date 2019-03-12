@@ -4835,3 +4835,123 @@
 2019-03-11 00:17:24,159 INFO Not modified files: 0
 2019-03-11 00:17:24,159 INFO Integrity ratio: 0.0%
 2019-03-11 00:17:24,160 INFO ==============================================
+2019-03-11 00:38:41,413 INFO =========================================
+2019-03-11 00:38:41,448 INFO Starting execution...
+2019-03-11 00:38:41,474 INFO ###### Summary ######
+2019-03-11 00:38:41,474 INFO Files to check: 3
+2019-03-11 00:38:41,474 INFO Checked files: 1
+2019-03-11 00:38:41,474 INFO Modified files: 1
+2019-03-11 00:38:41,475 INFO Not modified files: 0
+2019-03-11 00:38:41,475 INFO Integrity ratio: 0.0%
+2019-03-11 00:38:41,475 INFO Execution has been finished
+2019-03-11 00:38:41,476 INFO ==============================================
+2019-03-11 00:38:51,419 INFO =========================================
+2019-03-11 00:38:51,419 INFO Starting execution...
+2019-03-11 00:38:51,420 INFO ###### Summary ######
+2019-03-11 00:38:51,421 INFO Files to check: 2
+2019-03-11 00:38:51,421 INFO Checked files: 1
+2019-03-11 00:38:51,422 INFO Modified files: 1
+2019-03-11 00:38:51,423 INFO Not modified files: 0
+2019-03-11 00:38:51,437 INFO Integrity ratio: 0.0%
+2019-03-11 00:38:51,438 INFO Execution has been finished
+2019-03-11 00:38:51,438 INFO ==============================================
+2019-03-11 00:39:22,730 INFO =========================================
+2019-03-11 00:39:22,730 INFO Creating hashes file...
+2019-03-11 00:39:32,730 INFO =========================================
+2019-03-11 00:39:32,731 INFO Starting execution...
+2019-03-11 00:39:32,731 INFO File ./hola.txt has not been modified
+2019-03-11 00:39:32,732 INFO File ./imagen_share.png has not been modified
+2019-03-11 00:39:32,732 INFO File ./MAC.java has not been modified
+2019-03-11 00:39:32,733 INFO ###### Summary ######
+2019-03-11 00:39:32,733 INFO Files to check: 3
+2019-03-11 00:39:32,733 INFO Checked files: 3
+2019-03-11 00:39:32,733 INFO Modified files: 0
+2019-03-11 00:39:32,734 INFO Not modified files: 3
+2019-03-11 00:39:32,734 INFO Integrity ratio: 100.0%
+2019-03-11 00:39:32,734 INFO Execution has been finished
+2019-03-11 00:39:32,734 INFO ==============================================
+2019-03-11 00:39:42,728 INFO =========================================
+2019-03-11 00:39:42,730 INFO Starting execution...
+2019-03-11 00:39:42,730 INFO File ./hola.txt has not been modified
+2019-03-11 00:39:42,731 INFO File ./imagen_share.png has not been modified
+2019-03-11 00:39:42,732 INFO File ./MAC.java has not been modified
+2019-03-11 00:39:42,732 INFO ###### Summary ######
+2019-03-11 00:39:42,732 INFO Files to check: 3
+2019-03-11 00:39:42,733 INFO Checked files: 3
+2019-03-11 00:39:42,733 INFO Modified files: 0
+2019-03-11 00:39:42,735 INFO Not modified files: 3
+2019-03-11 00:39:42,736 INFO Integrity ratio: 100.0%
+2019-03-11 00:39:42,737 INFO Execution has been finished
+2019-03-11 00:39:42,737 INFO ==============================================
+2019-03-11 00:39:52,733 INFO =========================================
+2019-03-11 00:39:52,734 INFO Starting execution...
+2019-03-11 00:39:52,736 INFO File ./hola.txt has not been modified
+2019-03-11 00:39:52,737 INFO File ./imagen_share.png has not been modified
+2019-03-11 00:39:52,740 INFO ###### Summary ######
+2019-03-11 00:39:52,740 INFO Files to check: 3
+2019-03-11 00:39:52,740 INFO Checked files: 3
+2019-03-11 00:39:52,740 INFO Modified files: 1
+2019-03-11 00:39:52,741 INFO Not modified files: 2
+2019-03-11 00:39:52,741 INFO Integrity ratio: 66.66666666666666%
+2019-03-11 00:39:52,741 INFO Execution has been finished
+2019-03-11 00:39:52,742 INFO ==============================================
+2019-03-11 00:40:02,732 INFO =========================================
+2019-03-11 00:40:02,733 INFO Starting execution...
+2019-03-11 00:40:02,734 INFO File ./hola.txt has not been modified
+2019-03-11 00:40:02,735 INFO File ./imagen_share.png has not been modified
+2019-03-11 00:40:02,737 INFO ###### Summary ######
+2019-03-11 00:40:02,737 INFO Files to check: 3
+2019-03-11 00:40:02,738 INFO Checked files: 3
+2019-03-11 00:40:02,738 INFO Modified files: 1
+2019-03-11 00:40:02,738 INFO Not modified files: 2
+2019-03-11 00:40:02,738 INFO Integrity ratio: 66.66666666666666%
+2019-03-11 00:40:02,739 INFO Execution has been finished
+2019-03-11 00:40:02,739 INFO ==============================================
+2019-03-11 00:44:33,069 INFO =========================================
+2019-03-11 00:44:33,070 INFO Starting execution...
+2019-03-11 00:44:33,071 INFO File ./hola.txt has not been modified
+2019-03-11 00:44:33,072 INFO File ./imagen_share.png has not been modified
+2019-03-11 00:44:33,072 INFO ###### Summary ######
+2019-03-11 00:44:33,073 INFO Files to check: 3
+2019-03-11 00:44:33,073 INFO Checked files: 3
+2019-03-11 00:44:33,073 INFO Modified files: 1
+2019-03-11 00:44:33,073 INFO Not modified files: 2
+2019-03-11 00:44:33,073 INFO Integrity ratio: 66.66666666666666%
+2019-03-11 00:44:33,074 INFO Execution has been finished
+2019-03-11 00:44:33,074 INFO ==============================================
+2019-03-11 00:44:43,068 INFO =========================================
+2019-03-11 00:44:43,068 INFO Starting execution...
+2019-03-11 00:44:43,069 INFO File ./hola.txt has not been modified
+2019-03-11 00:44:43,070 INFO File ./imagen_share.png has not been modified
+2019-03-11 00:44:43,070 INFO ###### Summary ######
+2019-03-11 00:44:43,070 INFO Files to check: 3
+2019-03-11 00:44:43,071 INFO Checked files: 3
+2019-03-11 00:44:43,071 INFO Modified files: 1
+2019-03-11 00:44:43,071 INFO Not modified files: 2
+2019-03-11 00:44:43,072 INFO Integrity ratio: 66.66666666666666%
+2019-03-11 00:44:43,072 INFO Execution has been finished
+2019-03-11 00:44:43,072 INFO ==============================================
+2019-03-11 00:45:13,246 INFO =========================================
+2019-03-11 00:45:13,246 INFO Starting execution...
+2019-03-11 00:45:13,247 INFO File ./hola.txt has not been modified
+2019-03-11 00:45:13,247 INFO File ./imagen_share.png has not been modified
+2019-03-11 00:45:13,247 INFO ###### Summary ######
+2019-03-11 00:45:13,247 INFO Files to check: 3
+2019-03-11 00:45:13,247 INFO Checked files: 3
+2019-03-11 00:45:13,248 INFO Modified files: 1
+2019-03-11 00:45:13,248 INFO Not modified files: 2
+2019-03-11 00:45:13,248 INFO Integrity ratio: 66.66666666666666%
+2019-03-11 00:45:13,248 INFO Execution has been finished
+2019-03-11 00:45:13,249 INFO ==============================================
+2019-03-11 00:45:23,245 INFO =========================================
+2019-03-11 00:45:23,245 INFO Starting execution...
+2019-03-11 00:45:23,246 INFO File ./hola.txt has not been modified
+2019-03-11 00:45:23,246 INFO File ./imagen_share.png has not been modified
+2019-03-11 00:45:23,247 INFO ###### Summary ######
+2019-03-11 00:45:23,247 INFO Files to check: 3
+2019-03-11 00:45:23,248 INFO Checked files: 3
+2019-03-11 00:45:23,248 INFO Modified files: 1
+2019-03-11 00:45:23,248 INFO Not modified files: 2
+2019-03-11 00:45:23,248 INFO Integrity ratio: 66.66666666666666%
+2019-03-11 00:45:23,249 INFO Execution has been finished
+2019-03-11 00:45:23,249 INFO ==============================================
